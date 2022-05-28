@@ -120,9 +120,8 @@
     for (let i = 0; i < iterationCount; i++) {
       let value = 0;
       for (let j = 0; j < n; j++) {
-        value += attackPower * (Math.random() < cc ? criticalDamage : 1);
+        value += attackPower * (Math.random() < cc ? criticalDamage : 1) | 0;
       }
-      value |= 0;
       agg[value] = (agg[value] ?? 0) + 1;
     }
     return Object.entries(agg)
