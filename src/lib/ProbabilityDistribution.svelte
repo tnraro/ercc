@@ -138,7 +138,7 @@
     시행 횟수 {n}
   </label>
   <label>
-    <input type="range" min={50} max={250} step={10} bind:value={attackPower} />
+    <input type="range" min={50} max={250} step={1} bind:value={attackPower} />
     공격력 {attackPower}
   </label>
   <label>
@@ -156,7 +156,7 @@
       type="range"
       min={1.7}
       max={2.25}
-      step={0.05}
+      step={0.01}
       bind:value={criticalDamage}
     />
     치명타 피해량 {(criticalDamage * 100) | 0}%
