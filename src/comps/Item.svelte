@@ -44,4 +44,8 @@
     ---color-background: #9a7533;
     ---color-background-dark: #3d3224;
   }
+  div[data-grade="mythic"] {
+    ---color-background: #903034;
+    ---color-background-dark: #48231D;
+  }
 </style>

@@ -46,6 +46,8 @@
         return 3;
       case "legendary":
         return 4;
+      case "mythic":
+        return 5;
     }
   };
   const filterItems = (
