@@ -188,3 +188,7 @@ const criticalChance = await fetchData("CriticalChance");
 const cc = criticalChance.map(x => [x.probability / 100, x.actualUse]);
 
 write("actual-cc.ts", `export const actualUsedCriticalChance = new Map<number, number>(${JSON.stringify(cc, null, 2)});`);
+
+const sw = await fetchData("CharacterAttributes");
+
+write("sw.ts", `export const sw = ${JSON.stringify(sw.map((x, i) => [i + 1, x.characterCode, x.mastery]))};`);

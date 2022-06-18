@@ -7,6 +7,7 @@
     ItemType,
     weaponTypes,
   } from "../lib/items";
+  import { sw } from "../lib/sw";
 
   import Item from "./Item.svelte";
 
@@ -78,6 +79,7 @@
     return items;
   };
   $: filteredItems = filterItems(selectedItemSlot, selectedWeaponType);
+  $: ayaGgLink = `https://aya.gg/route?sw1=${sw.find(x => x[1] === selectedCharacter && x[2] === selectedWeaponType)?.[0] ?? ""}&i1=${equipments.filter(<T extends unknown>(x: T | undefined | null): x is T => x != null).map(x => x.id)}`;
 </script>
 
 <div class="container">
@@ -121,6 +123,7 @@
     {/each}
   </div>
 </div>
+<a href={ayaGgLink} target="_blank">aya.gg 루트 시뮬레이터로 이동</a>
 
 <style>
   .container {
