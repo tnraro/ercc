@@ -35,6 +35,7 @@
   let selectedCharacter = 10;
   let selectedWeaponType: ItemType = "Nunchaku";
   let selectedItemSlot: number = 0;
+  $: weaponTypesByCharacter = sw.filter(x => x[1] === selectedCharacter).map(x => x[2]);
   const gradeToScore = (grade: ItemGrade): number => {
     switch (grade) {
       case "common":
@@ -108,7 +109,7 @@
   <div class="items">
     {#if selectedItemSlot === 0}
       <select bind:value={selectedWeaponType}>
-        {#each weaponTypes as weaponType}
+        {#each weaponTypesByCharacter as weaponType}
           <option value={weaponType}>{weaponType}</option>
         {/each}
       </select>
