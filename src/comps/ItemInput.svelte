@@ -124,7 +124,7 @@
     {/each}
   </div>
 </div>
-<a href={ayaGgLink} target="_blank">aya.gg 루트 시뮬레이터로 이동</a>
+<a href={ayaGgLink} target="_blank">이 구성으로 루트 짜기(aya.gg)</a>
 
 <style>
   .container {
