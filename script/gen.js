@@ -77,7 +77,7 @@ const itemGrade = (grade) => {
 
 const items = [
   ...weapons.map((w) => ({
-    id: w.code,
+    id: parseInt(w.code),
     name: w.name,
     type: w.weaponType,
     modeType: w.modeType,
@@ -90,7 +90,7 @@ const items = [
     cd: w.criticalStrikeDamage,
   })),
   ...armors.map((w) => ({
-    id: w.code,
+    id: parseInt(w.code),
     name: w.name,
     type: w.armorType,
     modeType: w.modeType,
@@ -102,7 +102,7 @@ const items = [
     cc: w.criticalStrikeChance,
     cd: w.criticalStrikeDamage,
   })),
-];
+].filter(x => x.modeType === 0 || (x.modeType & 0b111) !== 0);
 
 await write("items.ts", `export type ItemGrade = "common" | "uncommon" | "rare" | "epic" | "legendary" | "mythic";
 export const weaponTypes = [
