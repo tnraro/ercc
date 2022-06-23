@@ -10,6 +10,7 @@
     <img
       src={`https://tnraro.github.io/er-static/items/${item.id}.webp`}
       alt={item.name}
+      title={item.name}
       width="62"
       height="36"
       loading="lazy"
