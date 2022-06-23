@@ -15,6 +15,7 @@
   export let atk: number;
   export let cc: number;
   export let cd: number;
+  let teamMode: number = 1;
   $: equipments = [findItemById(119401), null, null, null, null, null];
   $: char = findCharacterById(selectedCharacter);
   $: atk =
@@ -35,7 +36,9 @@
   let selectedCharacter = 10;
   let selectedWeaponType: ItemType = "Nunchaku";
   let selectedItemSlot: number = 0;
-  $: weaponTypesByCharacter = sw.filter(x => x[1] === selectedCharacter).map(x => x[2]);
+  $: weaponTypesByCharacter = sw
+    .filter((x) => x[1] === selectedCharacter)
+    .map((x) => x[2]);
   const gradeToScore = (grade: ItemGrade): number => {
     switch (grade) {
       case "common":
@@ -54,7 +57,8 @@
   };
   const filterItems = (
     selectedItemSlot: number,
-    selectedWeaponType: ItemType
+    selectedWeaponType: ItemType,
+    teamMode: number
   ) => {
     const selectedItemType = ((selectedItemSlot: number) => {
       switch (selectedItemSlot) {
@@ -73,18 +77,35 @@
       }
     })(selectedItemSlot);
     if (selectedItemType == null) return [];
-    const items = findItemByType(selectedItemType);
+    const items = findItemByType(selectedItemType).filter(
+      (item) => item.modeType === 0 || item.modeType & (1 << (teamMode - 1))
+    );
     items.sort((a, b) => {
       return gradeToScore(b.grade) - gradeToScore(a.grade);
     });
     return items;
   };
-  $: filteredItems = filterItems(selectedItemSlot, selectedWeaponType);
-  $: ayaGgLink = `https://aya.gg/route?sw1=${sw.find(x => x[1] === selectedCharacter && x[2] === selectedWeaponType)?.[0] ?? ""}&i1=${equipments.filter(<T extends unknown>(x: T | undefined | null): x is T => x != null).map(x => x.id)}`;
+  $: filteredItems = filterItems(
+    selectedItemSlot,
+    selectedWeaponType,
+    teamMode
+  );
+  $: ayaGgLink = `https://aya.gg/route?sw1=${
+    sw.find(
+      (x) => x[1] === selectedCharacter && x[2] === selectedWeaponType
+    )?.[0] ?? ""
+  }&i1=${equipments
+    .filter(<T extends unknown>(x: T | undefined | null): x is T => x != null)
+    .map((x) => x.id)}`;
 </script>
 
 <div class="container">
   <div>
+    <select bind:value={teamMode}>
+      <option value={1}>솔로</option>
+      <option value={2}>듀오</option>
+      <option value={3}>스쿼드</option>
+    </select>
     <select bind:value={selectedCharacter}>
       {#each characters as character}
         <option value={character.id}>{character.name}</option>
