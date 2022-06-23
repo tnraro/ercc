@@ -68,7 +68,7 @@ export interface ItemData {
 }
 export const items: ItemData[] = [
   {
-    "id": 101101,
+    "id": "101101",
     "name": "가위",
     "type": "OneHandSword",
     "modeType": 0,
@@ -81,7 +81,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101104,
+    "id": "101104",
     "name": "식칼",
     "type": "OneHandSword",
     "modeType": 0,
@@ -94,7 +94,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101201,
+    "id": "101201",
     "name": "군용나이프",
     "type": "OneHandSword",
     "modeType": 0,
@@ -107,7 +107,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101202,
+    "id": "101202",
     "name": "메스",
     "type": "OneHandSword",
     "modeType": 0,
@@ -120,7 +120,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101203,
+    "id": "101203",
     "name": "자마다르",
     "type": "OneHandSword",
     "modeType": 0,
@@ -133,7 +133,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101301,
+    "id": "101301",
     "name": "장미칼",
     "type": "OneHandSword",
     "modeType": 0,
@@ -146,7 +146,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101302,
+    "id": "101302",
     "name": "스위스아미나이프",
     "type": "OneHandSword",
     "modeType": 0,
@@ -159,7 +159,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101303,
+    "id": "101303",
     "name": "카라페이스카타르",
     "type": "OneHandSword",
     "modeType": 0,
@@ -172,7 +172,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101401,
+    "id": "101401",
     "name": "카른웬난",
     "type": "OneHandSword",
     "modeType": 0,
@@ -185,7 +185,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101402,
+    "id": "101402",
     "name": "파산검",
     "type": "OneHandSword",
     "modeType": 0,
@@ -198,7 +198,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101404,
+    "id": "101404",
     "name": "초진동나이프",
     "type": "OneHandSword",
     "modeType": 0,
@@ -211,7 +211,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101406,
+    "id": "101406",
     "name": "다마스커스가시",
     "type": "OneHandSword",
     "modeType": 0,
@@ -224,7 +224,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101407,
+    "id": "101407",
     "name": "마하라자",
     "type": "OneHandSword",
     "modeType": 0,
@@ -237,7 +237,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 101405,
+    "id": "101405",
     "name": "프라가라흐",
     "type": "OneHandSword",
     "modeType": 0,
@@ -250,7 +250,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102101,
+    "id": "102101",
     "name": "녹슨검",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -263,7 +263,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102201,
+    "id": "102201",
     "name": "샴쉬르",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -276,7 +276,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102301,
+    "id": "102301",
     "name": "일본도",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -289,7 +289,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102401,
+    "id": "102401",
     "name": "마사무네",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -302,7 +302,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102402,
+    "id": "102402",
     "name": "무라마사",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -315,7 +315,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102403,
+    "id": "102403",
     "name": "바스타드소드",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -328,7 +328,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102404,
+    "id": "102404",
     "name": "보검",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -341,7 +341,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102405,
+    "id": "102405",
     "name": "뚜언띠엔",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -354,7 +354,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102406,
+    "id": "102406",
     "name": "아론다이트",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -367,7 +367,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102407,
+    "id": "102407",
     "name": "엑스칼리버",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -380,7 +380,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102408,
+    "id": "102408",
     "name": "플라즈마소드",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -393,10 +393,10 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102409,
+    "id": "102409",
     "name": "레바테인",
     "type": "TwoHandSword",
-    "modeType": 0,
+    "modeType": 7,
     "grade": "legendary",
     "atk": 62,
     "atkLv": 0,
@@ -406,7 +406,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102410,
+    "id": "102410",
     "name": "모노호시자오",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -419,7 +419,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102411,
+    "id": "102411",
     "name": "호푸어드",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -432,7 +432,7 @@ export const items: ItemData[] = [
     "cd": 0.1
   },
   {
-    "id": 102412,
+    "id": "102412",
     "name": "빛의검",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -445,7 +445,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102501,
+    "id": "102501",
     "name": "다인슬라이프",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -458,7 +458,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 102502,
+    "id": "102502",
     "name": "알마스",
     "type": "TwoHandSword",
     "modeType": 0,
@@ -471,7 +471,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103201,
+    "id": "103201",
     "name": "쌍칼",
     "type": "DualSword",
     "modeType": 0,
@@ -484,7 +484,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103202,
+    "id": "103202",
     "name": "조잡한쌍검",
     "type": "DualSword",
     "modeType": 0,
@@ -497,7 +497,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103302,
+    "id": "103302",
     "name": "쌍둥이검",
     "type": "DualSword",
     "modeType": 0,
@@ -510,7 +510,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103301,
+    "id": "103301",
     "name": "피렌체식 쌍검",
     "type": "DualSword",
     "modeType": 0,
@@ -523,7 +523,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103401,
+    "id": "103401",
     "name": "이천일류",
     "type": "DualSword",
     "modeType": 0,
@@ -536,7 +536,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103402,
+    "id": "103402",
     "name": "자웅일대검",
     "type": "DualSword",
     "modeType": 0,
@@ -549,7 +549,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103403,
+    "id": "103403",
     "name": "아수라",
     "type": "DualSword",
     "modeType": 0,
@@ -562,7 +562,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103501,
+    "id": "103501",
     "name": "디오스쿠로이",
     "type": "DualSword",
     "modeType": 0,
@@ -575,7 +575,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103502,
+    "id": "103502",
     "name": "로이거 차르",
     "type": "DualSword",
     "modeType": 0,
@@ -588,7 +588,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 103503,
+    "id": "103503",
     "name": "간장과막야",
     "type": "DualSword",
     "modeType": 0,
@@ -601,7 +601,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104101,
+    "id": "104101",
     "name": "망치",
     "type": "Hammer",
     "modeType": 0,
@@ -614,7 +614,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104201,
+    "id": "104201",
     "name": "워해머",
     "type": "Hammer",
     "modeType": 0,
@@ -627,7 +627,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104301,
+    "id": "104301",
     "name": "모닝스타",
     "type": "Hammer",
     "modeType": 0,
@@ -640,7 +640,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104302,
+    "id": "104302",
     "name": "사슴망치",
     "type": "Hammer",
     "modeType": 0,
@@ -653,7 +653,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104303,
+    "id": "104303",
     "name": "운명의망치",
     "type": "Hammer",
     "modeType": 0,
@@ -666,7 +666,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104401,
+    "id": "104401",
     "name": "낭아봉",
     "type": "Hammer",
     "modeType": 0,
@@ -679,7 +679,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104402,
+    "id": "104402",
     "name": "다그다의망치",
     "type": "Hammer",
     "modeType": 0,
@@ -692,7 +692,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104403,
+    "id": "104403",
     "name": "토르의망치",
     "type": "Hammer",
     "modeType": 0,
@@ -705,7 +705,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104404,
+    "id": "104404",
     "name": "개밥바라기",
     "type": "Hammer",
     "modeType": 0,
@@ -718,7 +718,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104406,
+    "id": "104406",
     "name": "천근추",
     "type": "Hammer",
     "modeType": 0,
@@ -731,7 +731,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104501,
+    "id": "104501",
     "name": "피스브링어",
     "type": "Hammer",
     "modeType": 0,
@@ -744,12 +744,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105103,
+    "id": "105103",
     "name": "손도끼",
     "type": "Axe",
     "modeType": 0,
     "grade": "common",
-    "atk": 25,
+    "atk": 18,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -757,12 +757,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105201,
+    "id": "105201",
     "name": "사슬낫",
     "type": "Axe",
     "modeType": 0,
     "grade": "uncommon",
-    "atk": 50,
+    "atk": 43,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -770,12 +770,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105202,
+    "id": "105202",
     "name": "전투도끼",
     "type": "Axe",
     "modeType": 0,
     "grade": "uncommon",
-    "atk": 47,
+    "atk": 40,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -783,12 +783,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105301,
+    "id": "105301",
     "name": "경량화도끼",
     "type": "Axe",
     "modeType": 0,
     "grade": "rare",
-    "atk": 61,
+    "atk": 54,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -796,12 +796,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105302,
+    "id": "105302",
     "name": "사신의낫",
     "type": "Axe",
     "modeType": 0,
     "grade": "rare",
-    "atk": 70,
+    "atk": 63,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -809,12 +809,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105401,
+    "id": "105401",
     "name": "대부",
     "type": "Axe",
     "modeType": 0,
     "grade": "rare",
-    "atk": 88,
+    "atk": 81,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -822,12 +822,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105402,
+    "id": "105402",
     "name": "빔엑스",
     "type": "Axe",
     "modeType": 0,
     "grade": "epic",
-    "atk": 82,
+    "atk": 75,
     "atkLv": 2,
     "asr": 0,
     "asrLv": 0,
@@ -835,12 +835,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105403,
+    "id": "105403",
     "name": "산타무에르떼",
     "type": "Axe",
     "modeType": 0,
     "grade": "epic",
-    "atk": 90,
+    "atk": 83,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -848,12 +848,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105404,
+    "id": "105404",
     "name": "스퀴테",
     "type": "Axe",
     "modeType": 0,
     "grade": "epic",
-    "atk": 92,
+    "atk": 85,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -861,12 +861,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105405,
+    "id": "105405",
     "name": "파라슈",
     "type": "Axe",
     "modeType": 0,
     "grade": "epic",
-    "atk": 98,
+    "atk": 91,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -874,12 +874,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105406,
+    "id": "105406",
     "name": "하르페",
     "type": "Axe",
     "modeType": 0,
     "grade": "epic",
-    "atk": 88,
+    "atk": 81,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -887,12 +887,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105407,
+    "id": "105407",
     "name": "저거너트",
     "type": "Axe",
     "modeType": 0,
     "grade": "epic",
-    "atk": 72,
+    "atk": 65,
     "atkLv": 0,
     "asr": 0.2,
     "asrLv": 0,
@@ -900,12 +900,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 105408,
+    "id": "105408",
     "name": "반고부",
     "type": "Axe",
     "modeType": 0,
     "grade": "legendary",
-    "atk": 115,
+    "atk": 108,
     "atkLv": 0,
     "asr": 0.2,
     "asrLv": 0,
@@ -913,7 +913,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107101,
+    "id": "107101",
     "name": "단창",
     "type": "Spear",
     "modeType": 0,
@@ -926,7 +926,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107201,
+    "id": "107201",
     "name": "죽창",
     "type": "Spear",
     "modeType": 0,
@@ -939,7 +939,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107301,
+    "id": "107301",
     "name": "바이던트",
     "type": "Spear",
     "modeType": 0,
@@ -952,7 +952,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107302,
+    "id": "107302",
     "name": "파이크",
     "type": "Spear",
     "modeType": 0,
@@ -965,7 +965,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107303,
+    "id": "107303",
     "name": "도끼창",
     "type": "Spear",
     "modeType": 0,
@@ -978,7 +978,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107401,
+    "id": "107401",
     "name": "강창",
     "type": "Spear",
     "modeType": 0,
@@ -991,7 +991,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107402,
+    "id": "107402",
     "name": "애각창",
     "type": "Spear",
     "modeType": 0,
@@ -1004,7 +1004,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107403,
+    "id": "107403",
     "name": "장팔사모",
     "type": "Spear",
     "modeType": 0,
@@ -1017,7 +1017,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107404,
+    "id": "107404",
     "name": "코스믹바이던트",
     "type": "Spear",
     "modeType": 0,
@@ -1030,7 +1030,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107405,
+    "id": "107405",
     "name": "트리아이나",
     "type": "Spear",
     "modeType": 0,
@@ -1043,10 +1043,10 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107406,
+    "id": "107406",
     "name": "화첨창",
     "type": "Spear",
-    "modeType": 0,
+    "modeType": 7,
     "grade": "legendary",
     "atk": 95,
     "atkLv": 0,
@@ -1056,7 +1056,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107407,
+    "id": "107407",
     "name": "방천화극",
     "type": "Spear",
     "modeType": 0,
@@ -1069,7 +1069,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107408,
+    "id": "107408",
     "name": "청룡언월도",
     "type": "Spear",
     "modeType": 0,
@@ -1082,7 +1082,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 107501,
+    "id": "107501",
     "name": "롱기누스의창",
     "type": "Spear",
     "modeType": 0,
@@ -1095,7 +1095,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108102,
+    "id": "108102",
     "name": "단봉",
     "type": "Bat",
     "modeType": 0,
@@ -1108,7 +1108,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108202,
+    "id": "108202",
     "name": "장봉",
     "type": "Bat",
     "modeType": 0,
@@ -1121,7 +1121,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108301,
+    "id": "108301",
     "name": "도깨비방망이",
     "type": "Bat",
     "modeType": 0,
@@ -1134,7 +1134,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108401,
+    "id": "108401",
     "name": "우산",
     "type": "Bat",
     "modeType": 0,
@@ -1147,7 +1147,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108402,
+    "id": "108402",
     "name": "횃불",
     "type": "Bat",
     "modeType": 0,
@@ -1160,7 +1160,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108405,
+    "id": "108405",
     "name": "몽둥이",
     "type": "Bat",
     "modeType": 0,
@@ -1173,7 +1173,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108403,
+    "id": "108403",
     "name": "구원의여신상",
     "type": "Bat",
     "modeType": 0,
@@ -1186,7 +1186,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108404,
+    "id": "108404",
     "name": "타구봉",
     "type": "Bat",
     "modeType": 0,
@@ -1199,7 +1199,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108501,
+    "id": "108501",
     "name": "스파이의우산",
     "type": "Bat",
     "modeType": 0,
@@ -1212,7 +1212,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104405,
+    "id": "104405",
     "name": "마법봉",
     "type": "Bat",
     "modeType": 0,
@@ -1225,7 +1225,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104407,
+    "id": "104407",
     "name": "금강저",
     "type": "Bat",
     "modeType": 0,
@@ -1238,7 +1238,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 104408,
+    "id": "104408",
     "name": "팔괘장",
     "type": "Bat",
     "modeType": 0,
@@ -1251,7 +1251,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108502,
+    "id": "108502",
     "name": "여의봉",
     "type": "Bat",
     "modeType": 0,
@@ -1264,7 +1264,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109101,
+    "id": "109101",
     "name": "채찍",
     "type": "Whip",
     "modeType": 0,
@@ -1277,7 +1277,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109201,
+    "id": "109201",
     "name": "오랏줄",
     "type": "Whip",
     "modeType": 0,
@@ -1290,7 +1290,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109202,
+    "id": "109202",
     "name": "철편",
     "type": "Whip",
     "modeType": 0,
@@ -1303,7 +1303,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109301,
+    "id": "109301",
     "name": "바람채찍",
     "type": "Whip",
     "modeType": 0,
@@ -1316,7 +1316,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109401,
+    "id": "109401",
     "name": "뇌룡편",
     "type": "Whip",
     "modeType": 0,
@@ -1329,7 +1329,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109402,
+    "id": "109402",
     "name": "벽력편",
     "type": "Whip",
     "modeType": 0,
@@ -1342,7 +1342,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109403,
+    "id": "109403",
     "name": "글레이프니르",
     "type": "Whip",
     "modeType": 0,
@@ -1355,7 +1355,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109404,
+    "id": "109404",
     "name": "플라즈마윕",
     "type": "Whip",
     "modeType": 0,
@@ -1368,7 +1368,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109405,
+    "id": "109405",
     "name": "캐소드라쉬",
     "type": "Whip",
     "modeType": 0,
@@ -1381,7 +1381,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109406,
+    "id": "109406",
     "name": "우라누스",
     "type": "Whip",
     "modeType": 0,
@@ -1394,7 +1394,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 109501,
+    "id": "109501",
     "name": "혈화구절편",
     "type": "Whip",
     "modeType": 0,
@@ -1407,7 +1407,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110101,
+    "id": "110101",
     "name": "너클",
     "type": "Glove",
     "modeType": 0,
@@ -1420,7 +1420,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110102,
+    "id": "110102",
     "name": "목장갑",
     "type": "Glove",
     "modeType": 0,
@@ -1433,7 +1433,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110201,
+    "id": "110201",
     "name": "글러브",
     "type": "Glove",
     "modeType": 0,
@@ -1446,7 +1446,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110202,
+    "id": "110202",
     "name": "아이언너클",
     "type": "Glove",
     "modeType": 0,
@@ -1459,7 +1459,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110301,
+    "id": "110301",
     "name": "건틀릿",
     "type": "Glove",
     "modeType": 0,
@@ -1472,7 +1472,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110302,
+    "id": "110302",
     "name": "윙너클",
     "type": "Glove",
     "modeType": 0,
@@ -1485,7 +1485,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110401,
+    "id": "110401",
     "name": "귀골장갑",
     "type": "Glove",
     "modeType": 0,
@@ -1498,7 +1498,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110402,
+    "id": "110402",
     "name": "벽력귀투",
     "type": "Glove",
     "modeType": 0,
@@ -1511,7 +1511,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110403,
+    "id": "110403",
     "name": "유리너클",
     "type": "Glove",
     "modeType": 0,
@@ -1524,7 +1524,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110404,
+    "id": "110404",
     "name": "회단장갑",
     "type": "Glove",
     "modeType": 0,
@@ -1537,7 +1537,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110405,
+    "id": "110405",
     "name": "단영촌천투",
     "type": "Glove",
     "modeType": 0,
@@ -1550,7 +1550,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110406,
+    "id": "110406",
     "name": "디바인피스트",
     "type": "Glove",
     "modeType": 0,
@@ -1563,7 +1563,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110407,
+    "id": "110407",
     "name": "블러드윙너클",
     "type": "Glove",
     "modeType": 0,
@@ -1576,7 +1576,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110408,
+    "id": "110408",
     "name": "빙화현옥수",
     "type": "Glove",
     "modeType": 0,
@@ -1589,7 +1589,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110409,
+    "id": "110409",
     "name": "여래수투",
     "type": "Glove",
     "modeType": 0,
@@ -1602,7 +1602,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110410,
+    "id": "110410",
     "name": "브레이질건틀릿",
     "type": "Glove",
     "modeType": 0,
@@ -1615,7 +1615,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110411,
+    "id": "110411",
     "name": "소수",
     "type": "Glove",
     "modeType": 0,
@@ -1628,7 +1628,7 @@ export const items: ItemData[] = [
     "cd": 0.05
   },
   {
-    "id": 110412,
+    "id": "110412",
     "name": "천잠장갑",
     "type": "Glove",
     "modeType": 0,
@@ -1641,10 +1641,10 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110501,
+    "id": "110501",
     "name": "주작자문",
     "type": "Glove",
-    "modeType": 0,
+    "modeType": 7,
     "grade": "legendary",
     "atk": 52,
     "atkLv": 0,
@@ -1654,7 +1654,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 110502,
+    "id": "110502",
     "name": "프로스트팽",
     "type": "Glove",
     "modeType": 0,
@@ -1667,7 +1667,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 108103,
+    "id": "108103",
     "name": "대나무",
     "type": "Tonfa",
     "modeType": 0,
@@ -1680,7 +1680,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111201,
+    "id": "111201",
     "name": "톤파",
     "type": "Tonfa",
     "modeType": 0,
@@ -1693,7 +1693,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111301,
+    "id": "111301",
     "name": "경찰봉",
     "type": "Tonfa",
     "modeType": 0,
@@ -1706,7 +1706,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111401,
+    "id": "111401",
     "name": "류큐톤파",
     "type": "Tonfa",
     "modeType": 0,
@@ -1719,7 +1719,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111402,
+    "id": "111402",
     "name": "택티컬톤파",
     "type": "Tonfa",
     "modeType": 0,
@@ -1732,7 +1732,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111403,
+    "id": "111403",
     "name": "마이쏙",
     "type": "Tonfa",
     "modeType": 0,
@@ -1745,7 +1745,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111404,
+    "id": "111404",
     "name": "플라즈마톤파",
     "type": "Tonfa",
     "modeType": 0,
@@ -1758,7 +1758,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111405,
+    "id": "111405",
     "name": "윈드러너",
     "type": "Tonfa",
     "modeType": 0,
@@ -1771,7 +1771,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 111501,
+    "id": "111501",
     "name": "흑요석짓테",
     "type": "Tonfa",
     "modeType": 0,
@@ -1784,7 +1784,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112103,
+    "id": "112103",
     "name": "쇠구슬",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1797,7 +1797,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112105,
+    "id": "112105",
     "name": "야구공",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1810,7 +1810,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112202,
+    "id": "112202",
     "name": "수류탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1823,7 +1823,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112203,
+    "id": "112203",
     "name": "화염병",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1836,7 +1836,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112204,
+    "id": "112204",
     "name": "슬링",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1849,7 +1849,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112205,
+    "id": "112205",
     "name": "싸인볼",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1862,7 +1862,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112301,
+    "id": "112301",
     "name": "밀가루폭탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1875,7 +1875,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112302,
+    "id": "112302",
     "name": "소이탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1888,7 +1888,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112303,
+    "id": "112303",
     "name": "볼라이트닝",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1901,7 +1901,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112304,
+    "id": "112304",
     "name": "플러버",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1914,7 +1914,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112306,
+    "id": "112306",
     "name": "필럼",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1927,7 +1927,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112404,
+    "id": "112404",
     "name": "안티오크의수류탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1940,7 +1940,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112401,
+    "id": "112401",
     "name": "다비드슬링",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1953,7 +1953,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112402,
+    "id": "112402",
     "name": "연막탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1966,7 +1966,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112403,
+    "id": "112403",
     "name": "가시탱탱볼",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1979,7 +1979,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112305,
+    "id": "112305",
     "name": "고폭수류탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -1992,7 +1992,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112501,
+    "id": "112501",
     "name": "루테늄구슬",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -2005,7 +2005,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112405,
+    "id": "112405",
     "name": "파이어볼",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -2018,7 +2018,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112406,
+    "id": "112406",
     "name": "프리즘볼",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -2031,7 +2031,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 112407,
+    "id": "112407",
     "name": "아스트라페",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -2044,7 +2044,7 @@ export const items: ItemData[] = [
     "cd": 0.06
   },
   {
-    "id": 112408,
+    "id": "112408",
     "name": "점착폭탄",
     "type": "HighAngleFire",
     "modeType": 0,
@@ -2057,7 +2057,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113101,
+    "id": "113101",
     "name": "면도칼",
     "type": "DirectFire",
     "modeType": 0,
@@ -2070,7 +2070,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113102,
+    "id": "113102",
     "name": "트럼프카드",
     "type": "DirectFire",
     "modeType": 0,
@@ -2083,7 +2083,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113201,
+    "id": "113201",
     "name": "다트",
     "type": "DirectFire",
     "modeType": 0,
@@ -2096,7 +2096,7 @@ export const items: ItemData[] = [
     "cd": 0.08
   },
   {
-    "id": 113202,
+    "id": "113202",
     "name": "부적",
     "type": "DirectFire",
     "modeType": 0,
@@ -2109,7 +2109,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113203,
+    "id": "113203",
     "name": "빈티지카드",
     "type": "DirectFire",
     "modeType": 0,
@@ -2122,7 +2122,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113205,
+    "id": "113205",
     "name": "표창",
     "type": "DirectFire",
     "modeType": 0,
@@ -2135,7 +2135,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113206,
+    "id": "113206",
     "name": "흑건",
     "type": "DirectFire",
     "modeType": 0,
@@ -2148,7 +2148,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113302,
+    "id": "113207",
     "name": "유엽비도",
     "type": "DirectFire",
     "modeType": 0,
@@ -2161,7 +2161,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113301,
+    "id": "113301",
     "name": "챠크람",
     "type": "DirectFire",
     "modeType": 0,
@@ -2174,7 +2174,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113207,
+    "id": "113302",
     "name": "매화비표",
     "type": "DirectFire",
     "modeType": 0,
@@ -2187,7 +2187,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113401,
+    "id": "113401",
     "name": "미치광이왕의카드",
     "type": "DirectFire",
     "modeType": 0,
@@ -2200,7 +2200,7 @@ export const items: ItemData[] = [
     "cd": 0.1
   },
   {
-    "id": 113402,
+    "id": "113402",
     "name": "독침",
     "type": "DirectFire",
     "modeType": 0,
@@ -2213,7 +2213,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113403,
+    "id": "113403",
     "name": "법륜",
     "type": "DirectFire",
     "modeType": 0,
@@ -2226,7 +2226,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113404,
+    "id": "113404",
     "name": "플럼바타",
     "type": "DirectFire",
     "modeType": 0,
@@ -2239,7 +2239,7 @@ export const items: ItemData[] = [
     "cd": 0.1
   },
   {
-    "id": 113405,
+    "id": "113405",
     "name": "옥전결",
     "type": "DirectFire",
     "modeType": 0,
@@ -2252,7 +2252,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113406,
+    "id": "113406",
     "name": "풍마수리검",
     "type": "DirectFire",
     "modeType": 0,
@@ -2265,7 +2265,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113408,
+    "id": "113408",
     "name": "빙백은침",
     "type": "DirectFire",
     "modeType": 0,
@@ -2278,7 +2278,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113409,
+    "id": "113409",
     "name": "푸른색단도",
     "type": "DirectFire",
     "modeType": 0,
@@ -2291,7 +2291,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113410,
+    "id": "113410",
     "name": "플레솃",
     "type": "DirectFire",
     "modeType": 0,
@@ -2304,7 +2304,7 @@ export const items: ItemData[] = [
     "cd": 0.12
   },
   {
-    "id": 113411,
+    "id": "113411",
     "name": "건곤권",
     "type": "DirectFire",
     "modeType": 0,
@@ -2317,7 +2317,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113412,
+    "id": "113412",
     "name": "생사부",
     "type": "DirectFire",
     "modeType": 0,
@@ -2330,7 +2330,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113501,
+    "id": "113501",
     "name": "수다르사나",
     "type": "DirectFire",
     "modeType": 0,
@@ -2343,7 +2343,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 113502,
+    "id": "113502",
     "name": "만천화우",
     "type": "DirectFire",
     "modeType": 0,
@@ -2356,7 +2356,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114101,
+    "id": "114101",
     "name": "양궁",
     "type": "Bow",
     "modeType": 0,
@@ -2369,7 +2369,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114201,
+    "id": "114201",
     "name": "목궁",
     "type": "Bow",
     "modeType": 0,
@@ -2382,7 +2382,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114202,
+    "id": "114202",
     "name": "장궁",
     "type": "Bow",
     "modeType": 0,
@@ -2395,7 +2395,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114203,
+    "id": "114203",
     "name": "컴포지트보우",
     "type": "Bow",
     "modeType": 0,
@@ -2408,7 +2408,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114301,
+    "id": "114301",
     "name": "강궁",
     "type": "Bow",
     "modeType": 0,
@@ -2421,7 +2421,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114302,
+    "id": "114302",
     "name": "국궁",
     "type": "Bow",
     "modeType": 0,
@@ -2434,7 +2434,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114303,
+    "id": "114303",
     "name": "벽력궁",
     "type": "Bow",
     "modeType": 0,
@@ -2447,7 +2447,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114304,
+    "id": "114304",
     "name": "탄궁",
     "type": "Bow",
     "modeType": 0,
@@ -2460,7 +2460,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114401,
+    "id": "114401",
     "name": "편전",
     "type": "Bow",
     "modeType": 0,
@@ -2473,7 +2473,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114402,
+    "id": "114402",
     "name": "화전",
     "type": "Bow",
     "modeType": 0,
@@ -2486,7 +2486,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114403,
+    "id": "114403",
     "name": "골든래쇼보우",
     "type": "Bow",
     "modeType": 0,
@@ -2499,7 +2499,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114405,
+    "id": "114405",
     "name": "트윈보우",
     "type": "Bow",
     "modeType": 0,
@@ -2512,7 +2512,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114501,
+    "id": "114501",
     "name": "엘리멘탈보우",
     "type": "Bow",
     "modeType": 0,
@@ -2525,7 +2525,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114406,
+    "id": "114406",
     "name": "제베의활",
     "type": "Bow",
     "modeType": 0,
@@ -2538,7 +2538,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114502,
+    "id": "114502",
     "name": "페일노트",
     "type": "Bow",
     "modeType": 0,
@@ -2551,7 +2551,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114503,
+    "id": "114503",
     "name": "아르기로톡소스",
     "type": "Bow",
     "modeType": 0,
@@ -2564,7 +2564,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 114407,
+    "id": "114407",
     "name": "아르테미스",
     "type": "Bow",
     "modeType": 0,
@@ -2577,7 +2577,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115101,
+    "id": "115101",
     "name": "석궁",
     "type": "CrossBow",
     "modeType": 0,
@@ -2590,7 +2590,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115201,
+    "id": "115201",
     "name": "쇠뇌",
     "type": "CrossBow",
     "modeType": 0,
@@ -2603,7 +2603,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115202,
+    "id": "115202",
     "name": "크로스보우",
     "type": "CrossBow",
     "modeType": 0,
@@ -2616,7 +2616,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115301,
+    "id": "115301",
     "name": "노",
     "type": "CrossBow",
     "modeType": 0,
@@ -2629,7 +2629,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115302,
+    "id": "115302",
     "name": "저격궁",
     "type": "CrossBow",
     "modeType": 0,
@@ -2642,7 +2642,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115303,
+    "id": "115303",
     "name": "헤비크로스보우",
     "type": "CrossBow",
     "modeType": 0,
@@ -2655,7 +2655,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115401,
+    "id": "115401",
     "name": "철궁",
     "type": "CrossBow",
     "modeType": 0,
@@ -2668,7 +2668,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115402,
+    "id": "115402",
     "name": "대황",
     "type": "CrossBow",
     "modeType": 0,
@@ -2681,7 +2681,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115403,
+    "id": "115403",
     "name": "발리스타",
     "type": "CrossBow",
     "modeType": 0,
@@ -2694,7 +2694,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115404,
+    "id": "115404",
     "name": "저격크로스보우",
     "type": "CrossBow",
     "modeType": 0,
@@ -2707,7 +2707,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115405,
+    "id": "115405",
     "name": "영광금귀신기노",
     "type": "CrossBow",
     "modeType": 0,
@@ -2720,7 +2720,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 115501,
+    "id": "115501",
     "name": "샤릉가",
     "type": "CrossBow",
     "modeType": 0,
@@ -2733,7 +2733,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116101,
+    "id": "116101",
     "name": "발터PPK",
     "type": "Pistol",
     "modeType": 0,
@@ -2746,7 +2746,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116201,
+    "id": "116201",
     "name": "매그넘-파이선",
     "type": "Pistol",
     "modeType": 0,
@@ -2759,7 +2759,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116202,
+    "id": "116202",
     "name": "베레타M92F",
     "type": "Pistol",
     "modeType": 0,
@@ -2772,7 +2772,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116301,
+    "id": "116301",
     "name": "FN57",
     "type": "Pistol",
     "modeType": 0,
@@ -2785,7 +2785,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116401,
+    "id": "116401",
     "name": "더블리볼버SP",
     "type": "Pistol",
     "modeType": 0,
@@ -2798,7 +2798,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116402,
+    "id": "116402",
     "name": "매그넘-아나콘다",
     "type": "Pistol",
     "modeType": 0,
@@ -2811,7 +2811,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116408,
+    "id": "116408",
     "name": "데린저",
     "type": "Pistol",
     "modeType": 0,
@@ -2824,7 +2824,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116403,
+    "id": "116403",
     "name": "마탄의사수",
     "type": "Pistol",
     "modeType": 0,
@@ -2837,7 +2837,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116404,
+    "id": "116404",
     "name": "엘레강스",
     "type": "Pistol",
     "modeType": 0,
@@ -2850,7 +2850,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116405,
+    "id": "116405",
     "name": "일렉트론블라스터",
     "type": "Pistol",
     "modeType": 0,
@@ -2863,7 +2863,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116406,
+    "id": "116406",
     "name": "매그넘-보아",
     "type": "Pistol",
     "modeType": 0,
@@ -2876,7 +2876,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116407,
+    "id": "116407",
     "name": "글록48",
     "type": "Pistol",
     "modeType": 0,
@@ -2889,7 +2889,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116409,
+    "id": "116409",
     "name": "스탬피드",
     "type": "Pistol",
     "modeType": 0,
@@ -2902,7 +2902,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116410,
+    "id": "116410",
     "name": "플라즈마건",
     "type": "Pistol",
     "modeType": 0,
@@ -2915,7 +2915,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 116501,
+    "id": "116501",
     "name": "악켈테",
     "type": "Pistol",
     "modeType": 0,
@@ -2928,7 +2928,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117101,
+    "id": "117101",
     "name": "페도로프자동소총",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -2941,7 +2941,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117201,
+    "id": "117201",
     "name": "STG44",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -2954,7 +2954,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117301,
+    "id": "117301",
     "name": "AK-47",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -2967,7 +2967,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117401,
+    "id": "117401",
     "name": "M16A1",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -2980,7 +2980,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117402,
+    "id": "117402",
     "name": "개틀링건",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -2993,7 +2993,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117403,
+    "id": "117403",
     "name": "95식자동소총",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -3006,7 +3006,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117501,
+    "id": "117501",
     "name": "아그니",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -3019,7 +3019,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117404,
+    "id": "117404",
     "name": "AK-12",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -3032,7 +3032,7 @@ export const items: ItemData[] = [
     "cd": 0.05
   },
   {
-    "id": 117405,
+    "id": "117405",
     "name": "XCR",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -3045,7 +3045,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 117406,
+    "id": "117406",
     "name": "저지먼트",
     "type": "AssaultRifle",
     "modeType": 0,
@@ -3058,7 +3058,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 118101,
+    "id": "118101",
     "name": "화승총",
     "type": "SniperRifle",
     "modeType": 0,
@@ -3154,7 +3154,7 @@ export const items: ItemData[] = [
     "type": "SniperRifle",
     "modeType": 0,
     "grade": "epic",
-    "atk": 62,
+    "atk": 64,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -3169,7 +3169,7 @@ export const items: ItemData[] = [
     "grade": "epic",
     "atk": 87,
     "atkLv": 0,
-    "asr": 0.18,
+    "asr": 0.2,
     "asrLv": 0.02,
     "cc": 0,
     "cd": 0
@@ -3180,7 +3180,7 @@ export const items: ItemData[] = [
     "type": "SniperRifle",
     "modeType": 0,
     "grade": "legendary",
-    "atk": 80,
+    "atk": 78,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -3188,7 +3188,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 118502,
+    "id": "118502",
     "name": "현자총통",
     "type": "SniperRifle",
     "modeType": 0,
@@ -3201,7 +3201,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119101,
+    "id": "119101",
     "name": "쇠사슬",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3214,7 +3214,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119201,
+    "id": "119201",
     "name": "눈차크",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3227,7 +3227,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119301,
+    "id": "119301",
     "name": "샤퍼",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3240,7 +3240,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119302,
+    "id": "119302",
     "name": "블리더",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3253,7 +3253,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119401,
+    "id": "119401",
     "name": "대소반룡곤",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3266,7 +3266,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119402,
+    "id": "119402",
     "name": "초진동눈차크",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3279,12 +3279,12 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119403,
+    "id": "119403",
     "name": "케르베로스",
     "type": "Nunchaku",
     "modeType": 0,
     "grade": "epic",
-    "atk": 33,
+    "atk": 37,
     "atkLv": 2,
     "asr": 0,
     "asrLv": 0,
@@ -3292,7 +3292,20 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 119501,
+    "id": "119404",
+    "name": "블루3",
+    "type": "Nunchaku",
+    "modeType": 0,
+    "grade": "epic",
+    "atk": 59,
+    "atkLv": 0,
+    "asr": 0,
+    "asrLv": 0,
+    "cc": 0.26,
+    "cd": 0
+  },
+  {
+    "id": "119501",
     "name": "히드라",
     "type": "Nunchaku",
     "modeType": 0,
@@ -3305,7 +3318,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120101,
+    "id": "120101",
     "name": "바늘",
     "type": "Rapier",
     "modeType": 0,
@@ -3318,7 +3331,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120201,
+    "id": "120201",
     "name": "레이피어",
     "type": "Rapier",
     "modeType": 0,
@@ -3331,7 +3344,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120301,
+    "id": "120301",
     "name": "매화검",
     "type": "Rapier",
     "modeType": 0,
@@ -3344,7 +3357,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120303,
+    "id": "120303",
     "name": "에스톡",
     "type": "Rapier",
     "modeType": 0,
@@ -3357,7 +3370,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120302,
+    "id": "120302",
     "name": "활빈검",
     "type": "Rapier",
     "modeType": 0,
@@ -3370,7 +3383,7 @@ export const items: ItemData[] = [
     "cd": 0.15
   },
   {
-    "id": 120401,
+    "id": "120401",
     "name": "듀랜달Mk2",
     "type": "Rapier",
     "modeType": 0,
@@ -3383,7 +3396,7 @@ export const items: ItemData[] = [
     "cd": 0.06
   },
   {
-    "id": 120402,
+    "id": "120402",
     "name": "미스틸테인",
     "type": "Rapier",
     "modeType": 0,
@@ -3396,7 +3409,7 @@ export const items: ItemData[] = [
     "cd": 0.15
   },
   {
-    "id": 120403,
+    "id": "120403",
     "name": "볼틱레토",
     "type": "Rapier",
     "modeType": 0,
@@ -3409,7 +3422,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120404,
+    "id": "120404",
     "name": "유성검",
     "type": "Rapier",
     "modeType": 0,
@@ -3422,7 +3435,7 @@ export const items: ItemData[] = [
     "cd": 0.12
   },
   {
-    "id": 120405,
+    "id": "120405",
     "name": "주와이외즈",
     "type": "Rapier",
     "modeType": 0,
@@ -3435,7 +3448,7 @@ export const items: ItemData[] = [
     "cd": 0.12
   },
   {
-    "id": 120406,
+    "id": "120406",
     "name": "레드팬서",
     "type": "Rapier",
     "modeType": 0,
@@ -3448,7 +3461,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 120407,
+    "id": "120407",
     "name": "에스프리",
     "type": "Rapier",
     "modeType": 0,
@@ -3461,7 +3474,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121101,
+    "id": "121101",
     "name": "보급형기타",
     "type": "Guitar",
     "modeType": 0,
@@ -3474,7 +3487,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121201,
+    "id": "121201",
     "name": "골든브릿지",
     "type": "Guitar",
     "modeType": 0,
@@ -3487,7 +3500,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121202,
+    "id": "121202",
     "name": "싱글픽업",
     "type": "Guitar",
     "modeType": 0,
@@ -3500,7 +3513,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121301,
+    "id": "121301",
     "name": "루비스페셜",
     "type": "Guitar",
     "modeType": 0,
@@ -3513,7 +3526,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121302,
+    "id": "121302",
     "name": "험버커픽업",
     "type": "Guitar",
     "modeType": 0,
@@ -3526,7 +3539,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121303,
+    "id": "121303",
     "name": "King-V",
     "type": "Guitar",
     "modeType": 0,
@@ -3539,7 +3552,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121304,
+    "id": "121304",
     "name": "노캐스터",
     "type": "Guitar",
     "modeType": 0,
@@ -3552,7 +3565,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121305,
+    "id": "121305",
     "name": "슈퍼스트랫",
     "type": "Guitar",
     "modeType": 0,
@@ -3565,7 +3578,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121306,
+    "id": "121306",
     "name": "야생마",
     "type": "Guitar",
     "modeType": 0,
@@ -3578,7 +3591,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121401,
+    "id": "121401",
     "name": "보헤미안",
     "type": "Guitar",
     "modeType": 0,
@@ -3591,7 +3604,7 @@ export const items: ItemData[] = [
     "cd": 0.05
   },
   {
-    "id": 121402,
+    "id": "121402",
     "name": "천국의계단",
     "type": "Guitar",
     "modeType": 0,
@@ -3604,7 +3617,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121403,
+    "id": "121403",
     "name": "퍼플헤이즈",
     "type": "Guitar",
     "modeType": 0,
@@ -3617,7 +3630,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121404,
+    "id": "121404",
     "name": "새티스팩션",
     "type": "Guitar",
     "modeType": 0,
@@ -3630,7 +3643,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121405,
+    "id": "121405",
     "name": "원더풀투나잇",
     "type": "Guitar",
     "modeType": 0,
@@ -3643,7 +3656,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121406,
+    "id": "121406",
     "name": "더월",
     "type": "Guitar",
     "modeType": 0,
@@ -3656,7 +3669,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 121407,
+    "id": "121407",
     "name": "틴스피릿",
     "type": "Guitar",
     "modeType": 0,
@@ -3669,7 +3682,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122101,
+    "id": "122101",
     "name": "렌즈",
     "type": "Camera",
     "modeType": 0,
@@ -3682,7 +3695,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122201,
+    "id": "122201",
     "name": "카메라건",
     "type": "Camera",
     "modeType": 0,
@@ -3695,7 +3708,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122301,
+    "id": "122301",
     "name": "컴팩트카메라",
     "type": "Camera",
     "modeType": 0,
@@ -3708,7 +3721,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122302,
+    "id": "122302",
     "name": "레인지파인더",
     "type": "Camera",
     "modeType": 0,
@@ -3721,7 +3734,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122303,
+    "id": "122303",
     "name": "카메라라이플",
     "type": "Camera",
     "modeType": 0,
@@ -3734,7 +3747,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122401,
+    "id": "122401",
     "name": "미러리스",
     "type": "Camera",
     "modeType": 0,
@@ -3747,7 +3760,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122402,
+    "id": "122402",
     "name": "컴파운드사이트",
     "type": "Camera",
     "modeType": 0,
@@ -3760,7 +3773,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122403,
+    "id": "122403",
     "name": "카메라캐논",
     "type": "Camera",
     "modeType": 0,
@@ -3773,7 +3786,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122404,
+    "id": "122404",
     "name": "VICG",
     "type": "Camera",
     "modeType": 0,
@@ -3786,7 +3799,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 122501,
+    "id": "122501",
     "name": "울트라비전",
     "type": "Camera",
     "modeType": 0,
@@ -3799,7 +3812,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130101,
+    "id": "130101",
     "name": "유리구슬",
     "type": "Arcana",
     "modeType": 0,
@@ -3812,7 +3825,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130201,
+    "id": "130201",
     "name": "거울구슬",
     "type": "Arcana",
     "modeType": 0,
@@ -3825,7 +3838,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130202,
+    "id": "130202",
     "name": "얼음구슬",
     "type": "Arcana",
     "modeType": 0,
@@ -3838,7 +3851,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130301,
+    "id": "130301",
     "name": "의지의지팡이",
     "type": "Arcana",
     "modeType": 0,
@@ -3851,7 +3864,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130302,
+    "id": "130302",
     "name": "감정의컵",
     "type": "Arcana",
     "modeType": 0,
@@ -3864,7 +3877,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130303,
+    "id": "130303",
     "name": "이성의칼",
     "type": "Arcana",
     "modeType": 0,
@@ -3877,7 +3890,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130304,
+    "id": "130304",
     "name": "소유의펜타클",
     "type": "Arcana",
     "modeType": 0,
@@ -3890,7 +3903,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130401,
+    "id": "130401",
     "name": "은둔자",
     "type": "Arcana",
     "modeType": 0,
@@ -3903,7 +3916,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130402,
+    "id": "130402",
     "name": "운명의수레바퀴",
     "type": "Arcana",
     "modeType": 0,
@@ -3916,7 +3929,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130403,
+    "id": "130403",
     "name": "절제",
     "type": "Arcana",
     "modeType": 0,
@@ -3929,7 +3942,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130404,
+    "id": "130404",
     "name": "더스타",
     "type": "Arcana",
     "modeType": 0,
@@ -3942,7 +3955,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130405,
+    "id": "130405",
     "name": "더문",
     "type": "Arcana",
     "modeType": 0,
@@ -3955,7 +3968,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 130501,
+    "id": "130501",
     "name": "여제",
     "type": "Arcana",
     "modeType": 0,
@@ -3968,7 +3981,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131101,
+    "id": "131101",
     "name": "에키온 패시브 Lv2",
     "type": "VFArm",
     "modeType": 0,
@@ -3981,7 +3994,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131102,
+    "id": "131102",
     "name": "에키온 패시브 Lv3",
     "type": "VFArm",
     "modeType": 0,
@@ -3994,7 +4007,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131201,
+    "id": "131201",
     "name": "바이퍼",
     "type": "VFArm",
     "modeType": 0,
@@ -4124,7 +4137,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131504,
+    "id": "131504",
     "name": "블랙맘바킹-TL",
     "type": "VFArm",
     "modeType": 0,
@@ -4137,7 +4150,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131505,
+    "id": "131505",
     "name": "블랙맘바킹-FC",
     "type": "VFArm",
     "modeType": 0,
@@ -4150,7 +4163,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131506,
+    "id": "131506",
     "name": "블랙맘바킹-VBS",
     "type": "VFArm",
     "modeType": 0,
@@ -4163,7 +4176,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131507,
+    "id": "131507",
     "name": "슈퍼사이드와인더-ML",
     "type": "VFArm",
     "modeType": 0,
@@ -4176,7 +4189,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131508,
+    "id": "131508",
     "name": "슈퍼사이드와인더-FC",
     "type": "VFArm",
     "modeType": 0,
@@ -4189,12 +4202,51 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 131509,
+    "id": "131509",
     "name": "슈퍼사이드와인더-VBS",
     "type": "VFArm",
     "modeType": 0,
     "grade": "legendary",
     "atk": 73,
+    "atkLv": 0,
+    "asr": 0,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0
+  },
+  {
+    "id": 610501,
+    "name": "주작자문MK2",
+    "type": "Glove",
+    "modeType": 8,
+    "grade": "legendary",
+    "atk": 40,
+    "atkLv": 0,
+    "asr": 0,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0
+  },
+  {
+    "id": 602409,
+    "name": "레바테인MK2",
+    "type": "TwoHandSword",
+    "modeType": 8,
+    "grade": "legendary",
+    "atk": 48,
+    "atkLv": 0,
+    "asr": 0,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0
+  },
+  {
+    "id": 607406,
+    "name": "화첨창MK2",
+    "type": "Spear",
+    "modeType": 8,
+    "grade": "legendary",
+    "atk": 60,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -4480,7 +4532,7 @@ export const items: ItemData[] = [
     "type": "Head",
     "modeType": 0,
     "grade": "legendary",
-    "atk": 24,
+    "atk": 27,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -4558,7 +4610,7 @@ export const items: ItemData[] = [
     "type": "Head",
     "modeType": 0,
     "grade": "epic",
-    "atk": 18,
+    "atk": 15,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -5093,7 +5145,7 @@ export const items: ItemData[] = [
     "grade": "epic",
     "atk": 12,
     "atkLv": 0,
-    "asr": 0.37,
+    "asr": 0.33,
     "asrLv": 0,
     "cc": 0,
     "cd": 0
@@ -5141,7 +5193,7 @@ export const items: ItemData[] = [
     "id": 202503,
     "name": "성법의",
     "type": "Chest",
-    "modeType": 0,
+    "modeType": 7,
     "grade": "legendary",
     "atk": 25,
     "atkLv": 0,
@@ -5350,7 +5402,7 @@ export const items: ItemData[] = [
     "name": "포이즌드",
     "type": "Arm",
     "modeType": 0,
-    "grade": "rare",
+    "grade": "epic",
     "atk": 0,
     "atkLv": 0,
     "asr": 0,
@@ -6532,9 +6584,22 @@ export const items: ItemData[] = [
     "id": 205504,
     "name": "아티팩트",
     "type": "Trinket",
-    "modeType": 14,
+    "modeType": 6,
     "grade": "legendary",
     "atk": 18,
+    "atkLv": 0,
+    "asr": 0,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0
+  },
+  {
+    "id": 205507,
+    "name": "네크로노미콘",
+    "type": "Trinket",
+    "modeType": 0,
+    "grade": "legendary",
+    "atk": 0,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -6555,7 +6620,20 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 705601,
+    "id": "702503",
+    "name": "성법의MK2",
+    "type": "Chest",
+    "modeType": 8,
+    "grade": "legendary",
+    "atk": 45,
+    "atkLv": 0,
+    "asr": 0,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0
+  },
+  {
+    "id": "705601",
     "name": "미니어쳐솔라시스템",
     "type": "Trinket",
     "modeType": 8,
@@ -6568,7 +6646,7 @@ export const items: ItemData[] = [
     "cd": 0
   },
   {
-    "id": 705602,
+    "id": "705602",
     "name": "코발트블루",
     "type": "Trinket",
     "modeType": 8,
@@ -6576,6 +6654,19 @@ export const items: ItemData[] = [
     "atk": 20,
     "atkLv": 0,
     "asr": 0,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0
+  },
+  {
+    "id": "705504",
+    "name": "아티팩트MK2",
+    "type": "Trinket",
+    "modeType": 8,
+    "grade": "mythic",
+    "atk": 20,
+    "atkLv": 0,
+    "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
     "cd": 0
