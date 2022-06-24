@@ -3297,7 +3297,7 @@ export const items: ItemData[] = [
     "type": "Nunchaku",
     "modeType": 0,
     "grade": "epic",
-    "atk": 59,
+    "atk": 50,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
