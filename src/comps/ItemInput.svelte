@@ -139,7 +139,7 @@
       {/each}
     </div>
     <div>공격력 {atk}</div>
-    <div>공격속도 {asr * 100 | 0}%</div>
+    <div>공격속도 {asr.toFixed(2)} + α</div>
     <div>치명타 확률 {cc * 100 | 0}%</div>
     <div>치명타 피해량 {cd * 100 | 0}%</div>
   </div>
