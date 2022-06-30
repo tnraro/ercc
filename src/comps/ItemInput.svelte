@@ -24,6 +24,16 @@
       (char?.atk ?? 0) +
       (char?.atkLv ?? 0) * lv) |
     0;
+  $: asr = Math.min(
+    Math.max(
+      equipments.reduce((acc, item) => acc + (item?.asr ?? 0), 0) +
+        equipments.reduce((acc, item) => acc + (item?.asrLv ?? 0), 0) * lv +
+        (char?.as ?? 0) +
+        (char?.asLv ?? 0) * lv,
+      char?.asm ?? 0
+    ),
+    char?.asl ?? 2.5
+  );
   $: cc =
     Math.min(
       1,
@@ -122,10 +132,16 @@
       </div>
     </div>
   </div>
-  <div class="equipments">
-    {#each equipments as item, index}
-      <Item id={item?.id ?? 0} on:click={() => (selectedItemSlot = index)} />
-    {/each}
+  <div>
+    <div class="equipments">
+      {#each equipments as item, index}
+        <Item id={item?.id ?? 0} on:click={() => (selectedItemSlot = index)} />
+      {/each}
+    </div>
+    <div>공격력 {atk}</div>
+    <div>공격속도 {asr * 100 | 0}%</div>
+    <div>치명타 확률 {cc * 100 | 0}%</div>
+    <div>치명타 피해량 {cd * 100 | 0}%</div>
   </div>
   <div class="items">
     {#if selectedItemSlot === 0}
