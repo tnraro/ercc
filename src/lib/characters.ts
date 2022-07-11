@@ -531,7 +531,7 @@ export const characters = [
     "id": 45,
     "name": "Mai",
     "atk": 38,
-    "atkLv": 3.2,
+    "atkLv": 2.9,
     "as": 0.13,
     "asl": 2.5,
     "asm": 0,
