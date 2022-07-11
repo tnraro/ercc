@@ -1,5 +1,5 @@
-import fs from "fs/promises";
 import path from "path";
+import * as Bun from "bun";
 
 const API_KEY = process.env.API_KEY;
 
@@ -24,8 +24,9 @@ async function fetchData(path) {
   return body.data;
 }
 
+const __dirname = new URL(import.meta.url).pathname;
 async function write(name, data) {
-  await fs.writeFile(path.join(new URL(import.meta.url).pathname, "../../src/lib/", name), data);
+  await Bun.write(path.join(__dirname, "../../src/lib/", name), data);
 }
 
 const characters = await fetchData("Character");
