@@ -1724,7 +1724,7 @@ export const items: ItemData[] = [
     "type": "Tonfa",
     "modeType": 0,
     "grade": "epic",
-    "atk": 62,
+    "atk": 60,
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
@@ -3301,7 +3301,7 @@ export const items: ItemData[] = [
     "atkLv": 0,
     "asr": 0,
     "asrLv": 0,
-    "cc": 0.26,
+    "cc": 0.23,
     "cd": 0
   },
   {

@@ -159,7 +159,7 @@ export const characters = [
     "id": 14,
     "name": "Chiara",
     "atk": 39,
-    "atkLv": 2.3,
+    "atkLv": 2.5,
     "as": 0.12,
     "asl": 2.5,
     "asm": 0,
