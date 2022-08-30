@@ -192,4 +192,4 @@ write("actual-cc.ts", `export const actualUsedCriticalChance = new Map<number, n
 
 const sw = await fetchData("CharacterAttributes");
 
-write("sw.ts", `export const sw = ${JSON.stringify(sw.map((x, i) => [i + 1, x.characterCode, x.mastery]))};`);
+write("sw.ts", `export const sw = ${JSON.stringify(sw.map((x, i) => [i + 1, x.characterCode, x.mastery]), null, 2)};`);
