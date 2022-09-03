@@ -383,5 +383,10 @@ export const sw = [
     77,
     56,
     "Nunchaku"
+  ],
+  [
+    78,
+    57,
+    "Camera"
   ]
 ];
