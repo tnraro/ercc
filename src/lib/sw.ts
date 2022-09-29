@@ -181,212 +181,222 @@ export const sw = [
   ],
   [
     37,
+    19,
+    "Arcana"
+  ],
+  [
+    38,
     20,
     "Whip"
   ],
   [
-    38,
+    39,
     21,
     "Pistol"
   ],
   [
-    39,
+    40,
     22,
     "Bat"
   ],
   [
-    40,
+    41,
     23,
     "OneHandSword"
   ],
   [
-    41,
+    42,
     24,
     "Rapier"
   ],
   [
-    42,
+    43,
     25,
     "SniperRifle"
   ],
   [
-    43,
+    44,
     26,
     "Bat"
   ],
   [
-    44,
+    45,
     27,
     "Tonfa"
   ],
   [
-    45,
+    46,
     27,
     "TwoHandSword"
   ],
   [
-    46,
+    47,
     27,
     "DirectFire"
   ],
   [
-    47,
+    48,
     27,
     "Pistol"
   ],
   [
-    48,
+    49,
     28,
     "Hammer"
   ],
   [
-    49,
+    50,
     29,
     "Glove"
   ],
   [
-    50,
+    51,
     30,
     "Hammer"
   ],
   [
-    51,
+    52,
     31,
     "Bow"
   ],
   [
-    52,
+    53,
     32,
     "HighAngleFire"
   ],
   [
-    53,
+    54,
     33,
     "Glove"
   ],
   [
-    54,
+    55,
     34,
     "Camera"
   ],
   [
-    55,
+    56,
     35,
     "Glove"
   ],
   [
-    56,
+    57,
     35,
     "Tonfa"
   ],
   [
-    57,
+    58,
     36,
     "HighAngleFire"
   ],
   [
-    58,
+    59,
     37,
     "OneHandSword"
   ],
   [
-    59,
+    60,
     38,
     "Pistol"
   ],
   [
-    60,
+    61,
     39,
     "DualSword"
   ],
   [
-    61,
+    62,
     40,
     "DirectFire"
   ],
   [
-    62,
+    63,
     41,
     "Arcana"
   ],
   [
-    63,
+    64,
     42,
     "Arcana"
   ],
   [
-    64,
+    65,
     43,
     "HighAngleFire"
   ],
   [
-    65,
+    66,
     44,
     "VFArm"
   ],
   [
-    66,
+    67,
     45,
     "Whip"
   ],
   [
-    67,
+    68,
     46,
     "TwoHandSword"
   ],
   [
-    68,
+    69,
     47,
     "Whip"
   ],
   [
-    69,
+    70,
     48,
     "Bat"
   ],
   [
-    70,
+    71,
     49,
     "Spear"
   ],
   [
-    71,
+    72,
     50,
     "Rapier"
   ],
   [
-    72,
+    73,
     51,
     "Guitar"
   ],
   [
-    73,
+    74,
     52,
     "Arcana"
   ],
   [
-    74,
+    75,
     53,
     "Axe"
   ],
   [
-    75,
+    76,
     54,
     "CrossBow"
   ],
   [
-    76,
+    77,
     55,
     "Axe"
   ],
   [
-    77,
+    78,
     56,
     "Nunchaku"
   ],
   [
-    78,
+    79,
     57,
     "Camera"
+  ],
+  [
+    80,
+    58,
+    "AssaultRifle"
   ]
 ];
