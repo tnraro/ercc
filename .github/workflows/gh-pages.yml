@@ -31,7 +31,7 @@ jobs:
           API_KEY: ${{ secrets.API_KEY }}
       - uses: actions/upload-pages-artifact@v1
         with:
-          path: ./out
+          path: ./dist
   deploy:
     environment:
       name: github-pages
