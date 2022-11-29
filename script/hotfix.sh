@@ -11,5 +11,5 @@ bun run script/gen.js
 
 echo $ git add .
 git add .
-echo $ git commit -s -m "feat: $1"
-git commit -s -m "feat: $1"
+echo $ git commit -S -m "feat: $1"
+git commit -S -m "feat: $1"
