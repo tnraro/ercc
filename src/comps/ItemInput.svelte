@@ -161,7 +161,7 @@
     {/each}
   </div>
 </div>
-<a href={ayaGgLink} target="_blank">이 구성으로 루트 짜기(aya.gg)</a>
+<a href={ayaGgLink} target="_blank" rel="noreferrer">이 구성으로 루트 짜기(aya.gg)</a>
 
 <style>
   .container {
