@@ -216,202 +216,227 @@ export const sw = [
   ],
   [
     44,
+    24,
+    "Bat"
+  ],
+  [
+    45,
     25,
     "SniperRifle"
   ],
   [
-    45,
+    46,
     26,
     "Bat"
   ],
   [
-    46,
+    47,
     27,
     "Tonfa"
   ],
   [
-    47,
+    48,
     27,
     "TwoHandSword"
   ],
   [
-    48,
+    49,
     27,
     "DirectFire"
   ],
   [
-    49,
+    50,
     27,
     "Pistol"
   ],
   [
-    50,
+    51,
     28,
     "Hammer"
   ],
   [
-    51,
+    52,
     29,
     "Glove"
   ],
   [
-    52,
+    53,
+    29,
+    "Tonfa"
+  ],
+  [
+    54,
     30,
     "Hammer"
   ],
   [
-    53,
+    55,
     31,
     "Bow"
   ],
   [
-    54,
+    56,
     32,
     "HighAngleFire"
   ],
   [
-    55,
+    57,
     33,
     "Glove"
   ],
   [
-    56,
+    58,
     34,
     "Camera"
   ],
   [
-    57,
+    59,
     35,
     "Glove"
   ],
   [
-    58,
+    60,
     35,
     "Tonfa"
   ],
   [
-    59,
+    61,
     36,
     "HighAngleFire"
   ],
   [
-    60,
+    62,
     37,
     "OneHandSword"
   ],
   [
-    61,
+    63,
     38,
     "Pistol"
   ],
   [
-    62,
+    64,
     39,
     "DualSword"
   ],
   [
-    63,
+    65,
+    39,
+    "Rapier"
+  ],
+  [
+    66,
     40,
     "DirectFire"
   ],
   [
-    64,
+    67,
     41,
     "Arcana"
   ],
   [
-    65,
+    68,
     42,
     "Arcana"
   ],
   [
-    66,
+    69,
     43,
     "HighAngleFire"
   ],
   [
-    67,
+    70,
     44,
     "VFArm"
   ],
   [
-    68,
+    71,
     45,
     "Whip"
   ],
   [
-    69,
+    72,
     46,
     "TwoHandSword"
   ],
   [
-    70,
+    73,
     47,
     "Whip"
   ],
   [
-    71,
+    74,
     48,
     "Bat"
   ],
   [
-    72,
+    75,
     49,
     "Spear"
   ],
   [
-    73,
+    76,
     50,
     "Rapier"
   ],
   [
-    74,
+    77,
     51,
     "Guitar"
   ],
   [
-    75,
+    78,
     52,
     "Arcana"
   ],
   [
-    76,
+    79,
     53,
     "Axe"
   ],
   [
-    77,
+    80,
     54,
     "CrossBow"
   ],
   [
-    78,
+    81,
     55,
     "Axe"
   ],
   [
-    79,
+    82,
     56,
     "Nunchaku"
   ],
   [
-    80,
+    83,
     57,
     "Camera"
   ],
   [
-    81,
+    84,
     58,
     "AssaultRifle"
   ],
   [
-    82,
+    85,
     59,
     "Tonfa"
   ],
   [
-    83,
+    86,
     60,
     "DirectFire"
+  ],
+  [
+    87,
+    61,
+    "HighAngleFire"
+  ],
+  [
+    88,
+    62,
+    "SniperRifle"
   ]
 ];
