@@ -29,7 +29,7 @@ jobs:
           node-version: 18
           cache: pnpm
       - run: pnpm install --frozen-lockfile
-      - run: npm run build
+      - run: pnpm run build
         env:
           API_KEY: ${{ secrets.API_KEY }}
       - uses: actions/upload-pages-artifact@v1
