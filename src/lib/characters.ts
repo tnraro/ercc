@@ -110,7 +110,7 @@ export const characters = [
   {
     "id": 10,
     "name": "LiDailin",
-    "atk": 31,
+    "atk": 29,
     "atkLv": 2.9,
     "as": 0.15,
     "asl": 2.5,
@@ -134,7 +134,7 @@ export const characters = [
   {
     "id": 12,
     "name": "Hyejin",
-    "atk": 39,
+    "atk": 36,
     "atkLv": 3,
     "as": 0.08,
     "asl": 2.5,
@@ -158,7 +158,7 @@ export const characters = [
   {
     "id": 14,
     "name": "Chiara",
-    "atk": 44,
+    "atk": 42,
     "atkLv": 2.8,
     "as": 0.12,
     "asl": 2.5,
@@ -338,7 +338,7 @@ export const characters = [
   {
     "id": 29,
     "name": "Leon",
-    "atk": 31,
+    "atk": 28,
     "atkLv": 2.5,
     "as": 0.09,
     "asl": 2.5,
