@@ -438,5 +438,15 @@ export const sw = [
     88,
     62,
     "SniperRifle"
+  ],
+  [
+    89,
+    63,
+    "OneHandSword"
+  ],
+  [
+    90,
+    64,
+    "Arcana"
   ]
 ];
