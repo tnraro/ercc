@@ -256,197 +256,222 @@ export const sw = [
   ],
   [
     52,
-    29,
-    "Glove"
+    28,
+    "Bat"
   ],
   [
     53,
     29,
-    "Tonfa"
+    "Glove"
   ],
   [
     54,
+    29,
+    "Tonfa"
+  ],
+  [
+    55,
     30,
     "Hammer"
   ],
   [
-    55,
+    56,
     31,
     "Bow"
   ],
   [
-    56,
+    57,
     32,
     "HighAngleFire"
   ],
   [
-    57,
+    58,
     33,
     "Glove"
   ],
   [
-    58,
+    59,
     34,
     "Camera"
   ],
   [
-    59,
+    60,
     35,
     "Glove"
   ],
   [
-    60,
+    61,
     35,
     "Tonfa"
   ],
   [
-    61,
+    62,
     36,
     "HighAngleFire"
   ],
   [
-    62,
+    63,
     37,
     "OneHandSword"
   ],
   [
-    63,
+    64,
     38,
     "Pistol"
   ],
   [
-    64,
+    65,
     39,
     "DualSword"
   ],
   [
-    65,
+    66,
     39,
     "Rapier"
   ],
   [
-    66,
+    67,
     40,
     "DirectFire"
   ],
   [
-    67,
+    68,
     41,
     "Arcana"
   ],
   [
-    68,
+    69,
     42,
     "Arcana"
   ],
   [
-    69,
+    70,
     43,
     "HighAngleFire"
   ],
   [
-    70,
+    71,
     44,
     "VFArm"
   ],
   [
-    71,
+    72,
     45,
     "Whip"
   ],
   [
-    72,
+    73,
     46,
     "TwoHandSword"
   ],
   [
-    73,
+    74,
     47,
     "Whip"
   ],
   [
-    74,
+    75,
     48,
     "Bat"
   ],
   [
-    75,
+    76,
     49,
     "Spear"
   ],
   [
-    76,
+    77,
     50,
     "Rapier"
   ],
   [
-    77,
+    78,
     51,
     "Guitar"
   ],
   [
-    78,
+    79,
     52,
     "Arcana"
   ],
   [
-    79,
+    80,
     53,
     "Axe"
   ],
   [
-    80,
+    81,
+    53,
+    "Hammer"
+  ],
+  [
+    82,
     54,
     "CrossBow"
   ],
   [
-    81,
+    83,
     55,
     "Axe"
   ],
   [
-    82,
+    84,
     56,
     "Nunchaku"
   ],
   [
-    83,
+    85,
     57,
     "Camera"
   ],
   [
-    84,
+    86,
     58,
     "AssaultRifle"
   ],
   [
-    85,
+    87,
     59,
     "Tonfa"
   ],
   [
-    86,
+    88,
     60,
     "DirectFire"
   ],
   [
-    87,
+    89,
     61,
     "HighAngleFire"
   ],
   [
-    88,
+    90,
     62,
     "SniperRifle"
   ],
   [
-    89,
+    91,
     63,
     "OneHandSword"
   ],
   [
-    90,
+    92,
     64,
     "Arcana"
+  ],
+  [
+    93,
+    65,
+    "TwoHandSword"
+  ],
+  [
+    94,
+    66,
+    "Arcana"
+  ],
+  [
+    95,
+    67,
+    "Axe"
   ]
 ];

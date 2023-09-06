@@ -7,8 +7,8 @@ if (API_KEY == null) {
   throw new Error("API_KEY is not set");
 }
 
-async function fetchData(path) {
-  const res = await fetch("https://open-api.bser.io/v1/data/" + path, {
+async function fetchData(path, version = "v2") {
+  const res = await fetch(`https://open-api.bser.io/${version}/data/${path}`, {
     headers: {
       accept: "application/json",
       "x-api-key": API_KEY
@@ -96,8 +96,8 @@ const items = [
     type: w.armorType,
     modeType: w.modeType,
     grade: itemGrade(w.itemGrade),
-    atk: w.attackPower,
-    atkLv: w.attackPowerByLv,
+    atk: w.attackPower + w.adaptiveForce,
+    atkLv: w.attackPowerByLv + w.adaptiveForceByLevel,
     asr: w.attackSpeedRatio,
     asrLv: w.attackSpeedRatioByLv,
     cc: w.criticalStrikeChance,
@@ -184,11 +184,11 @@ export function findItemByType(type: ItemType): ItemData[] {
   return items.filter((item) => item.type === type);
 }`);
 
-const criticalChance = await fetchData("CriticalChance");
+// const criticalChance = await fetchData("CriticalChance");
 
-const cc = criticalChance.map(x => [x.probability / 100, x.actualUse]);
+// const cc = criticalChance.map(x => [x.probability / 100, x.actualUse]);
 
-write("actual-cc.ts", `export const actualUsedCriticalChance = new Map<number, number>(${JSON.stringify(cc, null, 2)});`);
+// write("actual-cc.ts", `export const actualUsedCriticalChance = new Map<number, number>(${JSON.stringify(cc, null, 2)});`);
 
 const sw = await fetchData("CharacterAttributes");
 

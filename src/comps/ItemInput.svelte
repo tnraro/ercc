@@ -3,8 +3,8 @@
   import {
     findItemById,
     findItemByType,
-    ItemGrade,
-    ItemType,
+    type ItemGrade,
+    type ItemType,
     weaponTypes,
   } from "../lib/items";
   import { sw } from "../lib/sw";
