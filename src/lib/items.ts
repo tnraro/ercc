@@ -65,86 +65,12 @@ export interface ItemData {
   asrLv: number;
   cc: number;
   cd: number;
+  pd: number;
+  pdr: number;
+  upd: number;
+  updr: number;
 }
 export const items: ItemData[] = [
-  {
-    "id": 101104,
-    "name": "식칼",
-    "type": "OneHandSword",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 4,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 101201,
-    "name": "군용나이프",
-    "type": "OneHandSword",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 10,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 101202,
-    "name": "메스",
-    "type": "OneHandSword",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 18,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 101301,
-    "name": "장미칼",
-    "type": "OneHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 101302,
-    "name": "스위스아미나이프",
-    "type": "OneHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 23,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 101303,
-    "name": "카라페이스카타르",
-    "type": "OneHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
   {
     "id": 101401,
     "name": "카른웬난",
@@ -156,7 +82,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101402,
@@ -169,7 +99,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101404,
@@ -182,7 +116,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101406,
@@ -195,7 +133,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101407,
@@ -208,7 +150,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101408,
@@ -221,7 +167,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101405,
@@ -234,7 +184,11 @@ export const items: ItemData[] = [
     "asr": 0.5,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101501,
@@ -247,7 +201,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 101502,
@@ -260,85 +218,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 102101,
-    "name": "녹슨검",
-    "type": "TwoHandSword",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 11,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 102201,
-    "name": "장검",
-    "type": "TwoHandSword",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 27,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 102301,
-    "name": "일본도",
-    "type": "TwoHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 102402,
-    "name": "무라마사",
-    "type": "TwoHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 43,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 102403,
-    "name": "바스타드소드",
-    "type": "TwoHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 38,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 102404,
-    "name": "보검",
-    "type": "TwoHandSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 40,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102405,
@@ -351,7 +235,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102406,
@@ -364,7 +252,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102407,
@@ -377,7 +269,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102409,
@@ -390,7 +286,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102410,
@@ -403,7 +303,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102411,
@@ -416,7 +320,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.29,
-    "cd": 0.05
+    "cd": 0.05,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102412,
@@ -429,7 +337,11 @@ export const items: ItemData[] = [
     "asr": 0.38,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102413,
@@ -442,7 +354,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102501,
@@ -455,7 +371,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102502,
@@ -468,7 +388,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 102503,
@@ -481,59 +405,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 103201,
-    "name": "쌍칼",
-    "type": "DualSword",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 8,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 103202,
-    "name": "조잡한쌍검",
-    "type": "DualSword",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 103302,
-    "name": "쌍둥이검",
-    "type": "DualSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 28,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 103301,
-    "name": "피렌체식 쌍검",
-    "type": "DualSword",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 28,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103401,
@@ -546,7 +422,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103402,
@@ -559,7 +439,11 @@ export const items: ItemData[] = [
     "asr": 0.45,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103403,
@@ -572,7 +456,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103404,
@@ -585,7 +473,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103501,
@@ -598,7 +490,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103502,
@@ -611,7 +507,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 103503,
@@ -624,72 +524,11 @@ export const items: ItemData[] = [
     "asr": 0.18,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 104101,
-    "name": "망치",
-    "type": "Hammer",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 16,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 104201,
-    "name": "워해머",
-    "type": "Hammer",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 104301,
-    "name": "모닝스타",
-    "type": "Hammer",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 104302,
-    "name": "사슴망치",
-    "type": "Hammer",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 104303,
-    "name": "운명의망치",
-    "type": "Hammer",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 38,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0.08,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104401,
@@ -702,7 +541,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104402,
@@ -715,7 +558,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104403,
@@ -728,7 +575,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104404,
@@ -741,7 +592,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104406,
@@ -754,7 +609,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.22,
-    "cd": 0.08
+    "cd": 0.08,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104409,
@@ -767,7 +626,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104501,
@@ -780,7 +643,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0.12,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104502,
@@ -793,85 +660,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 105103,
-    "name": "손도끼",
-    "type": "Axe",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 18,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 105201,
-    "name": "사슬낫",
-    "type": "Axe",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 38,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 105202,
-    "name": "전투도끼",
-    "type": "Axe",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 105301,
-    "name": "경량화도끼",
-    "type": "Axe",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 44,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 105302,
-    "name": "사신의낫",
-    "type": "Axe",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 53,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 105401,
-    "name": "대부",
-    "type": "Axe",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 40,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105402,
@@ -884,7 +677,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105403,
@@ -897,7 +694,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105404,
@@ -910,7 +711,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105405,
@@ -923,7 +728,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.17,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105406,
@@ -936,7 +745,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105407,
@@ -949,7 +762,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105408,
@@ -962,7 +779,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 105501,
@@ -975,85 +796,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 107101,
-    "name": "단창",
-    "type": "Spear",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 107201,
-    "name": "죽창",
-    "type": "Spear",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 32,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 107301,
-    "name": "바이던트",
-    "type": "Spear",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 52,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 107302,
-    "name": "파이크",
-    "type": "Spear",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 45,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 107303,
-    "name": "도끼창",
-    "type": "Spear",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 60,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 107401,
-    "name": "강창",
-    "type": "Spear",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 40,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107402,
@@ -1066,7 +813,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107403,
@@ -1079,7 +830,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107404,
@@ -1092,7 +847,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107405,
@@ -1105,7 +864,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107406,
@@ -1118,7 +881,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107407,
@@ -1131,7 +898,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107408,
@@ -1144,7 +915,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107501,
@@ -1157,7 +932,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 107502,
@@ -1170,85 +949,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108102,
-    "name": "단봉",
-    "type": "Bat",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108202,
-    "name": "장봉",
-    "type": "Bat",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108301,
-    "name": "도깨비방망이",
-    "type": "Bat",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 27,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108401,
-    "name": "우산",
-    "type": "Bat",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108402,
-    "name": "횃불",
-    "type": "Bat",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 36,
-    "atkLv": 0,
-    "asr": 0.1,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108405,
-    "name": "쇠파이프",
-    "type": "Bat",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 32,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 108403,
@@ -1261,7 +966,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 108404,
@@ -1274,7 +983,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 108501,
@@ -1287,7 +1000,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104405,
@@ -1300,7 +1017,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104407,
@@ -1313,7 +1034,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.25,
-    "cd": 0.07
+    "cd": 0.07,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 104408,
@@ -1326,7 +1051,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 108502,
@@ -1339,7 +1068,11 @@ export const items: ItemData[] = [
     "asr": 0.1,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 108503,
@@ -1352,59 +1085,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 109101,
-    "name": "채찍",
-    "type": "Whip",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 109201,
-    "name": "오랏줄",
-    "type": "Whip",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 109202,
-    "name": "철편",
-    "type": "Whip",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 109301,
-    "name": "바람채찍",
-    "type": "Whip",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109401,
@@ -1417,20 +1102,11 @@ export const items: ItemData[] = [
     "asr": 0.12,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 109402,
-    "name": "벽력편",
-    "type": "Whip",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0.1,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109403,
@@ -1443,7 +1119,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109404,
@@ -1456,7 +1136,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109405,
@@ -1469,7 +1153,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109406,
@@ -1482,7 +1170,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109501,
@@ -1495,7 +1187,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 109502,
@@ -1508,111 +1204,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110102,
-    "name": "목장갑",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 7,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110201,
-    "name": "글러브",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 18,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110202,
-    "name": "아이언너클",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110301,
-    "name": "건틀릿",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 28,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110302,
-    "name": "윙너클",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110401,
-    "name": "귀골장갑",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110402,
-    "name": "벽력귀투",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 32,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 110404,
-    "name": "회단장갑",
-    "type": "Glove",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110405,
@@ -1625,7 +1221,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110406,
@@ -1638,7 +1238,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110407,
@@ -1651,7 +1255,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110408,
@@ -1664,7 +1272,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110409,
@@ -1677,7 +1289,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110410,
@@ -1690,7 +1306,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110411,
@@ -1703,7 +1323,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.29,
-    "cd": 0.05
+    "cd": 0.05,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110412,
@@ -1716,7 +1340,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110501,
@@ -1729,7 +1357,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 110502,
@@ -1742,59 +1374,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 108103,
-    "name": "대나무",
-    "type": "Tonfa",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 111201,
-    "name": "톤파",
-    "type": "Tonfa",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 23,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 111301,
-    "name": "경찰봉",
-    "type": "Tonfa",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 31,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 111401,
-    "name": "류큐톤파",
-    "type": "Tonfa",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 38,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111402,
@@ -1807,7 +1391,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111403,
@@ -1820,7 +1408,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111404,
@@ -1833,7 +1425,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111405,
@@ -1846,7 +1442,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111406,
@@ -1859,7 +1459,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111501,
@@ -1872,7 +1476,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 111502,
@@ -1885,72 +1493,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112105,
-    "name": "야구공",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112202,
-    "name": "수류탄",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 18,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112204,
-    "name": "슬링",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 28,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112205,
-    "name": "싸인볼",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 14,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112301,
-    "name": "밀가루폭탄",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 32,
-    "atkLv": 0,
-    "asr": 0.08,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112302,
@@ -1963,46 +1510,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112303,
-    "name": "볼라이트닝",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 28,
-    "atkLv": 0,
-    "asr": 0.15,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112304,
-    "name": "플러버",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112306,
-    "name": "필럼",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112404,
@@ -2015,7 +1527,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112401,
@@ -2028,7 +1544,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112402,
@@ -2041,20 +1561,11 @@ export const items: ItemData[] = [
     "asr": 0.1,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 112403,
-    "name": "가시탱탱볼",
-    "type": "HighAngleFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 37,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112501,
@@ -2067,7 +1578,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112405,
@@ -2080,7 +1595,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112406,
@@ -2093,7 +1612,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112407,
@@ -2106,7 +1629,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.24,
-    "cd": 0.06
+    "cd": 0.06,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112408,
@@ -2119,7 +1646,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 112502,
@@ -2132,124 +1663,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113101,
-    "name": "면도칼",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 11,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113201,
-    "name": "다트",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 16,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0.08
-  },
-  {
-    "id": 113202,
-    "name": "부적",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 24,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113203,
-    "name": "빈티지카드",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0.1,
-    "cd": 0
-  },
-  {
-    "id": 113205,
-    "name": "표창",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113206,
-    "name": "흑건",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 14,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113207,
-    "name": "매화비표",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113301,
-    "name": "챠크람",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 29,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 113302,
-    "name": "유엽비도",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 26,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113401,
@@ -2262,20 +1680,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0.15,
-    "cd": 0.1
-  },
-  {
-    "id": 113404,
-    "name": "플럼바타",
-    "type": "DirectFire",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 48,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0.1
+    "cd": 0.1,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113405,
@@ -2288,7 +1697,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113406,
@@ -2301,7 +1714,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113408,
@@ -2314,7 +1731,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113409,
@@ -2327,7 +1748,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113410,
@@ -2340,7 +1765,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0.06
+    "cd": 0.06,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113411,
@@ -2353,7 +1782,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113412,
@@ -2366,7 +1799,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113501,
@@ -2379,7 +1816,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 113502,
@@ -2392,98 +1833,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114101,
-    "name": "양궁",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 11,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114201,
-    "name": "목궁",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114202,
-    "name": "장궁",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 17,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114203,
-    "name": "컴포지트보우",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114301,
-    "name": "강궁",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114302,
-    "name": "국궁",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 58,
-    "atkLv": 0,
-    "asr": 0.05,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114303,
-    "name": "벽력궁",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114401,
@@ -2496,20 +1850,11 @@ export const items: ItemData[] = [
     "asr": 0.15,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 114402,
-    "name": "화전",
-    "type": "Bow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114403,
@@ -2522,7 +1867,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114405,
@@ -2535,7 +1884,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114501,
@@ -2548,7 +1901,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114406,
@@ -2561,7 +1918,11 @@ export const items: ItemData[] = [
     "asr": 0.33,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114502,
@@ -2574,7 +1935,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114503,
@@ -2587,7 +1952,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114504,
@@ -2600,7 +1969,11 @@ export const items: ItemData[] = [
     "asr": 0.15,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 114407,
@@ -2613,85 +1986,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 115101,
-    "name": "석궁",
-    "type": "CrossBow",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 115201,
-    "name": "쇠뇌",
-    "type": "CrossBow",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 115202,
-    "name": "크로스보우",
-    "type": "CrossBow",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 115302,
-    "name": "저격궁",
-    "type": "CrossBow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 115303,
-    "name": "헤비크로스보우",
-    "type": "CrossBow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 40,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 115401,
-    "name": "철궁",
-    "type": "CrossBow",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 45,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 115402,
@@ -2704,7 +2003,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 115403,
@@ -2717,7 +2020,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 115404,
@@ -2730,7 +2037,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 115405,
@@ -2743,7 +2054,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 115406,
@@ -2756,7 +2071,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 115501,
@@ -2769,98 +2088,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116101,
-    "name": "발터PPK",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 14,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116201,
-    "name": "매그넘-파이선",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0.1,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116202,
-    "name": "베레타M92F",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 23,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116301,
-    "name": "FN57",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 29,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116401,
-    "name": "더블리볼버SP",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0.1,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116402,
-    "name": "매그넘-아나콘다",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0.1,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 116408,
-    "name": "데린저",
-    "type": "Pistol",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 40,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116403,
@@ -2873,7 +2105,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116404,
@@ -2886,7 +2122,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116405,
@@ -2899,7 +2139,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116406,
@@ -2912,7 +2156,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116407,
@@ -2925,7 +2173,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116409,
@@ -2938,7 +2190,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116410,
@@ -2951,7 +2207,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116501,
@@ -2964,7 +2224,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 116502,
@@ -2977,72 +2241,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 117101,
-    "name": "페도로프자동소총",
-    "type": "AssaultRifle",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 11,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 117201,
-    "name": "STG44",
-    "type": "AssaultRifle",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 19,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 117301,
-    "name": "AK-47",
-    "type": "AssaultRifle",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 46,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 117401,
-    "name": "M16A1",
-    "type": "AssaultRifle",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 117402,
-    "name": "개틀링건",
-    "type": "AssaultRifle",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 32,
-    "atkLv": 0,
-    "asr": 0.1,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117403,
@@ -3055,7 +2258,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117501,
@@ -3068,7 +2275,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117404,
@@ -3081,7 +2292,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.22,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117405,
@@ -3094,7 +2309,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117406,
@@ -3107,7 +2326,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0.22,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117407,
@@ -3120,7 +2343,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 117502,
@@ -3133,72 +2360,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 118101,
-    "name": "화승총",
-    "type": "SniperRifle",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 118201,
-    "name": "스프링필드",
-    "type": "SniperRifle",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 118301,
-    "name": "하푼건",
-    "type": "SniperRifle",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 60,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 118401,
-    "name": "금교전",
-    "type": "SniperRifle",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 40,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 118402,
-    "name": "레일건",
-    "type": "SniperRifle",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 50,
-    "atkLv": 0,
-    "asr": 0.2,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118403,
@@ -3211,7 +2377,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118404,
@@ -3224,7 +2394,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118405,
@@ -3237,7 +2411,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118406,
@@ -3250,7 +2428,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0.02,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118407,
@@ -3263,7 +2445,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118501,
@@ -3276,7 +2462,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118502,
@@ -3289,7 +2479,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 118503,
@@ -3302,59 +2496,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0.02,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 119101,
-    "name": "쇠사슬",
-    "type": "Nunchaku",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 13,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 119201,
-    "name": "눈차크",
-    "type": "Nunchaku",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 119301,
-    "name": "샤퍼",
-    "type": "Nunchaku",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 119302,
-    "name": "블리더",
-    "type": "Nunchaku",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 30,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 119401,
@@ -3367,7 +2513,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 119402,
@@ -3380,7 +2530,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 119403,
@@ -3393,7 +2547,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 119404,
@@ -3406,7 +2564,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.25,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 119501,
@@ -3419,7 +2581,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 119502,
@@ -3432,59 +2598,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 120101,
-    "name": "바늘",
-    "type": "Rapier",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 5,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 120201,
-    "name": "레이피어",
-    "type": "Rapier",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 120301,
-    "name": "블루밍",
-    "type": "Rapier",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0.18,
-    "cd": 0
-  },
-  {
-    "id": 120303,
-    "name": "에스톡",
-    "type": "Rapier",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120302,
@@ -3497,7 +2615,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0.15
+    "cd": 0.15,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120401,
@@ -3510,7 +2632,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.2,
-    "cd": 0.06
+    "cd": 0.06,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120402,
@@ -3523,7 +2649,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0.15
+    "cd": 0.15,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120403,
@@ -3536,7 +2666,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0.2,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120404,
@@ -3549,7 +2683,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.22,
-    "cd": 0.12
+    "cd": 0.12,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120405,
@@ -3562,7 +2700,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0.1,
-    "cd": 0.07
+    "cd": 0.07,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120406,
@@ -3575,7 +2717,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120407,
@@ -3588,7 +2734,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.24,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 120501,
@@ -3601,124 +2751,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121101,
-    "name": "보급형기타",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 5,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121201,
-    "name": "골든브릿지",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 6,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121202,
-    "name": "싱글픽업",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121301,
-    "name": "루비스페셜",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121302,
-    "name": "험버커픽업",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121303,
-    "name": "King-V",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121304,
-    "name": "노캐스터",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0.2,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121305,
-    "name": "슈퍼스트랫",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 46,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 121306,
-    "name": "야생마",
-    "type": "Guitar",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0.25,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121401,
@@ -3731,7 +2768,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121402,
@@ -3744,7 +2785,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121403,
@@ -3757,7 +2802,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121404,
@@ -3770,7 +2819,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121405,
@@ -3783,7 +2836,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121406,
@@ -3796,7 +2853,11 @@ export const items: ItemData[] = [
     "asr": 0.23,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121407,
@@ -3809,7 +2870,11 @@ export const items: ItemData[] = [
     "asr": 0.4,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 121501,
@@ -3822,72 +2887,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 122101,
-    "name": "렌즈",
-    "type": "Camera",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 12,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 122201,
-    "name": "카메라건",
-    "type": "Camera",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 19,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 122301,
-    "name": "컴팩트카메라",
-    "type": "Camera",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 22,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 122302,
-    "name": "레인지파인더",
-    "type": "Camera",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 122303,
-    "name": "카메라라이플",
-    "type": "Camera",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 122401,
@@ -3900,7 +2904,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 122402,
@@ -3913,7 +2921,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 122403,
@@ -3926,7 +2938,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 122404,
@@ -3939,7 +2955,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 122405,
@@ -3952,7 +2972,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0.07,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 122501,
@@ -3965,98 +2989,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130101,
-    "name": "유리구슬",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 5,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130201,
-    "name": "거울구슬",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 13,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130202,
-    "name": "얼음구슬",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 8,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130301,
-    "name": "의지의지팡이",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130302,
-    "name": "감정의컵",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 23,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130303,
-    "name": "이성의칼",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 20,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 130304,
-    "name": "소유의펜타클",
-    "type": "Arcana",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 25,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 130401,
@@ -4069,7 +3006,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 130402,
@@ -4082,7 +3023,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 130403,
@@ -4095,7 +3040,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 130404,
@@ -4108,7 +3057,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 130405,
@@ -4121,7 +3074,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 130501,
@@ -4134,85 +3091,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 131101,
-    "name": "에키온 패시브 Lv2",
-    "type": "VFArm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 131102,
-    "name": "에키온 패시브 Lv3",
-    "type": "VFArm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 131201,
-    "name": "바이퍼",
-    "type": "VFArm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 5,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 131301,
-    "name": "데스애더",
-    "type": "VFArm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 33,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 131302,
-    "name": "블랙맘바",
-    "type": "VFArm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 33,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 131303,
-    "name": "사이드와인더",
-    "type": "VFArm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 35,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131401,
@@ -4225,7 +3108,11 @@ export const items: ItemData[] = [
     "asr": 0.15,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131402,
@@ -4238,7 +3125,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131403,
@@ -4251,7 +3142,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131501,
@@ -4264,7 +3159,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131502,
@@ -4277,7 +3176,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131503,
@@ -4290,7 +3193,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131504,
@@ -4303,7 +3210,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131505,
@@ -4316,7 +3227,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131506,
@@ -4329,7 +3244,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131507,
@@ -4342,7 +3261,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131508,
@@ -4355,7 +3278,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 131509,
@@ -4368,176 +3295,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201101,
-    "name": "머리띠",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201102,
-    "name": "모자",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201104,
-    "name": "자전거헬멧",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201201,
-    "name": "가면",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201202,
-    "name": "머리테",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201203,
-    "name": "베레모",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201204,
-    "name": "사슬코이프",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201205,
-    "name": "안전모",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201301,
-    "name": "방탄모",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201302,
-    "name": "소방헬멧",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201303,
-    "name": "티아라",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201401,
-    "name": "왕관",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201402,
-    "name": "투구",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201304,
@@ -4550,7 +3312,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201404,
@@ -4563,7 +3329,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.28,
-    "cd": 0.05
+    "cd": 0.05,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201405,
@@ -4576,7 +3346,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201406,
@@ -4589,7 +3363,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201407,
@@ -4602,7 +3380,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201409,
@@ -4615,7 +3397,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201410,
@@ -4628,7 +3414,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201412,
@@ -4641,7 +3431,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201413,
@@ -4654,7 +3448,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201414,
@@ -4667,7 +3465,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 7,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201415,
@@ -4680,7 +3482,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201417,
@@ -4693,7 +3499,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201418,
@@ -4706,7 +3516,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 8,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201403,
@@ -4719,7 +3533,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201408,
@@ -4732,7 +3550,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 10,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201411,
@@ -4745,7 +3567,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201501,
@@ -4758,7 +3584,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201502,
@@ -4771,7 +3601,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.35,
-    "cd": 0.1
+    "cd": 0.1,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201503,
@@ -4784,7 +3618,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201504,
@@ -4797,7 +3635,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201505,
@@ -4810,7 +3652,11 @@ export const items: ItemData[] = [
     "asr": 0.35,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201506,
@@ -4823,7 +3669,11 @@ export const items: ItemData[] = [
     "asr": 0.42,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201507,
@@ -4836,7 +3686,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201508,
@@ -4849,7 +3703,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201509,
@@ -4862,7 +3720,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 11,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 701451,
@@ -4875,59 +3737,11 @@ export const items: ItemData[] = [
     "asr": 0.38,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201111,
-    "name": "프리야패시브Lv2",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201112,
-    "name": "프리야패시브Lv3",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201206,
-    "name": "피어나는봉오리",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 201305,
-    "name": "싱그러운꽃잎",
-    "type": "Head",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 201416,
@@ -4940,254 +3754,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202101,
-    "name": "바람막이",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 4,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202103,
-    "name": "승복",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202105,
-    "name": "전신수영복",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202106,
-    "name": "천갑옷",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202201,
-    "name": "가죽갑옷",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202202,
-    "name": "가죽자켓",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 8,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202205,
-    "name": "군복",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 4,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202206,
-    "name": "덧댄로브",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202207,
-    "name": "드레스",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 3,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202209,
-    "name": "비키니",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202210,
-    "name": "잠수복",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202211,
-    "name": "사제복",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202301,
-    "name": "라이더자켓",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202302,
-    "name": "사슬갑옷",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202303,
-    "name": "정장",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 10,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202304,
-    "name": "치파오",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 5,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202305,
-    "name": "판금갑옷",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202306,
-    "name": "한복",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 202401,
-    "name": "방탄조끼",
-    "type": "Chest",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202307,
@@ -5200,7 +3771,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202402,
@@ -5213,7 +3788,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202404,
@@ -5226,7 +3805,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202405,
@@ -5239,7 +3822,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.24,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202406,
@@ -5252,7 +3839,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 6,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202408,
@@ -5265,7 +3856,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202410,
@@ -5278,7 +3873,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202411,
@@ -5291,7 +3890,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 6,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202412,
@@ -5304,7 +3907,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202413,
@@ -5317,7 +3924,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202415,
@@ -5330,7 +3941,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202417,
@@ -5343,7 +3958,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202418,
@@ -5356,7 +3975,11 @@ export const items: ItemData[] = [
     "asr": 0.15,
     "asrLv": 0,
     "cc": 0.27,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202419,
@@ -5369,7 +3992,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202420,
@@ -5382,7 +4009,11 @@ export const items: ItemData[] = [
     "asr": 0.34,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202422,
@@ -5395,7 +4026,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202407,
@@ -5408,7 +4043,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202416,
@@ -5421,7 +4060,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202421,
@@ -5434,7 +4077,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202501,
@@ -5447,7 +4094,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202502,
@@ -5460,7 +4111,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202503,
@@ -5473,7 +4128,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202504,
@@ -5486,7 +4145,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202505,
@@ -5499,7 +4162,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202506,
@@ -5512,7 +4179,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202507,
@@ -5525,7 +4196,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202508,
@@ -5538,7 +4213,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202509,
@@ -5551,7 +4230,11 @@ export const items: ItemData[] = [
     "asr": 0.46,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202510,
@@ -5564,7 +4247,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.33,
-    "cd": 0.05
+    "cd": 0.05,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202511,
@@ -5577,7 +4264,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202512,
@@ -5590,7 +4281,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 202513,
@@ -5603,176 +4298,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203101,
-    "name": "손목시계",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0.08,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203102,
-    "name": "붕대",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203104,
-    "name": "팔찌",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203201,
-    "name": "가죽방패",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203202,
-    "name": "분대장완장",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203203,
-    "name": "브레이서",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203204,
-    "name": "고장난시계",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203301,
-    "name": "검집",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 18,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203302,
-    "name": "금팔찌",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203303,
-    "name": "바주반드",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203304,
-    "name": "진홍팔찌",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203305,
-    "name": "바브드블로섬",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 10,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 203401,
-    "name": "강철방패",
-    "type": "Arm",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 15,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 10,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203306,
@@ -5785,7 +4315,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203402,
@@ -5798,7 +4332,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203403,
@@ -5811,7 +4349,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203405,
@@ -5824,7 +4366,11 @@ export const items: ItemData[] = [
     "asr": 0.33,
     "asrLv": 0,
     "cc": 0.24,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203406,
@@ -5837,7 +4383,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0.17
+    "cd": 0.17,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203407,
@@ -5850,7 +4400,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 6,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203409,
@@ -5863,7 +4417,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203410,
@@ -5876,7 +4434,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203411,
@@ -5889,7 +4451,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203412,
@@ -5902,7 +4468,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203414,
@@ -5915,7 +4485,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 6,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203415,
@@ -5928,7 +4502,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.21,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203506,
@@ -5941,7 +4519,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203404,
@@ -5954,7 +4536,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203408,
@@ -5967,7 +4553,11 @@ export const items: ItemData[] = [
     "asr": 0.6,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203413,
@@ -5980,7 +4570,11 @@ export const items: ItemData[] = [
     "asr": 0.3,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203501,
@@ -5993,7 +4587,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203502,
@@ -6006,7 +4604,11 @@ export const items: ItemData[] = [
     "asr": 0.42,
     "asrLv": 0,
     "cc": 0.35,
-    "cd": 0.05
+    "cd": 0.05,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203503,
@@ -6019,7 +4621,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203504,
@@ -6032,7 +4638,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203505,
@@ -6045,7 +4655,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203507,
@@ -6058,7 +4672,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203508,
@@ -6071,7 +4689,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0.24
+    "cd": 0.24,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203509,
@@ -6084,7 +4706,11 @@ export const items: ItemData[] = [
     "asr": 0.2,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0.15,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203510,
@@ -6097,7 +4723,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0.15,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203511,
@@ -6110,7 +4740,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 15,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 203512,
@@ -6123,137 +4757,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204101,
-    "name": "슬리퍼",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204102,
-    "name": "운동화",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204103,
-    "name": "타이즈",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "common",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204201,
-    "name": "무릎보호대",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204202,
-    "name": "체인레깅스",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204203,
-    "name": "하이힐",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 2,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204204,
-    "name": "힐리스",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204205,
-    "name": "나막신",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204301,
-    "name": "덧댄슬리퍼",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204302,
-    "name": "부츠",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "uncommon",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204303,
@@ -6266,33 +4774,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204401,
-    "name": "강철무릎보호대",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
-  },
-  {
-    "id": 204404,
-    "name": "전투화",
-    "type": "Leg",
-    "modeType": 0,
-    "grade": "rare",
-    "atk": 0,
-    "atkLv": 0,
-    "asr": 0.05,
-    "asrLv": 0,
-    "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204304,
@@ -6305,7 +4791,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 7,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204402,
@@ -6318,7 +4808,11 @@ export const items: ItemData[] = [
     "asr": 0.34,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204403,
@@ -6331,7 +4825,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204406,
@@ -6344,7 +4842,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204408,
@@ -6357,7 +4859,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.25,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204409,
@@ -6370,7 +4876,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204411,
@@ -6383,7 +4893,11 @@ export const items: ItemData[] = [
     "asr": 0.18,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204412,
@@ -6396,7 +4910,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204415,
@@ -6409,7 +4927,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204407,
@@ -6422,7 +4944,11 @@ export const items: ItemData[] = [
     "asr": 0.48,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204410,
@@ -6435,7 +4961,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204413,
@@ -6448,7 +4978,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204414,
@@ -6461,7 +4995,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 15,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204501,
@@ -6474,7 +5012,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204502,
@@ -6487,7 +5029,11 @@ export const items: ItemData[] = [
     "asr": 0.28,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204503,
@@ -6500,7 +5046,11 @@ export const items: ItemData[] = [
     "asr": 0.25,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204504,
@@ -6513,7 +5063,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0.32,
-    "cd": 0.05
+    "cd": 0.05,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   },
   {
     "id": 204505,
@@ -6526,7 +5080,11 @@ export const items: ItemData[] = [
     "asr": 0,
     "asrLv": 0,
     "cc": 0,
-    "cd": 0
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
   }
 ];
 

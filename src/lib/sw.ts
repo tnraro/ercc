@@ -1,477 +1,848 @@
-export const sw = [
+export const sw: [number, number, string, Record<string, number>][] = [
   [
     1,
-    1,
-    "OneHandSword"
+    7,
+    "Glove",
+    {
+      "asr": 0.039,
+      "adm": 0.025
+    }
   ],
   [
     2,
-    1,
-    "TwoHandSword"
+    10,
+    "Glove",
+    {
+      "asr": 0.051,
+      "adm": 0.025
+    }
   ],
   [
     3,
-    1,
-    "Axe"
+    29,
+    "Glove",
+    {
+      "asr": 0.041
+    }
   ],
   [
     4,
-    1,
-    "DualSword"
+    33,
+    "Glove",
+    {
+      "asr": 0.039
+    }
   ],
   [
     5,
-    2,
-    "Pistol"
+    35,
+    "Glove",
+    {
+      "asr": 0.039,
+      "adm": 0.018
+    }
   ],
   [
     6,
-    2,
-    "AssaultRifle"
+    68,
+    "Glove",
+    {
+      "asr": 0.039,
+      "adm": 0.01
+    }
   ],
   [
     7,
-    2,
-    "SniperRifle"
+    7,
+    "Tonfa",
+    {
+      "asr": 0.026
+    }
   ],
   [
     8,
-    3,
-    "Rapier"
+    27,
+    "Tonfa",
+    {
+      "asr": 0.026,
+      "adm": 0.009
+    }
   ],
   [
     9,
-    3,
-    "TwoHandSword"
+    35,
+    "Tonfa",
+    {
+      "asr": 0.026
+    }
   ],
   [
     10,
-    3,
-    "Spear"
+    59,
+    "Tonfa",
+    {
+      "asr": 0.03,
+      "adm": 0.015
+    }
   ],
   [
     11,
-    4,
-    "Hammer"
+    29,
+    "Tonfa",
+    {
+      "asr": 0.026
+    }
   ],
   [
     12,
     4,
-    "Bat"
+    "Hammer",
+    {
+      "asr": 0.008
+    }
   ],
   [
     13,
-    5,
-    "HighAngleFire"
+    28,
+    "Hammer",
+    {
+      "asr": 0.015
+    }
   ],
   [
     14,
-    5,
-    "DirectFire"
+    30,
+    "Hammer",
+    {
+      "asr": 0.04,
+      "adm": 0.032
+    }
   ],
   [
     15,
-    6,
-    "Bow"
+    53,
+    "Hammer",
+    {
+      "asr": 0.035,
+      "adm": 0.024
+    }
   ],
   [
     16,
-    6,
-    "CrossBow"
+    1,
+    "Axe",
+    {
+      "asr": 0.02,
+      "adm": 0.019
+    }
   ],
   [
     17,
-    7,
-    "Glove"
+    53,
+    "Axe",
+    {
+      "asr": 0.03,
+      "adm": 0.017
+    }
   ],
   [
     18,
-    7,
-    "Tonfa"
+    55,
+    "Axe",
+    {
+      "asr": 0.037
+    }
   ],
   [
     19,
-    8,
-    "Guitar"
+    67,
+    "Axe",
+    {
+      "asr": 0.039
+    }
   ],
   [
     20,
-    9,
-    "AssaultRifle"
+    4,
+    "Bat",
+    {
+      "asr": 0.04,
+      "adm": 0.038
+    }
   ],
   [
     21,
-    9,
-    "Pistol"
+    22,
+    "Bat",
+    {
+      "asr": 0.04,
+      "adm": 0.013
+    }
   ],
   [
     22,
-    10,
-    "Glove"
+    26,
+    "Bat",
+    {
+      "asr": 0.03
+    }
   ],
   [
     23,
-    10,
-    "Nunchaku"
+    48,
+    "Bat",
+    {
+      "asr": 0.03
+    }
   ],
   [
     24,
-    11,
-    "TwoHandSword"
+    24,
+    "Bat",
+    {
+      "asr": 0.04
+    }
   ],
   [
     25,
-    11,
-    "DualSword"
+    28,
+    "Bat",
+    {
+      "asr": 0.03
+    }
   ],
   [
     26,
-    12,
-    "Bow"
+    20,
+    "Whip",
+    {
+      "asr": 0.028
+    }
   ],
   [
     27,
-    12,
-    "DirectFire"
+    45,
+    "Whip",
+    {
+      "asr": 0.028
+    }
   ],
   [
     28,
-    13,
-    "OneHandSword"
+    47,
+    "Whip",
+    {
+      "asr": 0.028
+    }
   ],
   [
     29,
-    13,
-    "Spear"
+    1,
+    "OneHandSword",
+    {
+      "asr": 0.041,
+      "adm": 0.03
+    }
   ],
   [
     30,
-    14,
-    "Rapier"
+    13,
+    "OneHandSword",
+    {
+      "asr": 0.05
+    }
   ],
   [
     31,
-    15,
-    "HighAngleFire"
+    18,
+    "OneHandSword",
+    {
+      "asr": 0.027
+    }
   ],
   [
     32,
-    15,
-    "DirectFire"
+    23,
+    "OneHandSword",
+    {
+      "asr": 0.027
+    }
   ],
   [
     33,
-    16,
-    "Pistol"
+    37,
+    "OneHandSword",
+    {
+      "asr": 0.027,
+      "adm": 0.028
+    }
   ],
   [
     34,
-    17,
-    "HighAngleFire"
+    1,
+    "TwoHandSword",
+    {
+      "asr": 0.036,
+      "adm": 0.03
+    }
   ],
   [
     35,
-    18,
-    "OneHandSword"
+    3,
+    "TwoHandSword",
+    {
+      "asr": 0.037
+    }
   ],
   [
     36,
-    19,
-    "DirectFire"
+    11,
+    "TwoHandSword",
+    {
+      "asr": 0.028,
+      "adm": 0.023
+    }
   ],
   [
     37,
-    19,
-    "Arcana"
+    27,
+    "TwoHandSword",
+    {
+      "asr": 0.033,
+      "adm": 0.011
+    }
   ],
   [
     38,
-    20,
-    "Whip"
+    46,
+    "TwoHandSword",
+    {
+      "asr": 0.04,
+      "adm": 0.024
+    }
   ],
   [
     39,
-    21,
-    "Pistol"
+    65,
+    "TwoHandSword",
+    {
+      "asr": 0.03,
+      "adm": 0.021
+    }
   ],
   [
     40,
-    22,
-    "Bat"
+    1,
+    "DualSword",
+    {
+      "asr": 0.03,
+      "adm": 0.016
+    }
   ],
   [
     41,
-    23,
-    "OneHandSword"
+    11,
+    "DualSword",
+    {
+      "asr": 0.034,
+      "adm": 0.022
+    }
   ],
   [
     42,
-    23,
-    "DualSword"
+    39,
+    "DualSword",
+    {
+      "asr": 0.026,
+      "adm": 0.02
+    }
   ],
   [
     43,
-    24,
-    "Rapier"
+    23,
+    "DualSword",
+    {
+      "asr": 0.03
+    }
   ],
   [
     44,
-    24,
-    "Bat"
+    3,
+    "Spear",
+    {
+      "asr": 0.034
+    }
   ],
   [
     45,
-    25,
-    "SniperRifle"
+    13,
+    "Spear",
+    {
+      "asr": 0.03
+    }
   ],
   [
     46,
-    26,
-    "Bat"
+    49,
+    "Spear",
+    {
+      "asr": 0.04,
+      "adm": 0.024
+    }
   ],
   [
     47,
-    27,
-    "Tonfa"
+    5,
+    "HighAngleFire",
+    {
+      "asr": 0.03
+    }
   ],
   [
     48,
-    27,
-    "TwoHandSword"
+    15,
+    "HighAngleFire",
+    {
+      "asr": 0.025
+    }
   ],
   [
     49,
-    27,
-    "DirectFire"
+    17,
+    "HighAngleFire",
+    {
+      "asr": 0.015
+    }
   ],
   [
     50,
-    27,
-    "Pistol"
+    32,
+    "HighAngleFire",
+    {
+      "asr": 0.031,
+      "adm": 0.016
+    }
   ],
   [
     51,
-    28,
-    "Hammer"
+    36,
+    "HighAngleFire",
+    {
+      "asr": 0.02
+    }
   ],
   [
     52,
-    28,
-    "Bat"
+    43,
+    "HighAngleFire",
+    {
+      "asr": 0.012
+    }
   ],
   [
     53,
-    29,
-    "Glove"
+    61,
+    "HighAngleFire",
+    {
+      "asr": 0.016
+    }
   ],
   [
     54,
-    29,
-    "Tonfa"
+    5,
+    "DirectFire",
+    {
+      "asr": 0.02
+    }
   ],
   [
     55,
-    30,
-    "Hammer"
+    12,
+    "DirectFire",
+    {
+      "asr": 0.04
+    }
   ],
   [
     56,
-    31,
-    "Bow"
+    15,
+    "DirectFire",
+    {
+      "asr": 0.032
+    }
   ],
   [
     57,
-    32,
-    "HighAngleFire"
+    19,
+    "DirectFire",
+    {
+      "asr": 0.02
+    }
   ],
   [
     58,
-    33,
-    "Glove"
+    27,
+    "DirectFire",
+    {
+      "asr": 0.02,
+      "adm": 0.012
+    }
   ],
   [
     59,
-    34,
-    "Camera"
+    40,
+    "DirectFire",
+    {
+      "asr": 0.027,
+      "adm": 0.016
+    }
   ],
   [
     60,
-    35,
-    "Glove"
+    60,
+    "DirectFire",
+    {
+      "asr": 0.029
+    }
   ],
   [
     61,
-    35,
-    "Tonfa"
+    6,
+    "Bow",
+    {
+      "asr": 0.034
+    }
   ],
   [
     62,
-    36,
-    "HighAngleFire"
+    12,
+    "Bow",
+    {
+      "asr": 0.027
+    }
   ],
   [
     63,
-    37,
-    "OneHandSword"
+    31,
+    "Bow",
+    {
+      "asr": 0.033,
+      "adm": 0.016
+    }
   ],
   [
     64,
-    38,
-    "Pistol"
+    6,
+    "CrossBow",
+    {
+      "asr": 0.034,
+      "adm": 0.016
+    }
   ],
   [
     65,
-    39,
-    "DualSword"
+    54,
+    "CrossBow",
+    {
+      "asr": 0.022
+    }
   ],
   [
     66,
-    39,
-    "Rapier"
+    2,
+    "Pistol",
+    {
+      "asr": 0.035
+    }
   ],
   [
     67,
-    40,
-    "DirectFire"
+    9,
+    "Pistol",
+    {
+      "asr": 0.045
+    }
   ],
   [
     68,
-    41,
-    "Arcana"
+    16,
+    "Pistol",
+    {
+      "asr": 0.025
+    }
   ],
   [
     69,
-    42,
-    "Arcana"
+    21,
+    "Pistol",
+    {
+      "asr": 0.045,
+      "adm": 0.019
+    }
   ],
   [
     70,
-    43,
-    "HighAngleFire"
+    27,
+    "Pistol",
+    {
+      "asr": 0.033,
+      "adm": 0.01
+    }
   ],
   [
     71,
-    44,
-    "VFArm"
+    38,
+    "Pistol",
+    {
+      "asr": 0.033
+    }
   ],
   [
     72,
-    45,
-    "Whip"
+    69,
+    "Pistol",
+    {
+      "asr": 0.031,
+      "atk": 1
+    }
   ],
   [
     73,
-    46,
-    "TwoHandSword"
+    2,
+    "AssaultRifle",
+    {
+      "asr": 0.039,
+      "adm": 0.014
+    }
   ],
   [
     74,
-    47,
-    "Whip"
+    9,
+    "AssaultRifle",
+    {
+      "asr": 0.042,
+      "adm": 0.018
+    }
   ],
   [
     75,
-    48,
-    "Bat"
+    58,
+    "AssaultRifle",
+    {
+      "asr": 0.03
+    }
   ],
   [
     76,
-    49,
-    "Spear"
+    2,
+    "SniperRifle",
+    {
+      "asr": 0.02
+    }
   ],
   [
     77,
-    50,
-    "Rapier"
+    25,
+    "SniperRifle",
+    {
+      "asr": 0.022,
+      "adm": 0.023
+    }
   ],
   [
     78,
-    51,
-    "Guitar"
+    62,
+    "SniperRifle",
+    {
+      "asr": 0.023
+    }
   ],
   [
     79,
-    52,
-    "Arcana"
+    10,
+    "Nunchaku",
+    {
+      "asr": 0.047,
+      "adm": 0.022
+    }
   ],
   [
     80,
-    53,
-    "Axe"
+    3,
+    "Rapier",
+    {
+      "asr": 0.03
+    }
   ],
   [
     81,
-    53,
-    "Hammer"
+    14,
+    "Rapier",
+    {
+      "asr": 0.032
+    }
   ],
   [
     82,
-    54,
-    "CrossBow"
+    24,
+    "Rapier",
+    {
+      "asr": 0.025
+    }
   ],
   [
     83,
-    55,
-    "Axe"
+    50,
+    "Rapier",
+    {
+      "asr": 0.025
+    }
   ],
   [
     84,
-    56,
-    "Nunchaku"
+    39,
+    "Rapier",
+    {
+      "asr": 0.02,
+      "adm": 0.015
+    }
   ],
   [
     85,
-    57,
-    "Camera"
+    8,
+    "Guitar",
+    {
+      "asr": 0.031,
+      "adm": 0.015
+    }
   ],
   [
     86,
-    58,
-    "AssaultRifle"
+    51,
+    "Guitar",
+    {
+      "asr": 0.02
+    }
   ],
   [
     87,
-    59,
-    "Tonfa"
+    34,
+    "Camera",
+    {
+      "asr": 0.02
+    }
   ],
   [
     88,
-    60,
-    "DirectFire"
+    41,
+    "Arcana",
+    {
+      "asr": 0.025
+    }
   ],
   [
     89,
-    61,
-    "HighAngleFire"
+    42,
+    "Arcana",
+    {
+      "asr": 0.025
+    }
   ],
   [
     90,
-    62,
-    "SniperRifle"
+    52,
+    "Arcana",
+    {
+      "asr": 0.025
+    }
   ],
   [
     91,
-    63,
-    "OneHandSword"
+    19,
+    "Arcana",
+    {
+      "asr": 0.025
+    }
   ],
   [
     92,
     64,
-    "Arcana"
+    "Arcana",
+    {
+      "asr": 0.025
+    }
   ],
   [
     93,
-    65,
-    "TwoHandSword"
+    66,
+    "Arcana",
+    {
+      "asr": 0.025
+    }
   ],
   [
     94,
-    66,
-    "Arcana"
+    44,
+    "VFArm",
+    {
+      "asr": 0.03,
+      "adm": 0.01
+    }
   ],
   [
     95,
-    67,
-    "Axe"
+    56,
+    "Nunchaku",
+    {
+      "asr": 0.025
+    }
+  ],
+  [
+    96,
+    57,
+    "Camera",
+    {
+      "asr": 0.01,
+      "adm": 0.01
+    }
+  ],
+  [
+    97,
+    63,
+    "OneHandSword",
+    {
+      "asr": 0.031,
+      "atk": 1
+    }
+  ],
+  [
+    98,
+    0,
+    "Hunt",
+    {}
+  ],
+  [
+    99,
+    0,
+    "Craft",
+    {}
+  ],
+  [
+    100,
+    0,
+    "Search",
+    {}
+  ],
+  [
+    101,
+    0,
+    "Move",
+    {}
+  ],
+  [
+    102,
+    0,
+    "Defense",
+    {}
   ]
 ];

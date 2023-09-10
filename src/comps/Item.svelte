@@ -10,7 +10,7 @@
   const onBlur = () => (isHovering = false);
 </script>
 
-<div
+<button
   class="item"
   data-grade={item?.grade}
   on:click
@@ -18,10 +18,11 @@
   on:mouseover={onFocus}
   on:focus={onFocus}
   on:mouseleave={onBlur}
+  on:blur={onBlur}
 >
   {#if item != null}
     <img
-      src={`https://tnraro.github.io/er-static/items/${item.id}.webp`}
+      src={`https://static.tnraro.com/er/images/items/ItemIcon_${item.id}.png`}
       alt={item.name}
       title={item.name}
       width="62"
@@ -29,7 +30,7 @@
       loading="lazy"
     />
   {/if}
-</div>
+</button>
 {#if isHovering && item != null}
   <div class="tooltip" use:popperContent>
     <div>
@@ -59,6 +60,12 @@
       {#if item.cd !== 0}
         <div>치명타 피해량 {item.cd * 100 | 0}%</div>
       {/if}
+      {#if item.pd !== 0}
+        <div>방어 관통 {item.pd | 0}</div>
+      {/if}
+      {#if item.pdr !== 0}
+        <div>방어 관통 {item.pdr * 100 | 0}%</div>
+      {/if}
     </div>
     {#if item.modeType !== 0}
       <div>
@@ -86,9 +93,12 @@
       var(---color-background, #5b5d60)
     );
     height: 36px;
+    border: none;
+    appearance: none;
+    padding: 0;
   }
   .item > img {
-    object-fit: cover;
+    object-fit: contain;
   }
   .item[data-grade="uncommon"] {
     ---color-background: #476b49;

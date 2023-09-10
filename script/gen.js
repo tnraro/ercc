@@ -77,31 +77,39 @@ const itemGrade = (grade) => {
 }
 
 const items = [
-  ...weapons.map((w) => ({
-    id: parseInt(w.code),
-    name: w.name,
-    type: w.weaponType,
-    modeType: w.modeType,
-    grade: itemGrade(w.itemGrade),
-    atk: w.attackPower,
-    atkLv: w.attackPowerByLv,
-    asr: w.attackSpeedRatio,
-    asrLv: w.attackSpeedRatioByLv,
-    cc: w.criticalStrikeChance,
-    cd: w.criticalStrikeDamage,
+  ...weapons.filter(x => x.isCompletedItem).map((x) => ({
+    id: parseInt(x.code),
+    name: x.name,
+    type: x.weaponType,
+    modeType: x.modeType,
+    grade: itemGrade(x.itemGrade),
+    atk: x.attackPower,
+    atkLv: x.attackPowerByLv,
+    asr: x.attackSpeedRatio,
+    asrLv: x.attackSpeedRatioByLv,
+    cc: x.criticalStrikeChance,
+    cd: x.criticalStrikeDamage,
+    pd: x.penetrationDefense,
+    pdr: x.penetrationDefenseRatio,
+    upd: x.uniquePenetrationDefense,
+    updr: x.uniquePenetrationDefenseRatio,
   })),
-  ...armors.map((w) => ({
-    id: parseInt(w.code),
-    name: w.name,
-    type: w.armorType,
-    modeType: w.modeType,
-    grade: itemGrade(w.itemGrade),
-    atk: w.attackPower + w.adaptiveForce,
-    atkLv: w.attackPowerByLv + w.adaptiveForceByLevel,
-    asr: w.attackSpeedRatio,
-    asrLv: w.attackSpeedRatioByLv,
-    cc: w.criticalStrikeChance,
-    cd: w.criticalStrikeDamage,
+  ...armors.filter(x => x.isCompletedItem).map((x) => ({
+    id: parseInt(x.code),
+    name: x.name,
+    type: x.armorType,
+    modeType: x.modeType,
+    grade: itemGrade(x.itemGrade),
+    atk: x.attackPower + x.adaptiveForce,
+    atkLv: x.attackPowerByLv + x.adaptiveForceByLevel,
+    asr: x.attackSpeedRatio,
+    asrLv: x.attackSpeedRatioByLv,
+    cc: x.criticalStrikeChance,
+    cd: x.criticalStrikeDamage,
+    pd: x.penetrationDefense,
+    pdr: x.penetrationDefenseRatio,
+    upd: x.uniquePenetrationDefense,
+    updr: x.uniquePenetrationDefenseRatio,
   })),
 ].filter(x => x.modeType === 0 || (x.modeType & 0b111) !== 0);
 
@@ -172,6 +180,10 @@ export interface ItemData {
   asrLv: number;
   cc: number;
   cd: number;
+  pd: number;
+  pdr: number;
+  upd: number;
+  updr: number;
 }
 export const items: ItemData[] = ${JSON.stringify(items, null, 2)};
 
@@ -190,6 +202,48 @@ export function findItemByType(type: ItemType): ItemData[] {
 
 // write("actual-cc.ts", `export const actualUsedCriticalChance = new Map<number, number>(${JSON.stringify(cc, null, 2)});`);
 
-const sw = await fetchData("CharacterAttributes");
+const sw = await fetchData("MasteryStat");
 
-write("sw.ts", `export const sw = ${JSON.stringify(sw.map((x, i) => [i + 1, x.characterCode, x.mastery]), null, 2)};`);
+const short = {
+  "AttackSpeedRatio": "asr",
+  "IncreaseBasicAttackDamageRatio": "adm", // attack damage multiplier
+  // "SkillAmpRatio"
+  "AttackPower": "atk",
+  // "AmplifierToMonsterRatio"
+  // "HpRegenRatioOutOfCombat"
+  // "SpRegenRatioOutOfCombat"
+  // "MoveSpeed"
+  // "PreventBasicAttackDamagedRatio"
+  // "PreventSkillDamagedRatio"
+};
+const processSwOptions = (x) => {
+  const options = (id) => {
+    const prop = x[`${id}Option`];
+    const value = x[`${id}OptionSection3Value`]; // 스쿼드겠지....
+    if (short[prop] != null) {
+      return {
+        [short[prop]]: value,
+      };
+    }
+    return {};
+  }
+  return {
+    ...options("first"),
+    ...options("second"),
+    ...options("third"),
+  }
+}
+write("sw.ts", `export const sw: [number, number, string, Record<string, number>][] = ${JSON.stringify(sw.map((x, i) => [i + 1, x.characterCode, x.type, processSwOptions(x)]), null, 2)};`);
+
+const weaponTypeInfo = await fetchData("WeaponTypeInfo");
+
+const weaponTypes = weaponTypeInfo.map(x => {
+  return {
+    type: x.type,
+    as: x.attackSpeed,
+  };
+});
+
+write("weaponTypeInfo.ts", `export const weaponTypeInfo = new Map<string, { type: string, as: number }>([
+${weaponTypes.map(wt => `  ["${wt.type}", ${JSON.stringify(wt)}]`).join(",\n")}
+]);`);

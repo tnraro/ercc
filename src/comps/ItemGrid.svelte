@@ -6,8 +6,7 @@
   export let e2 = 0;
   export let e3 = 0;
   export let e4 = 0;
-  export let e5 = 0;
-  $: equipments = [e0, e1, e2, e3, e4, e5];
+  $: equipments = [e0, e1, e2, e3, e4];
 </script>
 
 <div class="container">

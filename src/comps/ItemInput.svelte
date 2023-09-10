@@ -15,8 +15,10 @@
   export let atk: number;
   export let cc: number;
   export let cd: number;
+  export let pd: number;
+  export let pdr: number;
   let teamMode: number = 1;
-  $: equipments = [findItemById(119401), null, null, null, null, null];
+  $: equipments = [findItemById(119401), null, null, null, null];
   $: char = findCharacterById(selectedCharacter);
   $: atk =
     (equipments.reduce((acc, item) => acc + (item?.atk ?? 0), 0) +
@@ -43,6 +45,8 @@
     (char?.cc ?? 0) +
     (char?.ccLv ?? 0) * lv;
   $: cd = 1.7 + equipments.reduce((acc, item) => acc + (item?.cd ?? 0), 0);
+  $: pd = equipments.reduce((acc, item) => acc + (item?.pd ?? 0), 0)
+  $: pdr = equipments.reduce((acc, item) => acc + (item?.pdr ?? 0), 0)
   let selectedCharacter = 10;
   let selectedWeaponType: ItemType = "Nunchaku";
   let selectedItemSlot: number = 0;

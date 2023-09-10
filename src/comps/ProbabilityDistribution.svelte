@@ -6,6 +6,7 @@
   export let atk = 150;
   export let cc = 0.7;
   export let cd = 1.7;
+  export let def: number;
   $: aucc = actualUsedCriticalChance.get(cc) ?? 0;
   function getPd(
     iterationCount: number,
@@ -26,14 +27,15 @@
       .map(([k, v]) => [k, v / iterationCount] as const)
       .sort((a, b) => parseInt(a[0]) - parseInt(b[0]));
   }
-  $: pd = getPd(iterationCount, n, atk, aucc, cd);
+  $: _pd = getPd(iterationCount, n, atk, aucc, cd);
   $: realE = (atk * (1 - aucc) + atk * aucc * cd) * n;
+  $: E = (atk * (1 - aucc) + atk * aucc * cd);
 </script>
 
 <div class="graph">
   <div>누적피해량</div>
   <div>확률</div>
-  {#each pd as [k, v]}
+  {#each _pd as [k, v]}
     <div>{k}</div>
     <div
       class="probability"
@@ -43,7 +45,12 @@
   {/each}
 </div>
 <div>
-  기댓값 {realE | 0}
+  <div>
+    기댓값 {realE | 0}
+  </div>
+  <div>
+    히트당 {E | 0}
+  </div>
 </div>
 
 <style>
