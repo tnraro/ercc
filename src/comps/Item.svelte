@@ -25,8 +25,8 @@
       src={`https://static.tnraro.com/er/images/items/ItemIcon_${item.id}.png`}
       alt={item.name}
       title={item.name}
-      width="62"
-      height="36"
+      width="58"
+      height="30"
       loading="lazy"
     />
   {/if}

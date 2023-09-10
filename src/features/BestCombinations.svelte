@@ -6,9 +6,9 @@
   import { calcDamage } from "../lib/calc/damage";
   import Item from "../comps/Item.svelte";
   import { weaponTypeInfo } from "../lib/weaponTypeInfo";
+  import Icon from "./icon/Icon.svelte";
 
   let character = characters[9];
-  $: console.log(weaponTypes);
   $: updateWeaponTypes(), character;
   let weaponTypes: string[];
   let weaponType: string | undefined = undefined;
@@ -41,15 +41,23 @@
     weaponType = weaponTypes[0];
   };
   const updateWeapons = () => {
-    weapons = items.filter((item) => item.type === weaponType && (includeLegendaryItem || item.grade !== "legendary"));
-    if (weapon == null || weapons.find(w => w.id === weapon!.id) == null) {
+    weapons = items.filter(
+      (item) =>
+        item.type === weaponType &&
+        (includeLegendaryItem || item.grade !== "legendary")
+    );
+    if (weapon == null || weapons.find((w) => w.id === weapon!.id) == null) {
       weapon = weapons.at(0);
     }
   };
   const getCombinations = () => {
     if (weapon == null) return;
     const typeToArmors = ["Chest", "Head", "Arm", "Leg"].map((type) =>
-      items.filter((item) => item.type === type && (includeLegendaryItem || item.grade !== "legendary"))
+      items.filter(
+        (item) =>
+          item.type === type &&
+          (includeLegendaryItem || item.grade !== "legendary")
+      )
     );
     const current = <T extends string>(
       id: T,
@@ -67,7 +75,6 @@
     const __as = dot("as", character, weaponTypeInfo.get(weaponType!)!);
     const __asr = (weaponData.asr ?? 0) * weaponLevel;
     const adm = 1 + (weaponData.adm ?? 0) * weaponLevel;
-    console.log(__as, __asr);
 
     const combs = [];
     console.time("combination");
@@ -167,6 +174,7 @@
       <div class="c--7 c--center">피해량</div>
       <div class="c--7 c--center">공속</div>
       <div class="c--center c--fill">아이템</div>
+      <div class="c--7 c--center">루트</div>
     </div>
     {#each paginationedCombinations as combination}
       <div class="combination">
@@ -178,6 +186,18 @@
           {#each combination.equipments as itemId}
             <Item id={itemId} />
           {/each}
+        </div>
+        <div class="c--7 c--center">
+          <a
+            class="map"
+            href="https://aya.gg/route?sw1={sw.find(
+              (x) => x[1] === character.id && x[2] === weaponType
+            )?.[0] ?? ''}&i1={combination.equipments.join(',')}"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Icon as="map" />
+          </a>
         </div>
       </div>
     {/each}
@@ -253,6 +273,9 @@
     align-items: center;
     grid-template-columns: repeat(5, 64px);
     gap: 0.25rem;
+  }
+  .map {
+    color: hsl(210deg 5% 40%);
   }
   .pagination {
     display: flex;
