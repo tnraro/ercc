@@ -75,7 +75,7 @@
 
     const __as = dot("as", character, weaponTypeInfo.get(weaponType!)!);
     const __asr = (weaponData.asr ?? 0) * weaponLevel;
-    const adm = 1 + (weaponData.adm ?? 0) * weaponLevel;
+    const adm = (weaponData.adm ?? 0) * weaponLevel;
 
     const combs = [];
     console.time("combination");
@@ -95,8 +95,8 @@
             const cd = dot("cd", weapon, chest, head, arm, leg);
             const pd = dot("pd", weapon, chest, head, arm, leg);
             const pdr = dot("pdr", weapon, chest, head, arm, leg);
-            const critical = calcCritical(atk, cc, cd);
-            const damage = calcDamage(critical, adm, pd, pdr);
+            const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
+            const damage = calcDamage(critical, pd, pdr, targetDef);
             combs.push({
               dps: damage * as,
               damage,
