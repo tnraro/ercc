@@ -83,7 +83,9 @@
       for (const head of typeToArmors[1]) {
         for (const arm of typeToArmors[2]) {
           for (const leg of typeToArmors[3]) {
-            const atk = dot("atk", character, weapon, chest, head, arm, leg);
+            const atk =
+              dot("atk", character, weapon, chest, head, arm, leg) -
+              character.atkLv;
             const asr = dot("asr", weapon, chest, head, arm, leg) + __asr;
             const as = Math.max(
               Math.min(__as * (1 + asr), character.asl),
