@@ -25,6 +25,7 @@
     attackSpeed: number;
     equipments: number[];
   }[] = [];
+  let targetDef = 120;
   let results = 0;
   $: paginationedCombinations = combinations.slice(page * 10, page * 10 + 10);
   let pages = [] as number[];
@@ -154,6 +155,17 @@
       min={1}
       max={20}
       bind:value={weaponLevel}
+    />
+  </div>
+  <div class="option">
+    <label for="target-def">상대 방어력</label>
+    <input type="number" min={0} max={200} bind:value={targetDef} />
+    <input
+      id="target-def"
+      type="range"
+      min={0}
+      max={200}
+      bind:value={targetDef}
     />
   </div>
   <div class="option">
