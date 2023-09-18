@@ -22,7 +22,7 @@
 >
   {#if item != null}
     <img
-      src={`https://static.tnraro.com/er/images/items/ItemIcon_${item.id}.png`}
+      src={`https://static.tnraro.com/er/images/items/${item.id}.png`}
       alt={item.name}
       title={item.name}
       width="58"
