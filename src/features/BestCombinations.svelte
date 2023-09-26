@@ -7,17 +7,14 @@
   import Item from "../comps/Item.svelte";
   import { weaponTypeInfo } from "../lib/weaponTypeInfo";
   import Icon from "./icon/Icon.svelte";
+  import ErPreference from "../comps/ErPreference.svelte";
 
+  // states
   let character = characters[9];
-  $: updateWeaponTypes(), character;
-  let weaponTypes: string[];
-  let weaponType: string | undefined = undefined;
-  $: updateWeapons(), weaponType, includeLegendaryItem;
-  let weapons: ItemData[];
-  let weapon: ItemData | undefined = undefined;
+  let weaponType: string;
+  let weapon: ItemData;
   let characterLevel = 7;
   let weaponLevel = 5;
-  let page = 0;
   let includeLegendaryItem = false;
   let combinations: {
     dps: number;
@@ -25,31 +22,18 @@
     attackSpeed: number;
     equipments: number[];
   }[] = [];
-  let targetDef = 120;
+  let targetDefense = 120;
   let results = 0;
-  $: paginationedCombinations = combinations.slice(page * 10, page * 10 + 10);
+  let page = 0;
   let pages = [] as number[];
+
+  // derived states
+  $: paginationedCombinations = combinations.slice(page * 10, page * 10 + 10);
   $: updatePages(combinations, page);
   const updatePages = (combinations: unknown[], page: number) => {
     const start = Math.max(page - 5, 0);
     const end = Math.min(start + 10, Math.ceil(combinations.length / 10));
     pages = Array.from({ length: end - start }).map((_, i) => start + i + 1);
-  };
-  const updateWeaponTypes = () => {
-    weaponTypes = sw
-      .filter(([_, characterId]) => characterId === character.id)
-      .map((x) => x[2]) as string[];
-    weaponType = weaponTypes[0];
-  };
-  const updateWeapons = () => {
-    weapons = items.filter(
-      (item) =>
-        item.type === weaponType &&
-        (includeLegendaryItem || item.grade !== "legendary")
-    );
-    if (weapon == null || weapons.find((w) => w.id === weapon!.id) == null) {
-      weapon = weapons.at(0);
-    }
   };
   const getCombinations = () => {
     if (weapon == null) return;
@@ -77,7 +61,7 @@
     const __asr = (weaponData.asr ?? 0) * weaponLevel;
     const adm = (weaponData.adm ?? 0) * weaponLevel;
 
-    const combs = [];
+    let combs = [];
     console.time("combination");
     for (const chest of typeToArmors[0]) {
       for (const head of typeToArmors[1]) {
@@ -96,19 +80,23 @@
             const pd = dot("pd", weapon, chest, head, arm, leg);
             const pdr = dot("pdr", weapon, chest, head, arm, leg);
             const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
-            const damage = calcDamage(critical, pd, pdr, targetDef);
+            const damage = calcDamage(critical, pd, pdr, targetDefense);
             combs.push({
               dps: damage * as,
               damage,
               attackSpeed: as,
               equipments: [weapon.id, chest.id, head.id, arm.id, leg.id],
+              meta: { atk, asr, adm, as, cc, cd, pd, pdr, critical, damage },
             });
           }
         }
       }
     }
+    combs = combs.filter((comb) => comb.meta.as > 1.0 && comb.meta.atk >= 190);
     results = combs.length;
+    combs.sort((a, b) => b.meta.atk - a.meta.atk);
     combs.sort((a, b) => b.dps - a.dps);
+    console.log(combs.at(0)!.meta);
     page = 0;
     combinations = combs;
     console.timeEnd("combination");
@@ -116,60 +104,14 @@
 </script>
 
 <div class="settings">
-  <div class="option">
-    <label for="character">실험체</label>
-    <select id="character" bind:value={character}>
-      {#each characters as character (character.id)}
-        <option value={character}>{character.name}</option>
-      {/each}
-    </select>
-  </div>
-  <div class="option">
-    <label for="weapon-type">무기</label>
-    <select id="weapon-type" bind:value={weaponType}>
-      {#each weaponTypes as weaponType}
-        <option>{weaponType}</option>
-      {/each}
-    </select>
-    <select id="weapon" bind:value={weapon}>
-      {#each weapons as weapon (weapon.id)}
-        <option value={weapon}>{weapon.name}</option>
-      {/each}
-    </select>
-  </div>
-  <div class="option">
-    <label for="character-level">실험체 레벨</label>
-    <input type="number" min={1} max={20} bind:value={characterLevel} />
-    <input
-      id="character-level"
-      type="range"
-      min={1}
-      max={20}
-      bind:value={characterLevel}
-    />
-  </div>
-  <div class="option">
-    <label for="weapon-level">무기 숙련도</label>
-    <input type="number" min={1} max={20} bind:value={weaponLevel} />
-    <input
-      id="weapon-level"
-      type="range"
-      min={1}
-      max={20}
-      bind:value={weaponLevel}
-    />
-  </div>
-  <div class="option">
-    <label for="target-def">상대 방어력</label>
-    <input type="number" min={0} max={200} bind:value={targetDef} />
-    <input
-      id="target-def"
-      type="range"
-      min={0}
-      max={200}
-      bind:value={targetDef}
-    />
-  </div>
+  <ErPreference
+    bind:character
+    bind:weaponType
+    bind:weapon
+    bind:characterLevel
+    bind:weaponLevel
+    bind:targetDefense
+  />
   <div class="option">
     <label for="include-legendary-item">전설 아이템 포함</label>
     <input
@@ -186,6 +128,7 @@
     <div class="combination">
       <div class="c--7 c--center">DPS</div>
       <div class="c--7 c--center">피해량</div>
+      <div class="c--7 c--center">공격력</div>
       <div class="c--7 c--center">공속</div>
       <div class="c--center c--fill">아이템</div>
       <div class="c--7 c--center">루트</div>
@@ -194,6 +137,7 @@
       <div class="combination">
         <div class="c--7 c--right">{combination.dps.toFixed(2)}</div>
         <div class="c--7 c--right">{combination.damage}</div>
+        <div class="c--7 c--right">{combination.meta.atk | 0}</div>
         <div class="c--7 c--right">{combination.attackSpeed.toFixed(2)}</div>
         <div class="spacer" />
         <div class="equipments">
@@ -271,7 +215,7 @@
     flex: 1;
   }
   .c--7 {
-    width: 7ch;
+    width: 6ch;
   }
   .c--right {
     text-align: right;

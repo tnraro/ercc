@@ -2010,6 +2010,23 @@ export const items: ItemData[] = [
     "updr": 0
   },
   {
+    "id": 11540253,
+    "name": "대황 (2)",
+    "type": "CrossBow",
+    "modeType": 0,
+    "grade": "epic",
+    "atk": 64,
+    "atkLv": 0,
+    "asr": 0.3,
+    "asrLv": 0,
+    "cc": 0,
+    "cd": 0,
+    "pd": 0,
+    "pdr": 0,
+    "upd": 0,
+    "updr": 0
+  },
+  {
     "id": 115403,
     "name": "발리스타",
     "type": "CrossBow",

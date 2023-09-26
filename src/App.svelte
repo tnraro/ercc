@@ -1,10 +1,28 @@
 <script lang="ts">
-    import BestCombinations from "./features/BestCombinations.svelte";
+  import BestCombinations from "./features/BestCombinations.svelte";
+  import CompareValues from "./features/CompareValues.svelte";
 
+  const enum Route {
+    BestCombinations,
+    CompareItemValues,
+  }
+
+  let route = Route.BestCombinations;
 </script>
-
+<nav>
+  <button on:click={() => (route = Route.BestCombinations)}>
+    Best Combinations
+  </button>
+  <button on:click={() => (route = Route.CompareItemValues)}>
+    Compare Item Values
+  </button>
+</nav>
 <main>
-  <BestCombinations />
+  {#if route === Route.BestCombinations}
+    <BestCombinations />
+  {:else if route === Route.CompareItemValues}
+    <CompareValues />
+  {/if}
 </main>
 <footer>
   <h1>Disclaimer</h1>
