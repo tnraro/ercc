@@ -94,8 +94,8 @@
     }
     combs = combs.filter((comb) => comb.meta.as > 1.0 && comb.meta.atk >= 190);
     results = combs.length;
-    combs.sort((a, b) => b.meta.atk - a.meta.atk);
     combs.sort((a, b) => b.dps - a.dps);
+    combs.sort((a, b) => b.meta.atk - a.meta.atk);
     console.log(combs.at(0)!.meta);
     page = 0;
     combinations = combs;
