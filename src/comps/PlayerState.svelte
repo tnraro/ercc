@@ -1,3 +1,13 @@
+<script context="module" lang="ts">
+  export interface PlayerStateOptions {
+    character: (typeof characters)[0] | undefined,
+    weaponType: string | undefined;
+    weapon: ItemData | undefined;
+    characterLevel: number;
+    weaponLevel: number;
+    targetDefense: number;
+  }
+</script>
 <script lang="ts">
   import { onDestroy } from "svelte";
   import Icon from "../features/icon/Icon.svelte";
@@ -16,7 +26,7 @@
 
   // props
   export let character: (typeof characters)[0] | undefined = undefined;
-  export let weaponType: string;
+  export let weaponType: string | undefined = undefined;
   export let weapon: ItemData | undefined = undefined;
   export let characterLevel: number = 6;
   export let weaponLevel: number = 3;
@@ -35,7 +45,7 @@
   });
 </script>
 
-<div class="er-preference">
+<div class="player-state">
   <div class="row">
     <Select bind:value={character} items={characters} key="name" label="실험체">
       <img
@@ -126,7 +136,7 @@
 </div>
 
 <style lang="scss">
-  .er-preference {
+  .player-state {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;

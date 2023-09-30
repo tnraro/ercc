@@ -1,35 +1,13 @@
 <script lang="ts">
-  import { sw } from "../lib/sw";
-  import { characters } from "../lib/characters";
-  import { items, type ItemData } from "../lib/items";
+  import Item from "../comps/Item.svelte";
+  import { type PlayerStateOptions } from "../comps/PlayerState.svelte";
   import { calcCritical } from "../lib/calc/critical";
   import { calcDamage } from "../lib/calc/damage";
-  import Item from "../comps/Item.svelte";
+  import { items } from "../lib/items";
+  import { sw } from "../lib/sw";
   import { weaponTypeInfo } from "../lib/weaponTypeInfo";
   import Icon from "./icon/Icon.svelte";
-  import ErPreference from "../comps/ErPreference.svelte";
-
-  // states
-  let character = characters[9];
-  let weaponType: string;
-  let weapon: ItemData;
-  let characterLevel = 7;
-  let weaponLevel = 5;
-  let includeLegendaryItem = false;
-  let combinations: {
-    dps: number;
-    damage: number;
-    attackSpeed: number;
-    equipments: number[];
-  }[] = [];
-  let targetDefense = 120;
-  let results = 0;
-  let page = 0;
-  let pages = [] as number[];
-
-  // derived states
-  $: paginationedCombinations = combinations.slice(page * 10, page * 10 + 10);
-  $: updatePages(combinations, page);
+  // consts
   const updatePages = (combinations: unknown[], page: number) => {
     const start = Math.max(page - 5, 0);
     const end = Math.min(start + 10, Math.ceil(combinations.length / 10));
@@ -92,26 +70,43 @@
         }
       }
     }
-    combs = combs.filter((comb) => comb.meta.as > 1.0 && comb.meta.atk >= 190);
+    // combs = combs.filter((comb) => comb.meta.as > 1.0 && comb.meta.atk >= 190);
     results = combs.length;
-    combs.sort((a, b) => b.dps - a.dps);
     combs.sort((a, b) => b.meta.atk - a.meta.atk);
+    combs.sort((a, b) => b.dps - a.dps);
     console.log(combs.at(0)!.meta);
     page = 0;
     combinations = combs;
     console.timeEnd("combination");
   };
+
+  // props
+  export let playerState: PlayerStateOptions;
+  
+  // states
+  let includeLegendaryItem = false;
+  let combinations: {
+    dps: number;
+    damage: number;
+    attackSpeed: number;
+    equipments: number[];
+  }[] = [];
+  let results = 0;
+  let page = 0;
+  let pages = [] as number[];
+
+  // derived states
+  $: paginationedCombinations = combinations.slice(page * 10, page * 10 + 10);
+  $: updatePages(combinations, page);
+  $: character = playerState.character;
+  $: weaponType = playerState.weaponType;
+  $: weapon = playerState.weapon;
+  $: characterLevel = playerState.characterLevel;
+  $: weaponLevel = playerState.weaponLevel;
+  $: targetDefense = playerState.targetDefense;
 </script>
 
 <div class="settings">
-  <ErPreference
-    bind:character
-    bind:weaponType
-    bind:weapon
-    bind:characterLevel
-    bind:weaponLevel
-    bind:targetDefense
-  />
   <div class="option">
     <label for="include-legendary-item">전설 아이템 포함</label>
     <input

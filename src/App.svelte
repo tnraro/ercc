@@ -1,6 +1,11 @@
 <script lang="ts">
+  import PlayerState, {
+    type PlayerStateOptions,
+  } from "./comps/PlayerState.svelte";
   import BestCombinations from "./features/BestCombinations.svelte";
   import CompareValues from "./features/CompareValues.svelte";
+  import { characters } from "./lib/characters";
+  import type { ItemData } from "./lib/items";
 
   const enum Route {
     BestCombinations,
@@ -8,7 +13,16 @@
   }
 
   let route = Route.BestCombinations;
+  let playerState: PlayerStateOptions = {
+    character: undefined,
+    weapon: undefined,
+    weaponType: undefined,
+    characterLevel: 6,
+    weaponLevel: 3,
+    targetDefense: 90,
+  };
 </script>
+
 <nav>
   <button on:click={() => (route = Route.BestCombinations)}>
     Best Combinations
@@ -18,10 +32,18 @@
   </button>
 </nav>
 <main>
+  <PlayerState
+    bind:character={playerState.character}
+    bind:weaponType={playerState.weaponType}
+    bind:weapon={playerState.weapon}
+    bind:characterLevel={playerState.characterLevel}
+    bind:weaponLevel={playerState.weaponLevel}
+    bind:targetDefense={playerState.targetDefense}
+  />
   {#if route === Route.BestCombinations}
-    <BestCombinations />
+    <BestCombinations {playerState} />
   {:else if route === Route.CompareItemValues}
-    <CompareValues />
+    <CompareValues {playerState} />
   {/if}
 </main>
 <footer>
