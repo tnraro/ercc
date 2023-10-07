@@ -4,8 +4,6 @@
   } from "./comps/PlayerState.svelte";
   import BestCombinations from "./features/BestCombinations.svelte";
   import CompareValues from "./features/CompareValues.svelte";
-  import { characters } from "./lib/characters";
-  import type { ItemData } from "./lib/items";
 
   const enum Route {
     BestCombinations,
