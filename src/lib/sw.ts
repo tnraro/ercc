@@ -425,7 +425,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     28,
     "Hammer",
     {
-      "asr": 0.025
+      "asr": 0.03
     }
   ],
   [
@@ -678,7 +678,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Hammer",
     {
       "asr": 0.04,
-      "adm": 0.024
+      "adm": 0.026
     }
   ],
   [
@@ -795,6 +795,14 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Axe",
     {
       "asr": 0.039
+    }
+  ],
+  [
+    96,
+    68,
+    "Glove",
+    {
+      "asr": 0.023
     }
   ]
 ];

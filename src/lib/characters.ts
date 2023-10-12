@@ -542,7 +542,7 @@ export const characters = [
   {
     "id": 46,
     "name": "Aiden",
-    "atk": 35,
+    "atk": 38,
     "atkLv": 5.3,
     "as": 0.11,
     "asl": 2.5,
@@ -746,7 +746,7 @@ export const characters = [
   {
     "id": 63,
     "name": "Lyanh",
-    "atk": 41,
+    "atk": 36,
     "atkLv": 4.6,
     "as": 0.12,
     "asl": 2.5,
@@ -797,6 +797,18 @@ export const characters = [
     "atk": 40,
     "atkLv": 3.8,
     "as": 0.12,
+    "asl": 2.5,
+    "asm": 0,
+    "asLv": 0,
+    "cc": 0,
+    "ccLv": 0
+  },
+  {
+    "id": 68,
+    "name": "Alonso",
+    "atk": 36,
+    "atkLv": 4.2,
+    "as": 0.1,
     "asl": 2.5,
     "asm": 0,
     "asLv": 0,
