@@ -18,8 +18,9 @@
     const typeToArmors = ["Chest", "Head", "Arm", "Leg"].map((type) =>
       items.filter(
         (item) =>
-          item.type === type &&
-          (includeLegendaryItem || item.grade !== "legendary")
+          item.type === type
+          && (includeLegendaryItem || item.grade !== "legendary")
+          && (includeMythicItem || item.grade !== "mythic")
       )
     );
     const current = <T extends string>(
@@ -85,6 +86,7 @@
   
   // states
   let includeLegendaryItem = false;
+  let includeMythicItem = false;
   let combinations: {
     dps: number;
     damage: number;
@@ -113,6 +115,14 @@
       type="checkbox"
       id="include-legendary-item"
       bind:checked={includeLegendaryItem}
+    />
+  </div>
+  <div class="option">
+    <label for="include-mythic-item">신화 아이템 포함</label>
+    <input
+      type="checkbox"
+      id="include-mythic-item"
+      bind:checked={includeMythicItem}
     />
   </div>
   <button on:click={getCombinations}>생성</button>
