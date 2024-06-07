@@ -22,5 +22,6 @@
   "dependencies": {
     "@floating-ui/dom": "^1.5.3",
     "sass": "^1.67.0"
-  }
+  },
+  "packageManager": "pnpm@9.2.0"
 }
