@@ -5,7 +5,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "OneHandSword",
     {
       "asr": 0.041,
-      "adm": 0.032
+      "adm": 0.035
     }
   ],
   [
@@ -14,7 +14,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "TwoHandSword",
     {
       "asr": 0.036,
-      "adm": 0.027
+      "adm": 0.03
     }
   ],
   [
@@ -23,7 +23,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Axe",
     {
       "asr": 0.02,
-      "adm": 0.019
+      "adm": 0.017
     }
   ],
   [
@@ -32,7 +32,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "DualSword",
     {
       "asr": 0.034,
-      "adm": 0.018
+      "adm": 0.015
     }
   ],
   [
@@ -48,8 +48,8 @@ export const sw: [number, number, string, Record<string, number>][] = [
     2,
     "AssaultRifle",
     {
-      "asr": 0.039,
-      "adm": 0.014
+      "asr": 0.035,
+      "adm": 0.016
     }
   ],
   [
@@ -57,7 +57,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     2,
     "SniperRifle",
     {
-      "asr": 0.02
+      "asr": 0.025
     }
   ],
   [
@@ -157,7 +157,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Guitar",
     {
       "asr": 0.031,
-      "adm": 0.015
+      "adm": 0.018
     }
   ],
   [
@@ -166,7 +166,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "AssaultRifle",
     {
       "asr": 0.042,
-      "adm": 0.018
+      "adm": 0.016
     }
   ],
   [
@@ -182,8 +182,8 @@ export const sw: [number, number, string, Record<string, number>][] = [
     10,
     "Glove",
     {
-      "asr": 0.051,
-      "adm": 0.025
+      "asr": 0.048,
+      "adm": 0.017
     }
   ],
   [
@@ -192,7 +192,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Nunchaku",
     {
       "asr": 0.047,
-      "adm": 0.022
+      "adm": 0.024
     }
   ],
   [
@@ -298,7 +298,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     19,
     "DirectFire",
     {
-      "asr": 0.02
+      "asr": 0.025
     }
   ],
   [
@@ -323,7 +323,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Pistol",
     {
       "asr": 0.045,
-      "adm": 0.019
+      "adm": 0.017
     }
   ],
   [
@@ -332,7 +332,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Bat",
     {
       "asr": 0.04,
-      "adm": 0.013
+      "adm": 0.015
     }
   ],
   [
@@ -372,8 +372,8 @@ export const sw: [number, number, string, Record<string, number>][] = [
     25,
     "SniperRifle",
     {
-      "asr": 0.022,
-      "adm": 0.023
+      "asr": 0.027,
+      "adm": 0.02
     }
   ],
   [
@@ -449,7 +449,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     29,
     "Tonfa",
     {
-      "asr": 0.026
+      "asr": 0.03
     }
   ],
   [
@@ -467,7 +467,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Bow",
     {
       "asr": 0.033,
-      "adm": 0.016
+      "adm": 0.015
     }
   ],
   [
@@ -476,7 +476,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "HighAngleFire",
     {
       "asr": 0.031,
-      "adm": 0.016
+      "adm": 0.018
     }
   ],
   [
@@ -542,8 +542,8 @@ export const sw: [number, number, string, Record<string, number>][] = [
     39,
     "DualSword",
     {
-      "asr": 0.026,
-      "adm": 0.02
+      "asr": 0.03,
+      "adm": 0.022
     }
   ],
   [
@@ -552,7 +552,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Rapier",
     {
       "asr": 0.02,
-      "adm": 0.015
+      "adm": 0.013
     }
   ],
   [
@@ -585,7 +585,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     43,
     "HighAngleFire",
     {
-      "asr": 0.012
+      "asr": 0.02
     }
   ],
   [
@@ -602,7 +602,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     45,
     "Whip",
     {
-      "asr": 0.028
+      "asr": 0.036
     }
   ],
   [
@@ -611,7 +611,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "TwoHandSword",
     {
       "asr": 0.04,
-      "adm": 0.024
+      "adm": 0.021
     }
   ],
   [
@@ -669,7 +669,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Axe",
     {
       "asr": 0.03,
-      "adm": 0.017
+      "adm": 0.018
     }
   ],
   [
@@ -678,7 +678,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Hammer",
     {
       "asr": 0.04,
-      "adm": 0.026
+      "adm": 0.03
     }
   ],
   [
@@ -710,8 +710,8 @@ export const sw: [number, number, string, Record<string, number>][] = [
     57,
     "Camera",
     {
-      "asr": 0.01,
-      "adm": 0.01
+      "asr": 0.025,
+      "adm": 0.014
     }
   ],
   [
@@ -752,7 +752,7 @@ export const sw: [number, number, string, Record<string, number>][] = [
     62,
     "SniperRifle",
     {
-      "asr": 0.023
+      "asr": 0.03
     }
   ],
   [
@@ -803,6 +803,58 @@ export const sw: [number, number, string, Record<string, number>][] = [
     "Glove",
     {
       "asr": 0.023
+    }
+  ],
+  [
+    97,
+    69,
+    "Pistol",
+    {
+      "asr": 0.035
+    }
+  ],
+  [
+    98,
+    70,
+    "DirectFire",
+    {
+      "asr": 0.042,
+      "adm": 0.01
+    }
+  ],
+  [
+    99,
+    71,
+    "Axe",
+    {
+      "asr": 0.03,
+      "adm": 0.01
+    }
+  ],
+  [
+    100,
+    72,
+    "SniperRifle",
+    {
+      "asr": 0.036,
+      "adm": 0.02
+    }
+  ],
+  [
+    101,
+    73,
+    "Arcana",
+    {
+      "asr": 0.025
+    }
+  ],
+  [
+    102,
+    74,
+    "Bat",
+    {
+      "asr": 0.038,
+      "adm": 0.015
     }
   ]
 ];
