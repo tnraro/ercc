@@ -7,6 +7,7 @@
   import { sw } from "../lib/sw";
   import { weaponTypeInfo } from "../lib/weaponTypeInfo";
   import Icon from "./icon/Icon.svelte";
+  import ItemsByType from "./items-by-type/ItemsByType.svelte";
   import Pagination from "./pagination/Pagination.svelte";
   // consts
   const getCombinations = () => {
@@ -19,9 +20,18 @@
     const itemsBy = ["Chest", "Head", "Arm", "Leg"].reduce(
       (acc, type) => ({
         ...acc,
-        [type.toLowerCase()]: filteredItems.filter(
-          (item) => item.type === type,
-        ),
+        [type.toLowerCase()]: filteredItems
+          .filter((item) => item.type === type)
+          .filter(
+            (item) =>
+              excludedItems[type].size === 0 ||
+              !excludedItems[type].has(item.id),
+          )
+          .filter(
+            (item) =>
+              includedItems[type].size === 0 ||
+              includedItems[type].has(item.id),
+          ),
       }),
       {} as Record<string, ItemData[]>,
     );
@@ -96,6 +106,8 @@
   // states
   let includeLegendaryItem = false;
   let includeMythicItem = false;
+  let includedItems: Record<string, Set<number>>;
+  let excludedItems: Record<string, Set<number>>;
   let combinations: {
     dps: number;
     damage: number;
@@ -130,6 +142,14 @@
       bind:checked={includeMythicItem}
     />
   </div>
+  <details>
+    <summary>포함</summary>
+    <ItemsByType bind:itemIdSetBy={includedItems} />
+  </details>
+  <details>
+    <summary>제외</summary>
+    <ItemsByType bind:itemIdSetBy={excludedItems} />
+  </details>
   <button on:click={getCombinations}>생성</button>
 </div>
 {#if results > 0}
