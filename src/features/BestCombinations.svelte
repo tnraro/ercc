@@ -18,14 +18,6 @@
         .filter((item) => includeLegendaryItem || item.grade !== "legendary")
         .filter((item) => includeMythicItem || item.grade !== "mythic"),
     );
-    const current = <T extends string>(
-      id: T,
-      obj: { [key in T | `${T}Lv`]?: number },
-    ) => (obj[id] ?? 0) + (obj[`${id}Lv`] ?? 0) * characterLevel;
-    const dot = <T extends string>(
-      id: T,
-      ...objs: { [key in T | `${T}Lv`]?: number }[]
-    ) => objs.reduce((acc, x) => acc + current(id, x), 0);
 
     const weaponData = sw.find(
       (x) => x[1] === character.id && x[2] === weaponType,
@@ -73,6 +65,19 @@
     console.log(combs.at(0)!.meta);
     combinations = combs;
     console.timeEnd("combination");
+
+    function current<T extends string>(
+      id: T,
+      obj: { [key in T | `${T}Lv`]?: number },
+    ) {
+      return (obj[id] ?? 0) + (obj[`${id}Lv`] ?? 0) * characterLevel;
+    }
+    function dot<T extends string>(
+      id: T,
+      ...objs: { [key in T | `${T}Lv`]?: number }[]
+    ) {
+      return objs.reduce((acc, x) => acc + current(id, x), 0);
+    }
   };
 
   // props
