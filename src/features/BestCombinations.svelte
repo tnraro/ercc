@@ -19,7 +19,9 @@
     const itemsBy = ["Chest", "Head", "Arm", "Leg"].reduce(
       (acc, type) => ({
         ...acc,
-        [type.toLowerCase()]: filteredItems.filter((item) => item.type === type),
+        [type.toLowerCase()]: filteredItems.filter(
+          (item) => item.type === type,
+        ),
       }),
       {} as Record<string, ItemData[]>,
     );
