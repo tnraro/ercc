@@ -26,11 +26,11 @@
 
     const weaponData = sw.find(
       (x) => x[1] === character.id && x[2] === weaponType,
-    )![3];
+    )?.[3];
 
     const __as = dot("as", character, weaponTypeInfo.get(weaponType!)!);
-    const __asr = (weaponData.asr ?? 0) * weaponLevel;
-    const adm = (weaponData.adm ?? 0) * weaponLevel;
+    const __asr = (weaponData?.asr ?? 0) * weaponLevel;
+    const adm = (weaponData?.adm ?? 0) * weaponLevel;
 
     let combs = [];
     console.time("combination");
