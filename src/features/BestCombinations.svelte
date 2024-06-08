@@ -28,9 +28,11 @@
       (x) => x[1] === character.id && x[2] === weaponType,
     )?.[3];
 
-    const __as = dot("as", character, weaponTypeInfo.get(weaponType!)!);
-    const __asr = (weaponData?.asr ?? 0) * weaponLevel;
-    const adm = (weaponData?.adm ?? 0) * weaponLevel;
+    const base = {
+      as: dot("as", character, weaponTypeInfo.get(weaponType!)!),
+      asr: (weaponData?.asr ?? 0) * weaponLevel,
+      adm: (weaponData?.adm ?? 0) * weaponLevel,
+    };
 
     let combs = [];
     console.time("combination");
@@ -41,11 +43,12 @@
             const atk =
               dot("atk", character, weapon, chest, head, arm, leg) -
               character.atkLv;
-            const asr = dot("asr", weapon, chest, head, arm, leg) + __asr;
+            const asr = dot("asr", weapon, chest, head, arm, leg) + base.asr;
             const as = Math.max(
-              Math.min(__as * (1 + asr), character.asl),
+              Math.min(base.as * (1 + asr), character.asl),
               character.asm,
             );
+            const adm = base.adm;
             const cc = dot("cc", character, weapon, chest, head, arm, leg);
             const cd = dot("cd", weapon, chest, head, arm, leg);
             const pd = dot("pd", weapon, chest, head, arm, leg);
