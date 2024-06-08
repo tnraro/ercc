@@ -11,6 +11,7 @@
   // consts
   const getCombinations = () => {
     if (weapon == null) return;
+    if (character == null) return;
     const typeToArmors = ["Chest", "Head", "Arm", "Leg"].map((type) =>
       items.filter(
         (item) =>
