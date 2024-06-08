@@ -20,8 +20,8 @@ export const hit = (playerState: PlayerStateOptions, context: DamageContext) => 
   const { character, characterLevel, targetDefense, weaponLevel, weaponType } = playerState as RequiredNonNullable<PlayerStateOptions>;
 
   const weaponData = sw.find(
-    (x) => x[1] === character.id && x[2] === weaponType
-  )![3];
+    ({ id, weaponType }) => id === character.id && weaponType === weaponType
+  )!.stats;
   console.log(context.atk, context.atkLv, context.atk + context.atkLv * characterLevel);
   console.log(character);
 

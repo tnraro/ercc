@@ -5,7 +5,6 @@
     findItemByType,
     type ItemGrade,
     type ItemType,
-    weaponTypes,
   } from "../lib/items";
   import { sw } from "../lib/sw";
 
@@ -32,27 +31,27 @@
         equipments.reduce((acc, item) => acc + (item?.asrLv ?? 0), 0) * lv +
         (char?.as ?? 0) +
         (char?.asLv ?? 0) * lv,
-      char?.asm ?? 0
+      char?.asm ?? 0,
     ),
-    char?.asl ?? 2.5
+    char?.asl ?? 2.5,
   );
   $: cc =
     Math.min(
       1,
       ((equipments.reduce((acc, item) => acc + (item?.cc ?? 0), 0) * 100) | 0) /
-        100
+        100,
     ) +
     (char?.cc ?? 0) +
     (char?.ccLv ?? 0) * lv;
   $: cd = 1.7 + equipments.reduce((acc, item) => acc + (item?.cd ?? 0), 0);
-  $: pd = equipments.reduce((acc, item) => acc + (item?.pd ?? 0), 0)
-  $: pdr = equipments.reduce((acc, item) => acc + (item?.pdr ?? 0), 0)
+  $: pd = equipments.reduce((acc, item) => acc + (item?.pd ?? 0), 0);
+  $: pdr = equipments.reduce((acc, item) => acc + (item?.pdr ?? 0), 0);
   let selectedCharacter = 10;
   let selectedWeaponType: ItemType = "Nunchaku";
   let selectedItemSlot: number = 0;
   $: weaponTypesByCharacter = sw
-    .filter((x) => x[1] === selectedCharacter)
-    .map((x) => x[2]);
+    .filter(({ id }) => id === selectedCharacter)
+    .map(({ weaponType }) => weaponType);
   const gradeToScore = (grade: ItemGrade): number => {
     switch (grade) {
       case "common":
@@ -72,7 +71,7 @@
   const filterItems = (
     selectedItemSlot: number,
     selectedWeaponType: ItemType,
-    teamMode: number
+    teamMode: number,
   ) => {
     const selectedItemType = ((selectedItemSlot: number) => {
       switch (selectedItemSlot) {
@@ -92,7 +91,7 @@
     })(selectedItemSlot);
     if (selectedItemType == null) return [];
     const items = findItemByType(selectedItemType).filter(
-      (item) => item.modeType === 0 || item.modeType & (1 << (teamMode - 1))
+      (item) => item.modeType === 0 || item.modeType & (1 << (teamMode - 1)),
     );
     items.sort((a, b) => {
       return gradeToScore(b.grade) - gradeToScore(a.grade);
@@ -102,12 +101,13 @@
   $: filteredItems = filterItems(
     selectedItemSlot,
     selectedWeaponType,
-    teamMode
+    teamMode,
   );
   $: ayaGgLink = `https://aya.gg/route?sw1=${
     sw.find(
-      (x) => x[1] === selectedCharacter && x[2] === selectedWeaponType
-    )?.[0] ?? ""
+      ({ id, weaponType }) =>
+        id === selectedCharacter && weaponType === selectedWeaponType,
+    )?.index ?? ""
   }&i1=${equipments
     .filter(<T extends unknown>(x: T | undefined | null): x is T => x != null)
     .map((x) => x.id)}`;
@@ -144,8 +144,8 @@
     </div>
     <div>공격력 {atk}</div>
     <div>공격속도 {asr.toFixed(2)} + α</div>
-    <div>치명타 확률 {cc * 100 | 0}%</div>
-    <div>치명타 피해량 {cd * 100 | 0}%</div>
+    <div>치명타 확률 {(cc * 100) | 0}%</div>
+    <div>치명타 피해량 {(cd * 100) | 0}%</div>
   </div>
   <div class="items">
     {#if selectedItemSlot === 0}
@@ -165,7 +165,9 @@
     {/each}
   </div>
 </div>
-<a href={ayaGgLink} target="_blank" rel="noreferrer">이 구성으로 루트 짜기(aya.gg)</a>
+<a href={ayaGgLink} target="_blank" rel="noreferrer"
+  >이 구성으로 루트 짜기(aya.gg)</a
+>
 
 <style>
   .container {

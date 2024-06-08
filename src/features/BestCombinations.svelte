@@ -3,57 +3,54 @@
   import { type PlayerStateOptions } from "../comps/PlayerState.svelte";
   import { calcCritical } from "../lib/calc/critical";
   import { calcDamage } from "../lib/calc/damage";
-  import { items } from "../lib/items";
+  import { items, type ItemData } from "../lib/items";
   import { sw } from "../lib/sw";
   import { weaponTypeInfo } from "../lib/weaponTypeInfo";
   import Icon from "./icon/Icon.svelte";
+  import Pagination from "./pagination/Pagination.svelte";
   // consts
-  const updatePages = (combinations: unknown[], page: number) => {
-    const start = Math.max(page - 5, 0);
-    const end = Math.min(start + 10, Math.ceil(combinations.length / 10));
-    pages = Array.from({ length: end - start }).map((_, i) => start + i + 1);
-  };
   const getCombinations = () => {
     if (weapon == null) return;
-    const typeToArmors = ["Chest", "Head", "Arm", "Leg"].map((type) =>
-      items.filter(
-        (item) =>
-          item.type === type
-          && (includeLegendaryItem || item.grade !== "legendary")
-          && (includeMythicItem || item.grade !== "mythic")
-      )
+    if (character == null) return;
+
+    const filteredItems = items
+      .filter((item) => includeLegendaryItem || item.grade !== "legendary")
+      .filter((item) => includeMythicItem || item.grade !== "mythic");
+    const itemsBy = ["Chest", "Head", "Arm", "Leg"].reduce(
+      (acc, type) => ({
+        ...acc,
+        [type.toLowerCase()]: filteredItems.filter(
+          (item) => item.type === type,
+        ),
+      }),
+      {} as Record<string, ItemData[]>,
     );
-    const current = <T extends string>(
-      id: T,
-      obj: { [key in T | `${T}Lv`]?: number }
-    ) => (obj[id] ?? 0) + (obj[`${id}Lv`] ?? 0) * characterLevel;
-    const dot = <T extends string>(
-      id: T,
-      ...objs: { [key in T | `${T}Lv`]?: number }[]
-    ) => objs.reduce((acc, x) => acc + current(id, x), 0);
 
     const weaponData = sw.find(
-      (x) => x[1] === character.id && x[2] === weaponType
-    )![3];
+      ({ id, weaponType }) => id === character.id && weaponType === weaponType,
+    )?.stats;
 
-    const __as = dot("as", character, weaponTypeInfo.get(weaponType!)!);
-    const __asr = (weaponData.asr ?? 0) * weaponLevel;
-    const adm = (weaponData.adm ?? 0) * weaponLevel;
+    const base = {
+      as: dot("as", character, weaponTypeInfo.get(weaponType!)!),
+      asr: (weaponData?.asr ?? 0) * weaponLevel,
+      adm: (weaponData?.adm ?? 0) * weaponLevel,
+    };
 
     let combs = [];
     console.time("combination");
-    for (const chest of typeToArmors[0]) {
-      for (const head of typeToArmors[1]) {
-        for (const arm of typeToArmors[2]) {
-          for (const leg of typeToArmors[3]) {
+    for (const chest of itemsBy.chest) {
+      for (const head of itemsBy.head) {
+        for (const arm of itemsBy.arm) {
+          for (const leg of itemsBy.leg) {
             const atk =
               dot("atk", character, weapon, chest, head, arm, leg) -
               character.atkLv;
-            const asr = dot("asr", weapon, chest, head, arm, leg) + __asr;
+            const asr = dot("asr", weapon, chest, head, arm, leg) + base.asr;
             const as = Math.max(
-              Math.min(__as * (1 + asr), character.asl),
-              character.asm
+              Math.min(base.as * (1 + asr), character.asl),
+              character.asm,
             );
+            const adm = base.adm;
             const cc = dot("cc", character, weapon, chest, head, arm, leg);
             const cd = dot("cd", weapon, chest, head, arm, leg);
             const pd = dot("pd", weapon, chest, head, arm, leg);
@@ -76,14 +73,26 @@
     combs.sort((a, b) => b.meta.atk - a.meta.atk);
     combs.sort((a, b) => b.dps - a.dps);
     console.log(combs.at(0)!.meta);
-    page = 0;
     combinations = combs;
     console.timeEnd("combination");
+
+    function current<T extends string>(
+      id: T,
+      obj: { [key in T | `${T}Lv`]?: number },
+    ) {
+      return (obj[id] ?? 0) + (obj[`${id}Lv`] ?? 0) * characterLevel;
+    }
+    function dot<T extends string>(
+      id: T,
+      ...objs: { [key in T | `${T}Lv`]?: number }[]
+    ) {
+      return objs.reduce((acc, x) => acc + current(id, x), 0);
+    }
   };
 
   // props
   export let playerState: PlayerStateOptions;
-  
+
   // states
   let includeLegendaryItem = false;
   let includeMythicItem = false;
@@ -94,12 +103,8 @@
     equipments: number[];
   }[] = [];
   let results = 0;
-  let page = 0;
-  let pages = [] as number[];
 
   // derived states
-  $: paginationedCombinations = combinations.slice(page * 10, page * 10 + 10);
-  $: updatePages(combinations, page);
   $: character = playerState.character;
   $: weaponType = playerState.weaponType;
   $: weapon = playerState.weapon;
@@ -138,61 +143,34 @@
       <div class="c--center c--fill">아이템</div>
       <div class="c--7 c--center">루트</div>
     </div>
-    {#each paginationedCombinations as combination}
-      <div class="combination">
-        <div class="c--7 c--right">{combination.dps.toFixed(2)}</div>
-        <div class="c--7 c--right">{combination.damage}</div>
-        <div class="c--7 c--right">{combination.meta.atk | 0}</div>
-        <div class="c--7 c--right">{combination.attackSpeed.toFixed(2)}</div>
-        <div class="spacer" />
-        <div class="equipments">
-          {#each combination.equipments as itemId}
-            <Item id={itemId} />
-          {/each}
-        </div>
-        <div class="c--7 c--center">
-          <a
-            class="map"
-            href="https://aya.gg/route?sw1={sw.find(
-              (x) => x[1] === character.id && x[2] === weaponType
-            )?.[0] ?? ''}&i1={combination.equipments.join(',')}"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Icon as="map" />
-          </a>
-        </div>
+  </div>
+  <Pagination items={combinations}>
+    <div slot="item" class="combination" let:item={combination}>
+      <div class="c--7 c--right">{combination.dps.toFixed(2)}</div>
+      <div class="c--7 c--right">{combination.damage}</div>
+      <div class="c--7 c--right">{combination.meta.atk | 0}</div>
+      <div class="c--7 c--right">{combination.attackSpeed.toFixed(2)}</div>
+      <div class="spacer" />
+      <div class="equipments">
+        {#each combination.equipments as itemId}
+          <Item id={itemId} />
+        {/each}
       </div>
-    {/each}
-  </div>
-  <div class="pagination">
-    <div class="buttons">
-      <button on:click={(_) => (page = 0)}>|&lt;</button>
-      <button on:click={(_) => (page = Math.max(0, page - 1))}>&lt;</button>
-    </div>
-    <div class="buttons">
-      {#each pages as pageNum}
-        <button
-          class:current-page={pageNum - 1 === page}
-          on:click={(_) => {
-            page = pageNum - 1;
-          }}
+      <div class="c--7 c--center">
+        <a
+          class="map"
+          href="https://aya.gg/route?sw1={sw.find(
+            ({ id, weaponType }) =>
+              id === character.id && weaponType === weaponType,
+          )?.index ?? ''}&i1={combination.equipments.join(',')}"
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          {pageNum}
-        </button>
-      {/each}
+          <Icon as="map" />
+        </a>
+      </div>
     </div>
-    <div class="buttons">
-      <button
-        on:click={(_) =>
-          (page = Math.min(Math.ceil(combinations.length / 10), page + 1))}
-        >&gt;</button
-      >
-      <button on:click={(_) => (page = Math.ceil(combinations.length / 10) - 1)}
-        >&gt;|</button
-      >
-    </div>
-  </div>
+  </Pagination>
 {/if}
 
 <style>
@@ -239,17 +217,5 @@
   }
   .map {
     color: hsl(210deg 5% 40%);
-  }
-  .pagination {
-    display: flex;
-    justify-content: space-between;
-  }
-  .buttons {
-    display: flex;
-    gap: 0.25rem;
-  }
-  .current-page {
-    background: brown;
-    color: white;
   }
 </style>

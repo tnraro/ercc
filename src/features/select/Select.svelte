@@ -31,7 +31,7 @@
           const height = rects.reference.height * showItems;
           elements.floating.style.maxHeight = `${Math.min(
             availableHeight,
-            height
+            height,
           )}px`;
         },
       }),
