@@ -3,7 +3,7 @@
   import { type PlayerStateOptions } from "../comps/PlayerState.svelte";
   import { calcCritical } from "../lib/calc/critical";
   import { calcDamage } from "../lib/calc/damage";
-  import { items } from "../lib/items";
+  import { items, type ItemData } from "../lib/items";
   import { sw } from "../lib/sw";
   import { weaponTypeInfo } from "../lib/weaponTypeInfo";
   import Icon from "./icon/Icon.svelte";
@@ -12,11 +12,16 @@
   const getCombinations = () => {
     if (weapon == null) return;
     if (character == null) return;
-    const typeToArmors = ["Chest", "Head", "Arm", "Leg"].map((type) =>
-      items
-        .filter((item) => item.type === type)
-        .filter((item) => includeLegendaryItem || item.grade !== "legendary")
-        .filter((item) => includeMythicItem || item.grade !== "mythic"),
+
+    const filteredItems = items
+      .filter((item) => includeLegendaryItem || item.grade !== "legendary")
+      .filter((item) => includeMythicItem || item.grade !== "mythic");
+    const itemsBy = ["Chest", "Head", "Arm", "Leg"].reduce(
+      (acc, type) => ({
+        ...acc,
+        [type.toLowerCase()]: filteredItems.filter((item) => item.type === type),
+      }),
+      {} as Record<string, ItemData[]>,
     );
 
     const weaponData = sw.find(
@@ -29,10 +34,10 @@
 
     let combs = [];
     console.time("combination");
-    for (const chest of typeToArmors[0]) {
-      for (const head of typeToArmors[1]) {
-        for (const arm of typeToArmors[2]) {
-          for (const leg of typeToArmors[3]) {
+    for (const chest of itemsBy.chest) {
+      for (const head of itemsBy.head) {
+        for (const arm of itemsBy.arm) {
+          for (const leg of itemsBy.leg) {
             const atk =
               dot("atk", character, weapon, chest, head, arm, leg) -
               character.atkLv;
