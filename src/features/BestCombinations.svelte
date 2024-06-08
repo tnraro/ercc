@@ -13,12 +13,10 @@
     if (weapon == null) return;
     if (character == null) return;
     const typeToArmors = ["Chest", "Head", "Arm", "Leg"].map((type) =>
-      items.filter(
-        (item) =>
-          item.type === type &&
-          (includeLegendaryItem || item.grade !== "legendary") &&
-          (includeMythicItem || item.grade !== "mythic"),
-      ),
+      items
+        .filter((item) => item.type === type)
+        .filter((item) => includeLegendaryItem || item.grade !== "legendary")
+        .filter((item) => includeMythicItem || item.grade !== "mythic"),
     );
     const current = <T extends string>(
       id: T,
