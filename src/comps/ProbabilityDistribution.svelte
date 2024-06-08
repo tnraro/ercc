@@ -13,13 +13,16 @@
     n: number,
     attackPower: number,
     criticalChance: number,
-    criticalDamage: number
+    criticalDamage: number,
   ) {
     const agg: Record<number, number> = {};
     for (let i = 0; i < iterationCount; i++) {
       let value = 0;
       for (let j = 0; j < n; j++) {
-        value += (attackPower * (Math.random() < criticalChance ? criticalDamage : 1)) | 0;
+        value +=
+          (attackPower *
+            (Math.random() < criticalChance ? criticalDamage : 1)) |
+          0;
       }
       agg[value] = (agg[value] ?? 0) + 1;
     }
@@ -29,7 +32,7 @@
   }
   $: _pd = getPd(iterationCount, n, atk, aucc, cd);
   $: realE = (atk * (1 - aucc) + atk * aucc * cd) * n;
-  $: E = (atk * (1 - aucc) + atk * aucc * cd);
+  $: E = atk * (1 - aucc) + atk * aucc * cd;
 </script>
 
 <div class="graph">

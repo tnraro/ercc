@@ -160,7 +160,8 @@
         <a
           class="map"
           href="https://aya.gg/route?sw1={sw.find(
-            ({ id, weaponType }) => id === character.id && weaponType === weaponType,
+            ({ id, weaponType }) =>
+              id === character.id && weaponType === weaponType,
           )?.index ?? ''}&i1={combination.equipments.join(',')}"
           target="_blank"
           rel="noopener noreferrer"

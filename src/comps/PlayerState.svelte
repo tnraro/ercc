@@ -1,6 +1,6 @@
 <script context="module" lang="ts">
   export interface PlayerStateOptions {
-    character: (typeof characters)[0] | undefined,
+    character: (typeof characters)[0] | undefined;
     weaponType: string | undefined;
     weapon: ItemData | undefined;
     characterLevel: number;
@@ -8,6 +8,7 @@
     targetDefense: number;
   }
 </script>
+
 <script lang="ts">
   import { onDestroy } from "svelte";
   import Icon from "../features/icon/Icon.svelte";
@@ -21,7 +22,7 @@
   const [ids, disposeIds] = generateUniqueIds(
     "characterLevel",
     "weaponLevel",
-    "targetDefense"
+    "targetDefense",
   );
 
   // props
