@@ -51,8 +51,8 @@
   let selectedWeaponType: ItemType = "Nunchaku";
   let selectedItemSlot: number = 0;
   $: weaponTypesByCharacter = sw
-    .filter((x) => x[1] === selectedCharacter)
-    .map((x) => x[2]);
+    .filter(({ id }) => id === selectedCharacter)
+    .map(({ weaponType }) => weaponType);
   const gradeToScore = (grade: ItemGrade): number => {
     switch (grade) {
       case "common":
@@ -106,8 +106,8 @@
   );
   $: ayaGgLink = `https://aya.gg/route?sw1=${
     sw.find(
-      (x) => x[1] === selectedCharacter && x[2] === selectedWeaponType
-    )?.[0] ?? ""
+      ({ id, weaponType }) => id === selectedCharacter && weaponType === selectedWeaponType,
+    )?.index ?? ""
   }&i1=${equipments
     .filter(<T extends unknown>(x: T | undefined | null): x is T => x != null)
     .map((x) => x.id)}`;

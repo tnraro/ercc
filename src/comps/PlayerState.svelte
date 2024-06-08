@@ -34,8 +34,8 @@
 
   // derived
   $: weaponTypes = sw
-    .filter(([_, characterId]) => characterId === character?.id)
-    .map((x) => x[2]);
+    .filter(({ id }) => id === character?.id)
+    .map(({ weaponType }) => weaponType);
 
   $: weapons = items.filter((item) => item.type === weaponType);
 

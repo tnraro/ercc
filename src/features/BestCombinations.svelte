@@ -27,8 +27,8 @@
     );
 
     const weaponData = sw.find(
-      (x) => x[1] === character.id && x[2] === weaponType,
-    )?.[3];
+      ({ id, weaponType }) => id === character.id && weaponType === weaponType,
+    )?.stats;
 
     const base = {
       as: dot("as", character, weaponTypeInfo.get(weaponType!)!),
@@ -160,8 +160,8 @@
         <a
           class="map"
           href="https://aya.gg/route?sw1={sw.find(
-            (x) => x[1] === character.id && x[2] === weaponType,
-          )?.[0] ?? ''}&i1={combination.equipments.join(',')}"
+            ({ id, weaponType }) => id === character.id && weaponType === weaponType,
+          )?.index ?? ''}&i1={combination.equipments.join(',')}"
           target="_blank"
           rel="noopener noreferrer"
         >

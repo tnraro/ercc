@@ -10,8 +10,8 @@ export const createErPreference = () => {
     return characters.find(character => character.id === $characterId);
   });
   const weaponTypes = derived(characterId, ($characterId) => {
-    return sw.filter(([_, characterId]) => characterId === $characterId)
-      .map(x => x[2]);
+    return sw.filter(({ id }) => id === $characterId)
+      .map(({ weaponType }) => weaponType);
   });
   const weaponType = derived(weaponTypes, ($weaponTypes) => {
     return $weaponTypes[0];
