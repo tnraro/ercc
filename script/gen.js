@@ -237,7 +237,9 @@ const processSwOptions = (x) => {
 const findMs = (x) => {
   return ms.find(y => y.characterCode === x.characterCode && y.type === x.mastery);
 }
-write("sw.ts", `export const sw: [number, number, string, Record<string, number>][] = ${JSON.stringify(sw.map((x, i) => [i + 1, x.characterCode, x.mastery, processSwOptions(findMs(x))]), null, 2)};`);
+write("sw.ts", `export const sw: { index: number, id: number, weaponType: string, stats: Record<string, number> }[] = ${JSON.stringify(sw
+  .map((x, i) => ({ index: i + 1, id: x.characterCode, weaponType: x.mastery, stats: processSwOptions(findMs(x)) })), null, 2)
+  };`);
 
 const weaponTypeInfo = await fetchData("WeaponTypeInfo");
 
