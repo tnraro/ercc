@@ -108,6 +108,14 @@
       return objs.reduce((acc, x) => acc + current(id, x), 0);
     }
   };
+  function sortBy(stats: string) {
+    if (!Object.hasOwn(combinations[0]?.stats, stats)) return;
+    if (sortedBy === stats) return;
+
+    sortedBy = stats;
+    combinations.sort((a, b) => b.stats[stats] - a.stats[stats]);
+    combinations = combinations;
+  }
 
   // props
   export let playerState: PlayerStateOptions;
@@ -121,6 +129,7 @@
     equipments: number[];
     stats: Record<string, number>;
   }[] = [];
+  let sortedBy = "dps";
   let results = 0;
 
   // derived states
@@ -163,10 +172,13 @@
   <div class="results">
     <div>{results}건의 계산 결과</div>
     <div class="combination">
-      <div class="c--7 c--center">DPS</div>
-      <div class="c--7 c--center">피해량</div>
-      <div class="c--7 c--center">공격력</div>
-      <div class="c--7 c--center">공속</div>
+      {#each [{ key: "dps", name: "DPS" }, { key: "damage", name: "피해량" }, { key: "atk", name: "공격력" }, { key: "as", name: "공속" }] as { key, name }}
+        <button
+          class="c c--7 c--center"
+          class:c--sorted={sortedBy === key}
+          on:click={() => sortBy(key)}>{name}</button
+        >
+      {/each}
       <div class="c--center c--fill">아이템</div>
       <div class="c--7 c--center">루트</div>
     </div>
@@ -224,6 +236,9 @@
   .spacer {
     flex: 1;
   }
+  .c {
+    all: unset;
+  }
   .c--7 {
     width: 6ch;
   }
@@ -235,6 +250,10 @@
   }
   .c--fill {
     flex: 1;
+  }
+  .c--sorted::after {
+    content: "▼";
+    position: absolute;
   }
   .equipments {
     display: grid;
