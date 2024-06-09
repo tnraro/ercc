@@ -68,11 +68,20 @@
             const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
             const damage = calcDamage(critical, pd, pdr, targetDefense);
             combs.push({
-              dps: damage * as,
-              damage,
-              attackSpeed: as,
               equipments: [weapon.id, chest.id, head.id, arm.id, leg.id],
-              meta: { atk, asr, adm, as, cc, cd, pd, pdr, critical, damage },
+              stats: {
+                dps: damage * as,
+                atk,
+                asr,
+                adm,
+                as,
+                cc,
+                cd,
+                pd,
+                pdr,
+                critical,
+                damage,
+              },
             });
           }
         }
@@ -80,9 +89,9 @@
     }
     // combs = combs.filter((comb) => comb.meta.as > 1.0 && comb.meta.atk >= 190);
     results = combs.length;
-    combs.sort((a, b) => b.meta.atk - a.meta.atk);
-    combs.sort((a, b) => b.dps - a.dps);
-    console.log(combs.at(0)!.meta);
+    combs.sort((a, b) => b.stats.atk - a.stats.atk);
+    combs.sort((a, b) => b.stats.dps - a.stats.dps);
+    console.log(combs.at(0)!.stats);
     combinations = combs;
     console.timeEnd("combination");
 
@@ -109,10 +118,8 @@
   let includedItems: Record<string, Set<number>>;
   let excludedItems: Record<string, Set<number>>;
   let combinations: {
-    dps: number;
-    damage: number;
-    attackSpeed: number;
     equipments: number[];
+    stats: Record<string, number>;
   }[] = [];
   let results = 0;
 
@@ -166,10 +173,10 @@
   </div>
   <Pagination items={combinations}>
     <div slot="item" class="combination" let:item={combination}>
-      <div class="c--7 c--right">{combination.dps.toFixed(2)}</div>
-      <div class="c--7 c--right">{combination.damage}</div>
-      <div class="c--7 c--right">{combination.meta.atk | 0}</div>
-      <div class="c--7 c--right">{combination.attackSpeed.toFixed(2)}</div>
+      <div class="c--7 c--right">{combination.stats.dps.toFixed(2)}</div>
+      <div class="c--7 c--right">{combination.stats.damage}</div>
+      <div class="c--7 c--right">{combination.stats.atk | 0}</div>
+      <div class="c--7 c--right">{combination.stats.as.toFixed(2)}</div>
       <div class="spacer" />
       <div class="equipments">
         {#each combination.equipments as itemId}
