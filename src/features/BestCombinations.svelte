@@ -90,6 +90,7 @@
     results = combs.length;
     combs.sort((a, b) => b.stats.atk - a.stats.atk);
     combs.sort((a, b) => b.stats.dps - a.stats.dps);
+    sortedBy = "dps";
     console.log(combs.at(0)!.stats);
     combinations = combs;
     console.timeEnd("combination");
