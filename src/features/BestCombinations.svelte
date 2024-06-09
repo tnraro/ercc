@@ -87,7 +87,6 @@
         }
       }
     }
-    // combs = combs.filter((comb) => comb.meta.as > 1.0 && comb.meta.atk >= 190);
     results = combs.length;
     combs.sort((a, b) => b.stats.atk - a.stats.atk);
     combs.sort((a, b) => b.stats.dps - a.stats.dps);
