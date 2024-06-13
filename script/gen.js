@@ -77,27 +77,15 @@ const itemGrade = (grade) => {
 }
 
 const items = [
-  ...weapons.filter(x => x.isCompletedItem).map((x) => ({
+  ...weapons.filter(x => x.isCompletedItem).map(itemToStats),
+  ...armors.filter(x => x.isCompletedItem).map(itemToStats),
+].filter(x => x.modeType === 0 || (x.modeType & 0b111) !== 0);
+
+function itemToStats(x) {
+  return {
     id: parseInt(x.code),
     name: x.name,
-    type: x.weaponType,
-    modeType: x.modeType,
-    grade: itemGrade(x.itemGrade),
-    atk: x.attackPower,
-    atkLv: x.attackPowerByLv,
-    asr: x.attackSpeedRatio,
-    asrLv: x.attackSpeedRatioByLv,
-    cc: x.criticalStrikeChance,
-    cd: x.criticalStrikeDamage,
-    pd: x.penetrationDefense,
-    pdr: x.penetrationDefenseRatio,
-    upd: x.uniquePenetrationDefense,
-    updr: x.uniquePenetrationDefenseRatio,
-  })),
-  ...armors.filter(x => x.isCompletedItem).map((x) => ({
-    id: parseInt(x.code),
-    name: x.name,
-    type: x.armorType,
+    type: x.weaponType ?? x.armorType,
     modeType: x.modeType,
     grade: itemGrade(x.itemGrade),
     atk: x.attackPower + x.adaptiveForce,
@@ -110,8 +98,8 @@ const items = [
     pdr: x.penetrationDefenseRatio,
     upd: x.uniquePenetrationDefense,
     updr: x.uniquePenetrationDefenseRatio,
-  })),
-].filter(x => x.modeType === 0 || (x.modeType & 0b111) !== 0);
+  }
+}
 
 await write("items.ts", `export type ItemGrade = "common" | "uncommon" | "rare" | "epic" | "legendary" | "mythic";
 export const weaponTypes = [
