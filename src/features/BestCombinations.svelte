@@ -97,15 +97,19 @@
 
     function current<T extends string>(
       id: T,
+      idLv: `${T}Lv`,
       obj: { [key in T | `${T}Lv`]?: number },
     ) {
-      return (obj[id] ?? 0) + (obj[`${id}Lv`] ?? 0) * characterLevel;
+      const base = obj[id] ?? 0;
+      const lv = obj[idLv] ?? 0;
+      return base + lv * characterLevel;
     }
     function dot<T extends string>(
       id: T,
       ...objs: { [key in T | `${T}Lv`]?: number }[]
     ) {
-      return objs.reduce((acc, x) => acc + current(id, x), 0);
+      const idLv = `${id}Lv` as const;
+      return objs.reduce((acc, x) => acc + current(id, idLv, x), 0);
     }
   };
   function sortBy(stats: string) {
