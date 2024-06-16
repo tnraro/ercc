@@ -127,11 +127,14 @@
       ) {
         const idLv = `${id}Lv` as const;
         return objs.reduce((acc, x) => {
-          const base = x[id] ?? 0;
-          const lv = x[idLv] ?? 0;
+          let base = x[id];
+          let lv = x[idLv];
 
-          return acc + base + lv * characterLevel;
+          return acc + dot2(base, lv);
         }, 0);
+      }
+      function dot2(base: number | undefined = 0, lv: number | undefined = 0) {
+        return base + lv * characterLevel;
       }
     }
   };
