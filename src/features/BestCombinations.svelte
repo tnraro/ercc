@@ -14,32 +14,6 @@
     if (weapon == null) return;
     if (character == null) return;
 
-    const filteredItems = items
-      .filter((item) => includeLegendaryItem || item.grade !== "legendary")
-      .filter((item) => includeMythicItem || item.grade !== "mythic");
-    const itemsBy = ["Chest", "Head", "Arm", "Leg"].reduce(
-      (acc, type) => ({
-        ...acc,
-        [type.toLowerCase()]: filteredItems
-          .filter((item) => item.type === type)
-          .filter(
-            (item) =>
-              excludedItems[type].size === 0 ||
-              !excludedItems[type].has(item.id),
-          )
-          .filter(
-            (item) =>
-              includedItems[type].size === 0 ||
-              includedItems[type].has(item.id),
-          ),
-      }),
-      {} as Record<string, ItemData[]>,
-    );
-
-    const weaponData = sw.find(
-      ({ id, weaponType }) => id === character.id && weaponType === weaponType,
-    )?.stats;
-
     console.time("combination");
     const combs = calcCombinations();
     results = combs.length;
@@ -51,13 +25,35 @@
     console.timeEnd("combination");
 
     function calcCombinations() {
-      if (
-        weapon == null ||
-        character == null ||
-        weaponType == null ||
-        weaponData == null
-      )
-        return [];
+      if (weapon == null || character == null || weaponType == null) return [];
+
+      const filteredItems = items
+        .filter((item) => includeLegendaryItem || item.grade !== "legendary")
+        .filter((item) => includeMythicItem || item.grade !== "mythic");
+
+      const itemsBy = ["Chest", "Head", "Arm", "Leg"].reduce(
+        (acc, type) => ({
+          ...acc,
+          [type.toLowerCase()]: filteredItems
+            .filter((item) => item.type === type)
+            .filter(
+              (item) =>
+                excludedItems[type].size === 0 ||
+                !excludedItems[type].has(item.id),
+            )
+            .filter(
+              (item) =>
+                includedItems[type].size === 0 ||
+                includedItems[type].has(item.id),
+            ),
+        }),
+        {} as Record<string, ItemData[]>,
+      );
+
+      const weaponData = sw.find(
+        ({ id, weaponType }) =>
+          id === character.id && weaponType === weaponType,
+      )!.stats;
 
       const atk0 =
         character.atk +
