@@ -56,44 +56,49 @@
       if (weaponType == null) return [];
 
       const atk0 =
-        dot2(character.atk, character.atkLv) +
-        dot2(weapon.atk, weapon.atkLv) -
+        character.atk +
+        character.atkLv * characterLevel +
+        (weapon.atk + weapon.atkLv * characterLevel) -
         character.atkLv;
       const as0 =
-        dot2(character.as, character.asLv) + weaponTypeInfo.get(weaponType)!.as;
+        character.as +
+        character.asLv * characterLevel +
+        weaponTypeInfo.get(weaponType)!.as;
       const asr0 =
-        dot2(weapon.asr, weapon.asrLv) + (weaponData?.asr ?? 0) * weaponLevel;
+        weapon.asr +
+        weapon.asrLv * characterLevel +
+        (weaponData?.asr ?? 0) * weaponLevel;
       const adm0 = (weaponData?.adm ?? 0) * weaponLevel;
-      const cc0 = dot2(character.cc, character.ccLv) + weapon.cc;
+      const cc0 = character.cc + character.ccLv * characterLevel + weapon.cc;
       const cd0 = weapon.cd;
       const pd0 = weapon.pd;
       const pdr0 = weapon.pdr;
 
       const result = [];
       for (const chest of itemsBy.chest) {
-        const atk1 = atk0 + dot2(chest.atk, chest.atkLv);
-        const asr1 = asr0 + dot2(chest.asr, chest.asrLv);
+        const atk1 = atk0 + (chest.atk + chest.atkLv * characterLevel);
+        const asr1 = asr0 + (chest.asr + chest.asrLv * characterLevel);
         const cc1 = cc0 + chest.cc;
         const cd1 = cd0 + chest.cd;
         const pd1 = pd0 + chest.pd;
         const pdr1 = pdr0 + chest.pdr;
         for (const head of itemsBy.head) {
-          const atk2 = atk1 + dot2(head.atk, head.atkLv);
-          const asr2 = asr1 + dot2(head.asr, head.asrLv);
+          const atk2 = atk1 + (head.atk + head.atkLv * characterLevel);
+          const asr2 = asr1 + (head.asr + head.asrLv * characterLevel);
           const cc2 = cc1 + head.cc;
           const cd2 = cd1 + head.cd;
           const pd2 = pd1 + head.pd;
           const pdr2 = pdr1 + head.pdr;
           for (const arm of itemsBy.arm) {
-            const atk3 = atk2 + dot2(arm.atk, arm.atkLv);
-            const asr3 = asr2 + dot2(arm.asr, arm.asrLv);
+            const atk3 = atk2 + (arm.atk + arm.atkLv * characterLevel);
+            const asr3 = asr2 + (arm.asr + arm.asrLv * characterLevel);
             const cc3 = cc2 + arm.cc;
             const cd3 = cd2 + arm.cd;
             const pd3 = pd2 + arm.pd;
             const pdr3 = pdr2 + arm.pdr;
             for (const leg of itemsBy.leg) {
-              const atk = atk3 + dot2(leg.atk, leg.atkLv);
-              const asr = asr3 + dot2(leg.asr, leg.asrLv);
+              const atk = atk3 + (leg.atk + leg.atkLv * characterLevel);
+              const asr = asr3 + (leg.asr + leg.asrLv * characterLevel);
               const as = Math.max(
                 Math.min(as0 * (1 + asr), character.asl),
                 character.asm,
@@ -126,9 +131,6 @@
         }
       }
       return result;
-      function dot2(base: number, lv: number) {
-        return base + lv * characterLevel;
-      }
     }
   };
   function sortBy(stats: string) {
