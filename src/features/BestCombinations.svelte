@@ -55,29 +55,49 @@
       if (character == null) return [];
       if (weaponType == null) return [];
 
-      const base = {
-        as: dot("as", character, weaponTypeInfo.get(weaponType)!),
-        asr: (weaponData?.asr ?? 0) * weaponLevel,
-        adm: (weaponData?.adm ?? 0) * weaponLevel,
-      };
+      const atk0 = dot("atk", character, weapon) - character.atkLv;
+      const as0 = dot("as", character, weaponTypeInfo.get(weaponType)!);
+      const asr0 = dot("asr", weapon) + (weaponData?.asr ?? 0) * weaponLevel;
+      const adm0 = (weaponData?.adm ?? 0) * weaponLevel;
+      const cc0 = dot("cc", character, weapon);
+      const cd0 = dot("cd", weapon);
+      const pd0 = dot("pd", weapon);
+      const pdr0 = dot("pdr", weapon);
+
       const result = [];
       for (const chest of itemsBy.chest) {
+        const atk1 = atk0 + dot("atk", chest);
+        const asr1 = asr0 + dot("asr", chest);
+        const cc1 = cc0 + dot("cc", chest);
+        const cd1 = cd0 + dot("cd", chest);
+        const pd1 = pd0 + dot("pd", chest);
+        const pdr1 = pdr0 + dot("pdr", chest);
         for (const head of itemsBy.head) {
+          const atk2 = atk1 + dot("atk", head);
+          const asr2 = asr1 + dot("asr", head);
+          const cc2 = cc1 + dot("cc", head);
+          const cd2 = cd1 + dot("cd", head);
+          const pd2 = pd1 + dot("pd", head);
+          const pdr2 = pdr1 + dot("pdr", head);
           for (const arm of itemsBy.arm) {
+            const atk3 = atk2 + dot("atk", arm);
+            const asr3 = asr2 + dot("asr", arm);
+            const cc3 = cc2 + dot("cc", arm);
+            const cd3 = cd2 + dot("cd", arm);
+            const pd3 = pd2 + dot("pd", arm);
+            const pdr3 = pdr2 + dot("pdr", arm);
             for (const leg of itemsBy.leg) {
-              const atk =
-                dot("atk", character, weapon, chest, head, arm, leg) -
-                character.atkLv;
-              const asr = dot("asr", weapon, chest, head, arm, leg) + base.asr;
+              const atk = atk3 + dot("atk", leg);
+              const asr = asr3 + dot("asr", leg);
               const as = Math.max(
-                Math.min(base.as * (1 + asr), character.asl),
+                Math.min(as0 * (1 + asr), character.asl),
                 character.asm,
               );
-              const adm = base.adm;
-              const cc = dot("cc", character, weapon, chest, head, arm, leg);
-              const cd = dot("cd", weapon, chest, head, arm, leg);
-              const pd = dot("pd", weapon, chest, head, arm, leg);
-              const pdr = dot("pdr", weapon, chest, head, arm, leg);
+              const adm = adm0;
+              const cc = cc3 + dot("cc", leg);
+              const cd = cd3 + dot("cd", leg);
+              const pd = pd3 + dot("pd", leg);
+              const pdr = pdr3 + dot("pdr", leg);
               const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
               const damage = calcDamage(critical, pd, pdr, targetDefense);
               result.push({
