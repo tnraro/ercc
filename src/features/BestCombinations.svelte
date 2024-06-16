@@ -40,53 +40,8 @@
       ({ id, weaponType }) => id === character.id && weaponType === weaponType,
     )?.stats;
 
-    const base = {
-      as: dot("as", character, weaponTypeInfo.get(weaponType!)!),
-      asr: (weaponData?.asr ?? 0) * weaponLevel,
-      adm: (weaponData?.adm ?? 0) * weaponLevel,
-    };
-
-    let combs = [];
     console.time("combination");
-    for (const chest of itemsBy.chest) {
-      for (const head of itemsBy.head) {
-        for (const arm of itemsBy.arm) {
-          for (const leg of itemsBy.leg) {
-            const atk =
-              dot("atk", character, weapon, chest, head, arm, leg) -
-              character.atkLv;
-            const asr = dot("asr", weapon, chest, head, arm, leg) + base.asr;
-            const as = Math.max(
-              Math.min(base.as * (1 + asr), character.asl),
-              character.asm,
-            );
-            const adm = base.adm;
-            const cc = dot("cc", character, weapon, chest, head, arm, leg);
-            const cd = dot("cd", weapon, chest, head, arm, leg);
-            const pd = dot("pd", weapon, chest, head, arm, leg);
-            const pdr = dot("pdr", weapon, chest, head, arm, leg);
-            const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
-            const damage = calcDamage(critical, pd, pdr, targetDefense);
-            combs.push({
-              equipments: [weapon.id, chest.id, head.id, arm.id, leg.id],
-              stats: {
-                dps: damage * as,
-                atk,
-                asr,
-                adm,
-                as,
-                cc,
-                cd,
-                pd,
-                pdr,
-                critical,
-                damage,
-              },
-            });
-          }
-        }
-      }
-    }
+    const combs = calcCombinations();
     results = combs.length;
     combs.sort((a, b) => b.stats.atk - a.stats.atk);
     combs.sort((a, b) => b.stats.dps - a.stats.dps);
@@ -95,21 +50,69 @@
     combinations = combs;
     console.timeEnd("combination");
 
-    function current<T extends string>(
-      id: T,
-      idLv: `${T}Lv`,
-      obj: { [key in T | `${T}Lv`]?: number },
-    ) {
-      const base = obj[id] ?? 0;
-      const lv = obj[idLv] ?? 0;
-      return base + lv * characterLevel;
-    }
-    function dot<T extends string>(
-      id: T,
-      ...objs: { [key in T | `${T}Lv`]?: number }[]
-    ) {
-      const idLv = `${id}Lv` as const;
-      return objs.reduce((acc, x) => acc + current(id, idLv, x), 0);
+    function calcCombinations() {
+      if (weapon == null) return [];
+      if (character == null) return [];
+      if (weaponType == null) return [];
+
+      const base = {
+        as: dot("as", character, weaponTypeInfo.get(weaponType)!),
+        asr: (weaponData?.asr ?? 0) * weaponLevel,
+        adm: (weaponData?.adm ?? 0) * weaponLevel,
+      };
+      const result = [];
+      for (const chest of itemsBy.chest) {
+        for (const head of itemsBy.head) {
+          for (const arm of itemsBy.arm) {
+            for (const leg of itemsBy.leg) {
+              const atk =
+                dot("atk", character, weapon, chest, head, arm, leg) -
+                character.atkLv;
+              const asr = dot("asr", weapon, chest, head, arm, leg) + base.asr;
+              const as = Math.max(
+                Math.min(base.as * (1 + asr), character.asl),
+                character.asm,
+              );
+              const adm = base.adm;
+              const cc = dot("cc", character, weapon, chest, head, arm, leg);
+              const cd = dot("cd", weapon, chest, head, arm, leg);
+              const pd = dot("pd", weapon, chest, head, arm, leg);
+              const pdr = dot("pdr", weapon, chest, head, arm, leg);
+              const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
+              const damage = calcDamage(critical, pd, pdr, targetDefense);
+              result.push({
+                equipments: [weapon.id, chest.id, head.id, arm.id, leg.id],
+                stats: {
+                  dps: damage * as,
+                  atk,
+                  asr,
+                  adm,
+                  as,
+                  cc,
+                  cd,
+                  pd,
+                  pdr,
+                  critical,
+                  damage,
+                },
+              });
+            }
+          }
+        }
+      }
+      return result;
+      function dot<T extends string>(
+        id: T,
+        ...objs: { [key in T | `${T}Lv`]?: number }[]
+      ) {
+        const idLv = `${id}Lv` as const;
+        return objs.reduce((acc, x) => {
+          const base = x[id] ?? 0;
+          const lv = x[idLv] ?? 0;
+
+          return acc + base + lv * characterLevel;
+        }, 0);
+      }
     }
   };
   function sortBy(stats: string) {
