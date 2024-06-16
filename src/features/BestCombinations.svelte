@@ -51,10 +51,13 @@
     console.timeEnd("combination");
 
     function calcCombinations() {
-      if (weapon == null) return [];
-      if (character == null) return [];
-      if (weaponType == null) return [];
-      if (weaponData == null) return [];
+      if (
+        weapon == null ||
+        character == null ||
+        weaponType == null ||
+        weaponData == null
+      )
+        return [];
 
       const atk0 =
         character.atk +
