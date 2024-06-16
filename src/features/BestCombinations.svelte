@@ -55,49 +55,54 @@
       if (character == null) return [];
       if (weaponType == null) return [];
 
-      const atk0 = dot("atk", character, weapon) - character.atkLv;
-      const as0 = dot("as", character, weaponTypeInfo.get(weaponType)!);
-      const asr0 = dot("asr", weapon) + (weaponData?.asr ?? 0) * weaponLevel;
+      const atk0 =
+        dot2(character.atk, character.atkLv) +
+        dot2(weapon.atk, weapon.atkLv) -
+        character.atkLv;
+      const as0 =
+        dot2(character.as, character.asLv) + weaponTypeInfo.get(weaponType)!.as;
+      const asr0 =
+        dot2(weapon.asr, weapon.asrLv) + (weaponData?.asr ?? 0) * weaponLevel;
       const adm0 = (weaponData?.adm ?? 0) * weaponLevel;
-      const cc0 = dot("cc", character, weapon);
-      const cd0 = dot("cd", weapon);
-      const pd0 = dot("pd", weapon);
-      const pdr0 = dot("pdr", weapon);
+      const cc0 = dot2(character.cc, character.ccLv) + weapon.cc;
+      const cd0 = weapon.cd;
+      const pd0 = weapon.pd;
+      const pdr0 = weapon.pdr;
 
       const result = [];
       for (const chest of itemsBy.chest) {
-        const atk1 = atk0 + dot("atk", chest);
-        const asr1 = asr0 + dot("asr", chest);
-        const cc1 = cc0 + dot("cc", chest);
-        const cd1 = cd0 + dot("cd", chest);
-        const pd1 = pd0 + dot("pd", chest);
-        const pdr1 = pdr0 + dot("pdr", chest);
+        const atk1 = atk0 + dot2(chest.atk, chest.atkLv);
+        const asr1 = asr0 + dot2(chest.asr, chest.asrLv);
+        const cc1 = cc0 + chest.cc;
+        const cd1 = cd0 + chest.cd;
+        const pd1 = pd0 + chest.pd;
+        const pdr1 = pdr0 + chest.pdr;
         for (const head of itemsBy.head) {
-          const atk2 = atk1 + dot("atk", head);
-          const asr2 = asr1 + dot("asr", head);
-          const cc2 = cc1 + dot("cc", head);
-          const cd2 = cd1 + dot("cd", head);
-          const pd2 = pd1 + dot("pd", head);
-          const pdr2 = pdr1 + dot("pdr", head);
+          const atk2 = atk1 + dot2(head.atk, head.atkLv);
+          const asr2 = asr1 + dot2(head.asr, head.asrLv);
+          const cc2 = cc1 + head.cc;
+          const cd2 = cd1 + head.cd;
+          const pd2 = pd1 + head.pd;
+          const pdr2 = pdr1 + head.pdr;
           for (const arm of itemsBy.arm) {
-            const atk3 = atk2 + dot("atk", arm);
-            const asr3 = asr2 + dot("asr", arm);
-            const cc3 = cc2 + dot("cc", arm);
-            const cd3 = cd2 + dot("cd", arm);
-            const pd3 = pd2 + dot("pd", arm);
-            const pdr3 = pdr2 + dot("pdr", arm);
+            const atk3 = atk2 + dot2(arm.atk, arm.atkLv);
+            const asr3 = asr2 + dot2(arm.asr, arm.asrLv);
+            const cc3 = cc2 + arm.cc;
+            const cd3 = cd2 + arm.cd;
+            const pd3 = pd2 + arm.pd;
+            const pdr3 = pdr2 + arm.pdr;
             for (const leg of itemsBy.leg) {
-              const atk = atk3 + dot("atk", leg);
-              const asr = asr3 + dot("asr", leg);
+              const atk = atk3 + dot2(leg.atk, leg.atkLv);
+              const asr = asr3 + dot2(leg.asr, leg.asrLv);
               const as = Math.max(
                 Math.min(as0 * (1 + asr), character.asl),
                 character.asm,
               );
               const adm = adm0;
-              const cc = cc3 + dot("cc", leg);
-              const cd = cd3 + dot("cd", leg);
-              const pd = pd3 + dot("pd", leg);
-              const pdr = pdr3 + dot("pdr", leg);
+              const cc = cc3 + leg.cc;
+              const cd = cd3 + leg.cd;
+              const pd = pd3 + leg.pd;
+              const pdr = pdr3 + leg.pdr;
               const critical = calcCritical((atk * (1 + adm)) | 0, cc, cd);
               const damage = calcDamage(critical, pd, pdr, targetDefense);
               result.push({
@@ -121,19 +126,7 @@
         }
       }
       return result;
-      function dot<T extends string>(
-        id: T,
-        ...objs: { [key in T | `${T}Lv`]?: number }[]
-      ) {
-        const idLv = `${id}Lv` as const;
-        return objs.reduce((acc, x) => {
-          let base = x[id];
-          let lv = x[idLv];
-
-          return acc + dot2(base, lv);
-        }, 0);
-      }
-      function dot2(base: number | undefined = 0, lv: number | undefined = 0) {
+      function dot2(base: number, lv: number) {
         return base + lv * characterLevel;
       }
     }
