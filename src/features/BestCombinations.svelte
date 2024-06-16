@@ -54,6 +54,7 @@
       if (weapon == null) return [];
       if (character == null) return [];
       if (weaponType == null) return [];
+      if (weaponData == null) return [];
 
       const atk0 =
         character.atk +
@@ -67,8 +68,8 @@
       const asr0 =
         weapon.asr +
         weapon.asrLv * characterLevel +
-        (weaponData?.asr ?? 0) * weaponLevel;
-      const adm0 = (weaponData?.adm ?? 0) * weaponLevel;
+        weaponData.asr * weaponLevel;
+      const adm0 = weaponData.adm * weaponLevel;
       const cc0 = character.cc + character.ccLv * characterLevel + weapon.cc;
       const cd0 = weapon.cd;
       const pd0 = weapon.pd;
