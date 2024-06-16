@@ -11,9 +11,6 @@
   import Pagination from "./pagination/Pagination.svelte";
   // consts
   const getCombinations = () => {
-    if (weapon == null) return;
-    if (character == null) return;
-
     console.time("combination");
     const combs = calcCombinations();
     results = combs.length;
