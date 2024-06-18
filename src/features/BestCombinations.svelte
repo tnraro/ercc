@@ -25,6 +25,19 @@
       if (weapon == null || character == null || weaponType == null) return [];
 
       const filteredItems = items
+        .filter(
+          (item) =>
+            item.atk !== 0 ||
+            item.atkLv !== 0 ||
+            item.asr !== 0 ||
+            item.asrLv !== 0 ||
+            item.cc !== 0 ||
+            item.cd !== 0 ||
+            item.pd !== 0 ||
+            item.pdr !== 0 ||
+            item.upd !== 0 ||
+            item.updr !== 0,
+        )
         .filter((item) => includeLegendaryItem || item.grade !== "legendary")
         .filter((item) => includeMythicItem || item.grade !== "mythic");
 
