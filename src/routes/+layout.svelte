@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { base } from "$app/paths";
   import { characters, type Character } from "$lib/characters";
   import Heading1 from "$lib/components/ui/heading/heading1.svelte";
   import { Input } from "$lib/components/ui/input";
@@ -49,13 +50,13 @@
 <nav>
   <ul>
     <li>
-      <a href="/">Home</a>
+      <a href="{base}/">Home</a>
     </li>
     <li>
-      <a href="/best-combinations">Best Combinations</a>
+      <a href="{base}/best-combinations">Best Combinations</a>
     </li>
     <li>
-      <a href="/compare-item-values">CompareItemValues</a>
+      <a href="{base}/compare-item-values">CompareItemValues</a>
     </li>
   </ul>
 </nav>
