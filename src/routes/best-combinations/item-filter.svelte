@@ -7,7 +7,7 @@
 
 <script lang="ts">
   import Item from "$lib/components/item/item.svelte";
-  import Button from "$lib/components/ui/button/button.svelte";
+  import { buttonVariants } from "$lib/components/ui/button";
   import {
     Popover,
     PopoverContent,
@@ -20,6 +20,11 @@
     items: ItemFilterItems;
   }
   let { items = $bindable() }: Props = $props();
+
+  const secondaryButtonStyle = buttonVariants({
+    size: "default",
+    variant: "secondary",
+  });
 
   function add(type: ItemFilterKey, id: number) {
     if (items[type].has(id)) return;
@@ -53,8 +58,8 @@
 {#snippet selectedItems(key: ItemFilterKey, label: string)}
   <div class="flex items-center gap-4">
     <Popover>
-      <PopoverTrigger class="flex items-center gap-4 leading-none">
-        <Button variant="secondary"><Plus />{label}</Button>
+      <PopoverTrigger class={secondaryButtonStyle}>
+        <Plus />{label}
       </PopoverTrigger>
       <PopoverContent class="w-[calc(302px_+_4rem)]">
         {@render itemSelector(key)}
