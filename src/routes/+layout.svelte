@@ -21,7 +21,7 @@
     disposeIds();
   });
 
-  let { children } = $props();
+  let { children, data } = $props();
 
   let character = $state<Character>();
   let weaponType = $state<string>();
@@ -47,21 +47,30 @@
   let weapons = $derived(items.filter((item) => item.type === weaponType));
 </script>
 
-<nav>
-  <ul>
-    <li>
-      <a href="{base}/">Home</a>
-    </li>
-    <li>
-      <a href="{base}/best-combinations">Best Combinations</a>
-    </li>
-    <li>
-      <a href="{base}/compare-item-values">CompareItemValues</a>
-    </li>
-  </ul>
-</nav>
+<div class="mb-8 flex h-10 w-full items-center border-b">
+  <div class="container flex items-center">
+    <nav>
+      <ul class="flex items-center gap-8">
+        <li>
+          <a href="{base}/"
+            ><img
+              class="aspect-square w-7 rounded-full"
+              src="{base}/favicon-32x32.png"
+              alt=""
+            /></a
+          >
+        </li>
+        {#each data.routes as route (route.link)}
+          <li>
+            <a href="{base}{route.link}">{route.label}</a>
+          </li>
+        {/each}
+      </ul>
+    </nav>
+  </div>
+</div>
 
-<main>
+<main class="container flex min-h-lvh flex-col gap-8">
   <div class="player-state">
     <div class="row">
       <Select
@@ -185,13 +194,6 @@
 </footer>
 
 <style lang="scss">
-  main {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-    max-width: 640px;
-    margin: 0 auto;
-  }
   footer {
     max-width: 640px;
     margin: 0 auto;

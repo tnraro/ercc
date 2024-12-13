@@ -129,7 +129,7 @@
   }
 </script>
 
-<div class="settings">
+<div class="flex flex-col gap-2">
   <div class="option">
     <Checkbox id="include-legendary-item" bind:checked={includeLegendaryItem} />
     <Label for="include-legendary-item">전설 아이템 포함</Label>
@@ -164,11 +164,6 @@
 <EquipmentStatTable data={combinations} {columns} />
 
 <style lang="scss">
-  .settings {
-    display: flex;
-    flex-flow: column;
-    gap: 0.5rem;
-  }
   .option {
     display: flex;
     align-items: center;

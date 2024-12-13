@@ -8,9 +8,10 @@
     size,
     type ComputePositionConfig,
   } from "@floating-ui/dom";
+  import { ChevronDown } from "lucide-svelte";
   import { onDestroy, tick, type Snippet } from "svelte";
   import { fade } from "svelte/transition";
-  import { ChevronDown } from "lucide-svelte";
+  import { Label } from "../label";
 
   const [{ labelId, listboxId, comboboxId, optionId }, disposeIds] =
     generateUniqueIds("labelId", "listboxId", "comboboxId", "optionId");
@@ -221,14 +222,9 @@
 {#if label}
   <!-- svelte-ignore a11y_click_events_have_key_events -->
   <!-- svelte-ignore a11y_no_noninteractive_element_interactions -->
-  <label
-    class="ui-select__label"
-    id={labelId}
-    for={comboboxId}
-    onclick={() => trigger.focus()}
-  >
+  <Label id={labelId} for={comboboxId} onclick={() => trigger.focus()}>
     {label}
-  </label>
+  </Label>
 {/if}
 <div
   bind:this={trigger}
