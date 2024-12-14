@@ -167,7 +167,7 @@
       />
     </div>
     <div class="row">
-      <Label for={ids.targetDefense}>대상 방어력</Label>
+      <Label for={ids.targetDefense}>상대 방어력</Label>
       <Input
         id={ids.targetDefense}
         class="w-[contents]"

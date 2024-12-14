@@ -26,6 +26,11 @@ export const columns: ColumnDef<EquipmentStat>[] = [
     cell: ({ row }) => renderNumber(row.getValue("dps"), 2),
   },
   {
+    accessorKey: "damage",
+    header: renderSortableHeader("단일 피해"),
+    cell: ({ row }) => renderNumber(row.getValue("damage")),
+  },
+  {
     accessorKey: "atk",
     header: renderSortableHeader("공격력"),
     cell: ({ row }) => renderNumber(row.getValue("atk")),
