@@ -106,7 +106,7 @@
     );
 
     const weaponData = sw.find(
-      ({ id, weaponType }) => id === character.id && weaponType === weaponType,
+      (x) => x.id === character.id && x.weaponType === weaponType,
     )!.stats;
 
     const worker = new Worker(new URL("./calc-combination", import.meta.url), {

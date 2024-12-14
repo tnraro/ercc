@@ -1,5 +1,5 @@
 import type { Character } from "$lib/characters";
-import { calcCritical, calcDamage } from "$lib/damage";
+import { calcCritical, calcDamage, clampAs, clampCc } from "$lib/damage";
 import type { ItemData } from "$lib/items";
 import { weaponTypeInfo } from "$lib/weaponTypeInfo";
 import type { ItemFilterKey } from "./item-filter.svelte";
@@ -37,7 +37,7 @@ onmessage = (e: MessageEvent<Data>) => {
     weaponTypeInfo.get(weaponType)!.as;
   const asr0 =
     weapon.asr + weapon.asrLv * characterLevel + weaponData.asr * weaponLevel;
-  const adm0 = weaponData.adm * weaponLevel;
+  const adm0 = (weaponData.adm ?? 0) * weaponLevel;
   const cc0 = character.cc + character.ccLv * characterLevel + weapon.cc;
   const cd0 = weapon.cd;
   const pd0 = weapon.pd;
@@ -68,12 +68,9 @@ onmessage = (e: MessageEvent<Data>) => {
         for (const leg of itemsBy.leg) {
           const atk = atk3 + (leg.atk + leg.atkLv * characterLevel);
           const asr = asr3 + (leg.asr + leg.asrLv * characterLevel);
-          const as = Math.max(
-            Math.min(as0 * (1 + asr), character.asl),
-            character.asm,
-          );
+          const as = clampAs(as0 * (1 + asr), character.asl, character.asm);
           const adm = adm0;
-          const cc = cc3 + leg.cc;
+          const cc = clampCc(cc3 + leg.cc);
           const cd = cd3 + leg.cd;
           const pd = pd3 + leg.pd;
           const pdr = pdr3 + leg.pdr;
